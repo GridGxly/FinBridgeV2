@@ -1,16 +1,38 @@
-# React + Vite
+# Finbridge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Money made clear for our communities. translate it, learn it, and use it.**
 
-Currently, two official plugins are available:
+Finbridge helps ethnic communities, immigrants, bilingual students, and anyone new to the U.S. build real financial literacy and set up for long-term success.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Who it’s for
+- Ethnic communities (from young to old)
+- Immigrants & folks not yet accustomed to the U.S. system
+- Bilingual students and families
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Languages (initial set)
+English, Mandarin Chinese, Hindi, French, Tagalog, Vietnamese, Arabic, Haitian Creole, German.
 
-## Expanding the ESLint configuration
+## What it does (right now)
+- **Translate**: key terms and documents so “bank-speak” becomes everyday language  
+- **Learn**: bite-size finance basics (credit, HYSA, Roth IRA, fees, APR, etc.)  
+- **Accessibility first**: clear wording, multilingual UI, mobile-friendly
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> More features will be added as FinBridge is developed. The point is access
+
+## Coming next
+- Inline doc translator + term glossary
+- Lightweight lessons + short quizzes
+- Saved terms/history
+- Plaid integrations
+- AI widgets for explaing in plain language to further assist.
+
+---
+
+## Tech stack
+**Frontend:** React, Vite, Tailwind CSS (v3), i18next  
+**Backend:** Node.js (Express), Firebase (storage)  
+**Deployment:** Vercel  
+**Status:** personal build (sandbox data only)
+

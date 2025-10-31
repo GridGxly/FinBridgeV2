@@ -19,14 +19,14 @@ English, Mandarin Chinese, Hindi, French, Tagalog, Vietnamese, Arabic, Haitian C
 - **Learn**: bite-size finance basics (credit, HYSA, Roth IRA, fees, APR, etc.)  
 - **Accessibility first**: clear wording, multilingual UI, mobile-friendly
 
-> More features will be added as FinBridge is developed. The point is access
+> More features will be added as FinBridge is developed.
 
 ## Coming next
-- Inline doc translator + term glossary
+- Inline document translator + term glossary
 - Lightweight lessons + short quizzes
 - Saved terms/history
-- Plaid integrations
-- AI widgets for explaing in plain language to further assist.
+- Plaid  integrations
+- AI widgets for explaing in plain language to further assist via Google Gemini
 
 ---
 

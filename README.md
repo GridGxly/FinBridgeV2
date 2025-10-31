@@ -2,13 +2,13 @@
 
 **Money made clear for our communities. translate it, learn it, and use it.**
 
-Finbridge helps ethnic communities, immigrants, bilingual students, and anyone new to the U.S. build real financial literacy and set up for long-term success.
+Finbridge helps ethnic communities, immigrants, bilingual students, and anyone new to the U.S. build real financial literacy and set up users for long-term success.
 
 ---
 
 ## Who it’s for
 - Ethnic communities (from young to old)
-- Immigrants & folks not yet accustomed to the U.S. system
+- Immigrants & Individuals not yet accustomed to the U.S. system
 - Bilingual students and families
 
 ## Languages (initial set)
@@ -19,7 +19,7 @@ English, Mandarin Chinese, Hindi, French, Tagalog, Vietnamese, Arabic, Haitian C
 - **Learn**: bite-size finance basics (credit, HYSA, Roth IRA, fees, APR, etc.)  
 - **Accessibility first**: clear wording, multilingual UI, mobile-friendly
 
-> More features will be added as FinBridge is developed.
+> Disclaimer: FinBridge Is Still In Beta So More Features Will Be Added As FinBridge Is Further Developed
 
 ## Coming next
 - Inline document translator + term glossary

@@ -2,7 +2,7 @@
 
 **Money made clear for our communities. translate it, learn it, and use it.**
 
-Finbridge helps ethnic communities, immigrants, bilingual students, and anyone new to the U.S. build real financial literacy and set up users for long-term success.
+Finbridge helps ethnic communities, immigrants, bilingual students, and anyone new to the U.S. build real financial literacy and sets up users for long-term success.
 
 ---
 

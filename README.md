@@ -1,12 +1,12 @@
-# Finbridge
+# Finbridge (Beta)
 
-**Money made clear for our communities. translate it, learn it, and use it.**
+**Money made clear for our communities: translate it, learn it, and use it.**
 
 Finbridge helps ethnic communities, immigrants, bilingual students, and anyone new to the U.S. build real financial literacy and sets up users for long-term success.
 
 ---
 
-## Who it’s for
+## Who it’s For
 - Ethnic communities (from young to old)
 - Immigrants & Individuals not yet accustomed to the U.S. system
 - Bilingual students and families
@@ -19,9 +19,7 @@ English, Mandarin Chinese, Hindi, French, Tagalog, Vietnamese, Arabic, Haitian C
 - **Learn**: bite-size finance basics (credit, HYSA, Roth IRA, fees, APR, etc.)  
 - **Accessibility first**: clear wording, multilingual UI, mobile-friendly
 
-> Disclaimer: FinBridge Is Still In Beta So More Features Will Be Added As FinBridge Is Further Developed
-
-## Coming next
+## Coming next‼️
 - Inline document translator + term glossary
 - Lightweight lessons + short quizzes
 - Saved terms/history
@@ -31,8 +29,8 @@ English, Mandarin Chinese, Hindi, French, Tagalog, Vietnamese, Arabic, Haitian C
 ---
 
 ## Tech stack
-**Frontend:** React, Vite, Tailwind CSS (v3), i18next  
-**Backend:** Node.js (Express), Firebase (storage)  
+**Frontend:** React, Vite, Tailwind, i18next  
+**Backend:** Node.js (Express), Firebase
 **Deployment:** Vercel  
 **Status:** personal build (sandbox data only)
 

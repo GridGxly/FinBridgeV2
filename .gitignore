@@ -68,11 +68,26 @@ dist-ssr
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-# env file
-.env
-
-# FireBase Key
+# FireBase & Google Cloud Keys
 backend/firebase/*.json
+service-account.json
+backend/service-account.json
+**/*.json
+!package.json
+!tsconfig.json
+!jsconfig.json
+!.vscode/*.json
+!vercel.json
+
+
+# Security keys
+*.pem
+*.key
+*.p12
+*.keystore
+**/.env
+**/.env.*
+
 
 # Editor directories and files
 .vscode/*

@@ -2,7 +2,6 @@ import { initializeApp, cert } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
 import fs from "fs";
 
-
 const rawPath = process.env.FIREBASE_SA_PATH || process.env.GOOGLE_APPLICATION_CREDENTIALS || "";
 const saPath = rawPath && rawPath.trim();
 

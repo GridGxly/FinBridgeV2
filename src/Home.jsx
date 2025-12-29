@@ -6,7 +6,7 @@ export default function Home() {
     const { t, i18n } = useTranslation();
     const navigate = useNavigate();
 
-    
+
     const heroImg = "/assets/article-1.webp";
     const a1 = "/assets/article-2.jpg";
     const a2 = "/assets/article-3.jpg";
@@ -23,7 +23,7 @@ export default function Home() {
     const translatedArticles = t("home.articles", { returnObjects: true });
     const articles = Array.isArray(translatedArticles) ? translatedArticles : [];
 
-    
+
 
     return (
         <main className="bg-gray-50 font-serif">
@@ -32,7 +32,7 @@ export default function Home() {
                 @media print { header, nav, .no-print { display: none !important; } main { padding-top: 0 !important; } img { max-width: 100% !important; } }
                 .accent{background-color:var(--accent);} .accent-text{color:var(--accent);} .accent-border{border-color:var(--accent);} 
             `}</style>
-            {/* HERO */}
+
             <section className="mx-auto max-w-6xl px-6 sm:px-8 pt-12 pb-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div>
@@ -80,9 +80,9 @@ export default function Home() {
                 </div>
             </section>
 
-            
 
-            {/* ARTICLES */}
+
+
             <section id="articles-section" className="mx-auto max-w-6xl px-6 sm:px-8 pb-8">
                 <h2 className="text-2xl font-semibold text-neutral-900 mb-6">{t("home.learn_heading", { defaultValue: "Learn more about personal finance" })}</h2>
 
@@ -117,8 +117,8 @@ export default function Home() {
                 </div>
             </section>
 
-            
-            {/* CTA BAND (prominent accent) */}
+
+
             <section className="accent">
                 <div className="mx-auto max-w-6xl px-6 sm:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
                     <div>

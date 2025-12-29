@@ -1,0 +1,12 @@
+Lease Agreement
+
+This Lease Agreement (the "Agreement") is made this 1st day of January, 2025, by and between Landlord Inc. ("Landlord") and John Doe ("Tenant").
+
+1. PREMISES: Landlord hereby leases to Tenant the premises located at 123 Finance St, Tech City.
+2. RENT: Tenant agrees to pay Landlord the sum of $2,500 per month, due on the 1st day of each month.
+3. SECURITY DEPOSIT: A security deposit of $3,000 shall be paid prior to occupancy.
+4. UTILITIES: Tenant is responsible for all electric and water utilities.
+
+Signed,
+John Doe
+Landlord Inc.

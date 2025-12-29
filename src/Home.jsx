@@ -1,157 +1,169 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import LanguageSelector from "./components/LanguageSelector";
+import { FaTwitter, FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const navigate = useNavigate();
 
+    const [email, setEmail] = useState("");
+    const [subscribed, setSubscribed] = useState(false);
 
-    const heroImg = "/assets/article-1.webp";
-    const a1 = "/assets/article-2.jpg";
-    const a2 = "/assets/article-3.jpg";
-    const a3 = "/assets/hero-family.jpg";
-
-    const initial = i18n.language?.startsWith("es") ? "es" : "en";
-    const [lang, setLang] = useState(initial);
-
-    useEffect(() => {
-        const current = i18n.language?.startsWith("es") ? "es" : "en";
-        if (current !== lang) i18n.changeLanguage(lang);
-    }, [lang, i18n]);
-
-    const translatedArticles = t("home.articles", { returnObjects: true });
-    const articles = Array.isArray(translatedArticles) ? translatedArticles : [];
-
-
+    const handleSubscribe = (e) => {
+        e.preventDefault();
+        if (email) {
+            setSubscribed(true);
+            setEmail("");
+            setTimeout(() => setSubscribed(false), 3000);
+        }
+    };
 
     return (
-        <main className="bg-gray-50 font-serif">
-            <style>{`
-                :root{ --accent: #692475; }
-                @media print { header, nav, .no-print { display: none !important; } main { padding-top: 0 !important; } img { max-width: 100% !important; } }
-                .accent{background-color:var(--accent);} .accent-text{color:var(--accent);} .accent-border{border-color:var(--accent);} 
-            `}</style>
-
-            <section className="mx-auto max-w-6xl px-6 sm:px-8 pt-12 pb-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div>
-                        <div className="mb-6">
-                            <label className="block text-lg font-semibold text-neutral-700 mb-2">{t("home.choose_language", { defaultValue: "Choose your language" })}</label>
-                            <select
-                                className="rounded border px-3 py-2 text-base"
-                                value={lang}
-                                onChange={(e) => setLang(e.target.value)}
-                            >
-                                <option value="en">{t("switcher.en", { defaultValue: "English" })}</option>
-                                <option value="es">{t("switcher.es", { defaultValue: "Español" })}</option>
-                            </select>
+        <main className="bg-white font-sans text-slate-900 border-t border-gray-100">
+            <section className="bg-[#063925] text-white py-16 px-6 lg:px-12 relative overflow-hidden" style={{ background: 'linear-gradient(to right, #063925, #0a4d32)' }}>
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+                    <div className="flex-1 space-y-6">
+                        <div className="bg-white/10 text-white text-xs font-bold px-3 py-1 rounded-sm inline-block uppercase tracking-widest border border-white/20">
+                            {t('hero.badge')}
                         </div>
-
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-neutral-900 leading-tight">
-                            {t("hero.title", { defaultValue: "Understand your finances with no confusion." })}
+                        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+                            {t('hero.title_start')} <span className="text-[#EF4444]">{t('hero.title_highlight')}</span>
                         </h1>
-                        <p className="mt-4 text-lg text-neutral-700 max-w-prose">{t("hero.subtitle", { defaultValue: "Simple, culturally aware guidance—translated for you." })}</p>
+                        <p className="text-lg text-white/90 max-w-xl">
+                            {t('hero.subtitle')}
+                        </p>
 
-                        <div className="mt-6 flex flex-wrap gap-3 items-center">
+                        <div className="flex flex-col sm:flex-row gap-4 pt-4">
                             <button
-                                className="px-5 py-2 rounded-md accent text-white font-medium transition"
-                                onClick={() => navigate("/dashboard")}
+                                onClick={() => navigate('/login')}
+                                className="bg-[#EAB308] text-[#713F12] px-8 py-3 rounded-sm font-bold text-sm uppercase tracking-wider hover:bg-[#FACC15] transition-colors shadow-md"
                             >
-                                {t("home.login_plaid", { defaultValue: "Log in to Plaid" })}
+                                {t('hero.cta_primary')}
                             </button>
-
                             <button
-                                className="px-4 py-2 rounded-md border accent-border accent-text bg-white text-sm hover:bg-neutral-50 transition"
-                                onClick={() => document.getElementById("articles-section")?.scrollIntoView({ behavior: 'smooth' })}
+                                onClick={() => document.getElementById("about-footer")?.scrollIntoView({ behavior: 'smooth' })}
+                                className="bg-transparent border border-white text-white px-8 py-3 rounded-sm font-bold text-sm uppercase tracking-wider hover:bg-white/10 transition-colors"
                             >
-                                {t("home.learn_more", { defaultValue: "Learn more" })}
+                                {t('hero.cta_secondary')}
                             </button>
                         </div>
-
-                        <p className="mt-4 text-sm text-neutral-500">{t("home.trust_line", { defaultValue: "Trusted, secure, and privacy-first." })}</p>
                     </div>
 
-                    <div>
-                        <div className="bg-white rounded-2xl shadow-md overflow-hidden">
-                            <img src={heroImg} alt={t("hero.image_alt", { defaultValue: "People learning together" })} className="w-full h-[360px] object-cover" loading="eager" />
+                    <div className="hidden md:block w-80 bg-white rounded-lg shadow-2xl p-6 border border-gray-100">
+                        <div className="mb-2">
+                            <label className="block text-[11px] font-bold uppercase tracking-widest mb-3 text-slate-400">Select Your Language</label>
+                            <LanguageSelector />
                         </div>
+                        <p className="text-xs text-slate-400 italic mt-4 text-center">
+                            "We speak your language."
+                        </p>
                     </div>
                 </div>
             </section>
 
+            <section className="max-w-7xl mx-auto py-20 px-6 lg:px-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div className="bg-white p-6 border-l-4 border-[#063925] shadow-sm hover:shadow-md transition-shadow group cursor-pointer">
+                        <div className="w-12 h-12 bg-emerald-50 text-[#063925] rounded-full flex items-center justify-center mb-6 group-hover:bg-[#063925] group-hover:text-white transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#063925" strokeWidth="2"><path d="M3 21h18M5 21V7l8-4 8 4v14M8 21v-4h8v4" /></svg>
+                        </div>
+                        <h3 className="text-xl font-bold text-slate-900 mb-3">{t('features.community.title')}</h3>
+                        <p className="text-slate-600 leading-relaxed text-sm">
+                            {t('features.community.description')}
+                        </p>
+                    </div>
 
+                    <div className="bg-white p-6 border-l-4 border-[#EAB308] shadow-sm hover:shadow-md transition-shadow group cursor-pointer">
+                        <div className="w-12 h-12 bg-yellow-50 text-[#EAB308] rounded-full flex items-center justify-center mb-6 group-hover:bg-[#EAB308] group-hover:text-white transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EAB308" strokeWidth="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+                        </div>
+                        <h3 className="text-xl font-bold text-slate-900 mb-3">{t('features.literacy.title')}</h3>
+                        <p className="text-slate-600 leading-relaxed text-sm">
+                            {t('features.literacy.description')}
+                        </p>
+                    </div>
 
+                    <div className="bg-white p-6 border-l-4 border-[#063925] shadow-sm hover:shadow-md transition-shadow group cursor-pointer">
+                        <div className="w-12 h-12 bg-emerald-50 text-[#063925] rounded-full flex items-center justify-center mb-6 group-hover:bg-[#063925] group-hover:text-white transition-colors">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#063925" strokeWidth="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
+                        </div>
+                        <h3 className="text-xl font-bold text-slate-900 mb-3">{t('features.security.title')}</h3>
+                        <p className="text-slate-600 leading-relaxed text-sm">
+                            {t('features.security.description')}
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-            <section id="articles-section" className="mx-auto max-w-6xl px-6 sm:px-8 pb-8">
-                <h2 className="text-2xl font-semibold text-neutral-900 mb-6">{t("home.learn_heading", { defaultValue: "Learn more about personal finance" })}</h2>
+            <footer id="about-footer" className="bg-[#1e293b] text-white pt-16 pb-8 border-t-4 border-[#063925]">
+                <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 text-sm">
 
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {articles.map((a, idx) => {
-                        const imgs = [a1, a2, a3];
-                        const imgSrc = a.img || imgs[idx] || "";
-                        const key = a.href || a.title || idx;
-                        return (
-                            <a
-                                key={key}
-                                href={a.href || "#"}
-                                target={a.href ? "_blank" : undefined}
-                                rel={a.href ? "noreferrer" : undefined}
-                                className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition transform hover:-translate-y-1"
-                            >
-                                {imgSrc ? (
-                                    <img src={imgSrc} alt={a.title || ""} className="h-40 w-full object-cover" loading="lazy" />
-                                ) : (
-                                    <div className="h-40 w-full bg-neutral-100" />
-                                )}
-                                <div className="p-4">
-                                    <h3 className="font-semibold text-lg text-neutral-900">{a.title}</h3>
-                                    <p className="mt-1 text-sm text-neutral-600">{a.blurb}</p>
-                                    <div className="mt-3 inline-flex items-center accent-text text-sm font-medium">
-                                        {t("cta.secondary", { defaultValue: "Learn more" })} →
-                                    </div>
-                                </div>
+                    <div className="col-span-1 md:col-span-1 text-center">
+                        <p className="text-slate-400 mb-6 leading-relaxed">
+                            {t('footer.description')}
+                        </p>
+                        <div className="flex gap-4 justify-center">
+                            <a href="#" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:bg-[#063925] hover:text-white transition-all transform hover:-translate-y-1">
+                                <FaTwitter size={18} />
                             </a>
-                        );
-                    })}
-                </div>
-            </section>
+                            <a href="#" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:bg-[#063925] hover:text-white transition-all transform hover:-translate-y-1">
+                                <FaFacebookF size={18} />
+                            </a>
+                            <a href="#" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:bg-[#063925] hover:text-white transition-all transform hover:-translate-y-1">
+                                <FaInstagram size={18} />
+                            </a>
+                            <a href="#" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:bg-[#063925] hover:text-white transition-all transform hover:-translate-y-1">
+                                <FaLinkedinIn size={18} />
+                            </a>
+                        </div>
+                    </div>
 
-
-
-            <section className="accent">
-                <div className="mx-auto max-w-6xl px-6 sm:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
                     <div>
-                        <p className="text-white text-lg font-medium">{t("home.cta_text", { defaultValue: "Translating and understanding your finances doesn’t have to be hard." })}</p>
-                        <p className="text-sm text-indigo-100">{t("home.cta_subtext", { defaultValue: "Explore guides, tools, and culturally aware advice." })}</p>
+                        <h4 className="font-bold uppercase tracking-wider mb-6 text-slate-300">{t('footer.about.title')}</h4>
+                        <ul className="space-y-3 text-slate-400">
+                            <li><Link to="/about/mission" className="hover:text-white transition-colors">{t('footer.about.mission')}</Link></li>
+                            <li><Link to="/about/impact" className="hover:text-white transition-colors">{t('footer.about.impact')}</Link></li>
+                            <li><Link to="/about/diversity" className="hover:text-white transition-colors">{t('footer.about.diversity')}</Link></li>
+                        </ul>
                     </div>
-                    <div className="flex gap-3">
-                        <button
-                            className="px-6 py-3 rounded-md bg-white accent-text font-semibold hover:opacity-95 transition"
-                            onClick={() => navigate("/dashboard")}
-                        >
-                            {t("home.cta_button", { defaultValue: "Get started" })}
-                        </button>
-                        <button
-                            className="px-4 py-2 rounded-md border border-white/30 text-white bg-transparent hover:bg-white/10 transition"
-                            onClick={() => document.getElementById("articles-section")?.scrollIntoView({ behavior: 'smooth' })}
-                        >
-                            {t("home.learn_more", { defaultValue: "Learn more" })}
-                        </button>
+
+                    <div>
+                        <h4 className="font-bold uppercase tracking-wider mb-6 text-slate-300">{t('footer.resources.title')}</h4>
+                        <ul className="space-y-3 text-slate-400">
+                            <li><Link to="/resources/guides" className="hover:text-white transition-colors">{t('footer.resources.guides')}</Link></li>
+                            <li><Link to="/resources/language" className="hover:text-white transition-colors">{t('footer.resources.language')}</Link></li>
+                            <li><Link to="/support" className="hover:text-white transition-colors">{t('footer.resources.help')}</Link></li>
+                        </ul>
                     </div>
+
+                    <div>
+                        <h4 className="font-bold uppercase tracking-wider mb-6 text-slate-300">{t('footer.stay_informed.title')}</h4>
+                        <p className="text-slate-500 text-xs mb-4">
+                            {t('footer.stay_informed.subtitle')}
+                        </p>
+                        <form className="flex flex-col gap-2" onSubmit={handleSubscribe}>
+                            <input
+                                type="email"
+                                required
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                className="bg-slate-800 border border-slate-700 p-3 rounded-sm text-white focus:outline-none focus:border-[#063925] transition-colors"
+                                placeholder={t('footer.stay_informed.placeholder')}
+                            />
+                            <button type="submit" className="bg-[#063925] text-white font-bold py-2 rounded-sm hover:bg-[#0a4d32] transition-colors uppercase text-xs tracking-wide">
+                                {subscribed ? t('footer.stay_informed.subscribed') : t('footer.stay_informed.button')}
+                            </button>
+                        </form>
+                    </div>
+
                 </div>
-            </section>
 
+                <div className="max-w-7xl mx-auto px-6 lg:px-12 mt-16 pt-8 border-t border-slate-800 text-slate-500 text-xs text-center md:text-left">
+                    <p>{t('footer.copyright')}</p>
+                </div>
+            </footer>
         </main>
-    );
-}
-
-function Feature({ title, desc }) {
-    return (
-        <div className="bg-white rounded-xl shadow-md p-5">
-            <div className="h-10 w-10 rounded-full bg-yellow-400/80 mb-3" />
-            <h3 className="font-semibold text-black">{title}</h3>
-            <p className="mt-1 text-sm text-neutral-700">{desc}</p>
-        </div>
     );
 }

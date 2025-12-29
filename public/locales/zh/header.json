@@ -1,0 +1,9 @@
+{
+  "nav": {
+    "banking": "银行业务",
+    "loans": "贷款",
+    "investing": "投资",
+    "sign_in": "登录",
+    "dashboard": "仪表板"
+  }
+}

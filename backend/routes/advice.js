@@ -1,27 +1,30 @@
 import express from "express";
-import { translateText } from "../services/translateService.js";
-import { getFinancialAdvice } from "../services/geminiService.js";
+import { getChatResponse } from "../services/openAIService.js";
 
 const router = express.Router();
 
 router.post("/", async (req, res) => {
     try {
-        const { message, language, culture } = req.body;
-        const userMessageInEnglish = await translateText(message, "en");
+        const { message, history, language, context } = req.body;
 
-        const englishReplay = await getFinancialAdvice({
-            message: userMessageInEnglish,
-            language: "English",
-            culture
-        });
+        const messages = history ? history.map(msg => ({
+            role: msg.sender === 'user' ? 'user' : 'assistant',
+            content: msg.text
+        })) : [];
 
-        const finalReply = await translateText(englishReplay, language);
+        messages.push({ role: 'user', content: message });
 
-        res.json({ reply: finalReply });
+        const reply = await getChatResponse(messages, language, context);
+
+        res.json({ reply });
     }
-    catch(error) {
-        console.error("Advice route error:", error);
-        res.status(500).json({ error: "Error generating advice" });
+    catch (error) {
+        console.error("Chat route error:", error);
+        res.status(500).json({
+            error: "Error generating response",
+            details: error.message,
+            stack: error.stack
+        });
     }
 });
 

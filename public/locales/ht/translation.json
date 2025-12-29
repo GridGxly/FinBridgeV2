@@ -1,0 +1,120 @@
+{
+  "hero": {
+    "badge": "Literasi Finansye pou Tout Moun",
+    "title_start": "Pon ant",
+    "title_highlight": "kilti ak finans.",
+    "subtitle": "Senplisite ak klète pou avni finansye ou. Finbridge konekte ou ak lajan ou nan lang ou.",
+    "cta_primary": "Konekte Bank",
+    "cta_secondary": "Aprann Plis",
+    "copyright": "© 2025 Finbridge"
+  },
+  "features": {
+    "community": {
+      "title": "Kominote Anvan Tout",
+      "description": "Konsèy finansye pèsonalize ki respekte valè kiltirèl ou ak pratik ekonomize kominote a."
+    },
+    "literacy": {
+      "title": "Konesans Finansye",
+      "description": "Aprann sou kredi, ekonomi, ak envestisman nan tèm senp, tradui nan lang ou."
+    },
+    "security": {
+      "title": "Koneksyon Sekirize",
+      "description": "Sekirite nivo labank asire done ou an sekirite pandan ou jwenn yon gade klè sou finans ou."
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "Konsène Nou",
+      "mission": "Misyon Nou",
+      "impact": "Enpak Kominotè",
+      "diversity": "Divèsite ak Enklizyon"
+    },
+    "resources": {
+      "title": "Resous",
+      "guides": "Gid Finansye",
+      "language": "Sipò Lang",
+      "help": "Sant Èd"
+    },
+    "stay_informed": {
+      "title": "Rete Enfòme",
+      "subtitle": "Abònman pou resevwa konsèy finansye ak mizajou mache.",
+      "placeholder": "Adrès Imèl",
+      "button": "Enskri",
+      "subscribed": "Enskri!"
+    },
+    "copyright": "© 2025 Finbridge",
+    "description": "Sèvi kominote nou yo avèk entegrite, transparans, ak konpreyansyon kiltirèl depi 2025."
+  },
+  "login": {
+    "brand": "Finbridge",
+    "hero": {
+      "title": "Lajan,\nTradui.",
+      "subtitle": "Navige vwayaj finansye ou avèk klète.",
+      "copyright": "© 2025 Finbridge"
+    },
+    "form": {
+      "title": "Konekte",
+      "subtitle": "Lyen kont bankè prensipal ou a pou verifye idantite ou.",
+      "button": "Konekte Kont Bankè",
+      "encryption": "Chifre bout-an-bout via Plaid",
+      "terms_prefix": "Lè ou konekte, ou dakò ak",
+      "terms_link": "Tèm yo",
+      "privacy_link": "Règleman Konfidansyalite",
+      "terms_suffix": " Finbridge la.",
+      "and": "ak"
+    },
+    "loading": "Etabli koneksyon an sekirite..."
+  },
+  "dashboard": {
+    "title": "Tablo Debò",
+    "nav": {
+      "overview": "Apèsi",
+      "accounts": "Kont",
+      "transactions": "Tranzaksyon",
+      "cash_flow": "Koule Lajan",
+      "translate": "Tradui Dokiman"
+    },
+    "stats": {
+      "net_worth": "Valè Filè",
+      "assets": "Byen",
+      "liabilities": "Dèt"
+    },
+    "graph": {
+      "title": "Koule Lajan",
+      "generating": "Jenere Grafik AI...",
+      "unavailable": "Grafik Pa Disponib",
+      "time": {
+        "this_month": "Mwa Sa a",
+        "last_month": "Mwa Pase",
+        "ytd": "Ane Sa a"
+      }
+    },
+    "translate": {
+      "title": "Tradui Dokiman",
+      "updated": "Dènye aktyalizasyon: Fenman",
+      "upload_title": "Telechaje Dokiman",
+      "upload_desc": "Kole tèks oswa telechaje yon dosye pou tradiksyon ak rezime.",
+      "button_upload": "Telechaje Dosye (PDF/IMG)",
+      "button_process": "Tradui ak Rezime",
+      "analysis_title": "Analiz AI",
+      "powered_by": "Powered by Gemini",
+      "waiting": "Ap tann kontni...",
+      "waiting_desc": "AI pral tradui dokiman an nan lang ou pi pito epi bay yon rezime pwen kle yo.",
+      "exec_summary": "Rezime Egzekitif",
+      "translated_content": "Kontni Tradui",
+      "confidence": "Konfyans"
+    },
+    "recent": {
+      "title": "Tranzaksyon Resan",
+      "view_all": "Wè Tout"
+    },
+    "updated": "Dènye aktyalizasyon: Fenman"
+  },
+  "chat": {
+    "title": "Asistan Finbridge",
+    "welcome": "Bonjou! Mwen se Finbridge AI. Ki jan mwen ka ede ou jodi a?",
+    "placeholder": "Mande sou finans...",
+    "typing": "Ap ekri...",
+    "error": "Padon, mwen gen pwoblèm pou konekte kounye a."
+  }
+}

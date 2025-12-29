@@ -1,0 +1,9 @@
+{
+  "nav": {
+    "banking": "Pagbabangko",
+    "loans": "Mga Pautang",
+    "investing": "Pamumuhunan",
+    "sign_in": "MAG-SIGN IN",
+    "dashboard": "DASHBOARD"
+  }
+}

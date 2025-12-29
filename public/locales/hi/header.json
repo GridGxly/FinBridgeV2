@@ -1,0 +1,9 @@
+{
+  "nav": {
+    "banking": "बैंकिंग",
+    "loans": "ऋण",
+    "investing": "निवेश",
+    "sign_in": "साइन इन",
+    "dashboard": "डैशबोर्ड"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "hero": {
+    "badge": "Kiến thức tài chính cho mọi người",
+    "title_start": "Thu hẹp khoảng cách giữa",
+    "title_highlight": "văn hóa và tài chính.",
+    "subtitle": "Đơn giản và rõ ràng cho tương lai tài chính của bạn. Finbridge kết nối bạn với tiền của bạn bằng ngôn ngữ của bạn.",
+    "cta_primary": "Kết nối Ngân hàng",
+    "cta_secondary": "Tìm hiểu thêm",
+    "copyright": "© 2025 Finbridge"
+  },
+  "features": {
+    "community": {
+      "title": "Cộng đồng là trên hết",
+      "description": "Lời khuyên tài chính phù hợp tôn trọng các giá trị văn hóa và thực hành tiết kiệm của cộng đồng bạn."
+    },
+    "literacy": {
+      "title": "Kiến thức tài chính",
+      "description": "Tìm hiểu về tín dụng, tiết kiệm và đầu tư bằng những thuật ngữ đơn giản, được dịch sang ngôn ngữ của bạn."
+    },
+    "security": {
+      "title": "Kết nối an toàn",
+      "description": "Bảo mật cấp ngân hàng đảm bảo dữ liệu của bạn an toàn trong khi bạn có được cái nhìn rõ ràng về tài chính của mình."
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "Về chúng tôi",
+      "mission": "Sứ mệnh của chúng tôi",
+      "impact": "Tác động cộng đồng",
+      "diversity": "Đa dạng & Hòa nhập"
+    },
+    "resources": {
+      "title": "Tài nguyên",
+      "guides": "Hướng dẫn tài chính",
+      "language": "Hỗ trợ ngôn ngữ",
+      "help": "Trung tâm trợ giúp"
+    },
+    "stay_informed": {
+      "title": "Luôn cập nhật",
+      "subtitle": "Đăng ký để nhận các mẹo tài chính và cập nhật thị trường.",
+      "placeholder": "Địa chỉ Email",
+      "button": "Đăng ký",
+      "subscribed": "Đã đăng ký!"
+    },
+    "copyright": "© 2025 Finbridge",
+    "description": "Phục vụ cộng đồng của chúng tôi với sự chính trực, minh bạch và hiểu biết văn hóa từ năm 2025."
+  },
+  "login": {
+    "brand": "Finbridge",
+    "hero": {
+      "title": "Tiền tệ,\nĐã dịch.",
+      "subtitle": "Điều hướng hành trình tài chính của bạn với sự rõ ràng.",
+      "copyright": "© 2025 Finbridge"
+    },
+    "form": {
+      "title": "Đăng nhập",
+      "subtitle": "Liên kết tài khoản ngân hàng chính của bạn để xác minh danh tính.",
+      "button": "Kết nối Tài khoản Ngân hàng",
+      "encryption": "Được mã hóa đầu cuối qua Plaid",
+      "terms_prefix": "Bằng cách kết nối, bạn đồng ý với",
+      "terms_link": "Điều khoản",
+      "privacy_link": "Chính sách quyền riêng tư",
+      "terms_suffix": " của Finbridge.",
+      "and": "và"
+    },
+    "loading": "Đang thiết lập kết nối an toàn..."
+  },
+  "dashboard": {
+    "title": "Bảng điều khiển",
+    "nav": {
+      "overview": "Tổng quan",
+      "accounts": "Tài khoản",
+      "transactions": "Giao dịch",
+      "cash_flow": "Dòng tiền",
+      "translate": "Dịch tài liệu"
+    },
+    "stats": {
+      "net_worth": "Giá trị ròng",
+      "assets": "Tài sản",
+      "liabilities": "Nợ phải trả"
+    },
+    "graph": {
+      "title": "Dòng tiền",
+      "generating": "Đang tạo biểu đồ AI...",
+      "unavailable": "Biểu đồ không khả dụng",
+      "time": {
+        "this_month": "Tháng này",
+        "last_month": "Tháng trước",
+        "ytd": "Từ đầu năm"
+      }
+    },
+    "translate": {
+      "title": "Dịch tài liệu",
+      "updated": "Cập nhật lần cuối: Vừa xong",
+      "upload_title": "Tải lên tài liệu",
+      "upload_desc": "Dán văn bản hoặc tải lên tệp để dịch và tóm tắt.",
+      "button_upload": "Tải lên tệp (PDF/IMG)",
+      "button_process": "Dịch và Tóm tắt",
+      "analysis_title": "Phân tích AI",
+      "powered_by": "Được cung cấp bởi Gemini",
+      "waiting": "Đang chờ nội dung...",
+      "waiting_desc": "AI sẽ dịch tài liệu sang ngôn ngữ bạn chọn và cung cấp tóm tắt các điểm chính.",
+      "exec_summary": "Tóm tắt điều hành",
+      "translated_content": "Nội dung đã dịch",
+      "confidence": "Độ tin cậy"
+    },
+    "recent": {
+      "title": "Giao dịch gần đây",
+      "view_all": "Xem tất cả"
+    },
+    "updated": "Cập nhật lần cuối: Vừa xong"
+  },
+  "chat": {
+    "title": "Trợ lý Finbridge",
+    "welcome": "Xin chào! Tôi là Finbridge AI. Tôi có thể giúp gì cho bạn hôm nay?",
+    "placeholder": "Hỏi về tài chính...",
+    "typing": "Đang nhập...",
+    "error": "Xin lỗi, tôi đang gặp sự cố kết nối ngay bây giờ."
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "hero": {
+    "badge": "Littératie financière pour tous",
+    "title_start": "Combler le fossé entre",
+    "title_highlight": "culture et finance.",
+    "subtitle": "Simplicité et clarté pour votre avenir financier. Finbridge vous connecte avec votre argent dans votre langue.",
+    "cta_primary": "Connecter la banque",
+    "cta_secondary": "En savoir plus",
+    "copyright": "© 2025 Finbridge"
+  },
+  "features": {
+    "community": {
+      "title": "La Communauté d'Abord",
+      "description": "Conseils financiers adaptés qui respectent vos valeurs culturelles et les pratiques d'épargne communautaires."
+    },
+    "literacy": {
+      "title": "Éducation Financière",
+      "description": "Apprenez sur le crédit, l'épargne et les investissements en termes simples, traduits dans votre langue."
+    },
+    "security": {
+      "title": "Connexion Sécurisée",
+      "description": "Sécurité de niveau bancaire garantissant que vos données sont en sécurité pendant que vous obtenez une vue claire de vos finances."
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "À Propos",
+      "mission": "Notre Mission",
+      "impact": "Impact Communautaire",
+      "diversity": "Diversité et Inclusion"
+    },
+    "resources": {
+      "title": "Ressources",
+      "guides": "Guides Financiers",
+      "language": "Support Linguistique",
+      "help": "Centre d'Aide"
+    },
+    "stay_informed": {
+      "title": "Restez Informé",
+      "subtitle": "Abonnez-vous pour recevoir des conseils financiers.",
+      "placeholder": "Adresse E-mail",
+      "button": "S'abonner",
+      "subscribed": "Abonné !"
+    },
+    "copyright": "© 2025 Finbridge",
+    "description": "Servir nos communautés avec intégrité, transparence et compréhension culturelle depuis 2025."
+  },
+  "login": {
+    "brand": "Finbridge",
+    "hero": {
+      "title": "L'argent,\nTraduit.",
+      "subtitle": "Naviguez votre parcours financier avec clarté.",
+      "copyright": "© 2025 Finbridge"
+    },
+    "form": {
+      "title": "Connexion",
+      "subtitle": "Liez votre compte financier principal pour vérifier votre identité.",
+      "button": "Connecter compte bancaire",
+      "encryption": "Chiffré de bout en bout via Plaid",
+      "terms_prefix": "En connectant, vous acceptez les",
+      "terms_link": "Conditions",
+      "privacy_link": "Confidentialité",
+      "terms_suffix": " de Finbridge.",
+      "and": "et"
+    },
+    "loading": "Établissement connexion sécurisée..."
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "nav": {
+      "overview": "Vue d'ensemble",
+      "accounts": "Comptes",
+      "transactions": "Transactions",
+      "cash_flow": "Flux de trésorerie",
+      "translate": "Traduire des documents"
+    },
+    "stats": {
+      "net_worth": "Valeur Nette",
+      "assets": "Actifs",
+      "liabilities": "Passifs"
+    },
+    "graph": {
+      "title": "Flux de trésorerie",
+      "generating": "Génération du graphique IA...",
+      "unavailable": "Graphique indisponible",
+      "time": {
+        "this_month": "Ce mois-ci",
+        "last_month": "Mois dernier",
+        "ytd": "Cumul annuel"
+      }
+    },
+    "recent": {
+      "title": "Transactions récentes",
+      "view_all": "Voir tout"
+    },
+    "updated": "Dernière mise à jour : À l'instant",
+    "translate": {
+      "title": "Traduire des documents",
+      "updated": "Dernière mise à jour : À l'instant",
+      "upload_title": "Télécharger un document",
+      "upload_desc": "Collez du texte ou téléchargez un fichier pour la traduction et le résumé.",
+      "button_upload": "Télécharger un fichier (PDF/IMG)",
+      "button_process": "Traduire et résumer",
+      "analysis_title": "Analyse IA",
+      "powered_by": "Propulsé par Gemini",
+      "waiting": "En attente du contenu...",
+      "waiting_desc": "L'IA traduira le document dans votre langue préférée et fournira un résumé des points clés.",
+      "exec_summary": "Résumé Exécutif",
+      "translated_content": "Contenu Traduit",
+      "confidence": "Confiance"
+    }
+  },
+  "chat": {
+    "title": "Assistant Finbridge",
+    "welcome": "Bonjour ! Je suis Finbridge AI. Comment puis-je vous aider aujourd'hui ?",
+    "placeholder": "Posez des questions sur les finances...",
+    "typing": "En train d'écrire...",
+    "error": "Désolé, j'ai des difficultés à me connecter pour le moment."
+  }
+}

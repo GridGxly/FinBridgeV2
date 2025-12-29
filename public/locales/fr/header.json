@@ -1,0 +1,9 @@
+{
+  "nav": {
+    "banking": "Banque",
+    "loans": "Prêts",
+    "investing": "Investir",
+    "sign_in": "CONNEXION",
+    "dashboard": "TABLEAU DE BORD"
+  }
+}

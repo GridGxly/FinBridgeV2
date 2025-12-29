@@ -77,6 +77,7 @@ backend/service-account.json
 !tsconfig.json
 !jsconfig.json
 !.vscode/*.json
+!public/locales/**/*.json
 !vercel.json
 
 
@@ -99,3 +100,4 @@ backend/service-account.json
 *.njsproj
 *.sln
 *.sw?
+backend/check_env.js

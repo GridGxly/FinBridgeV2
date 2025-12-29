@@ -1,0 +1,120 @@
+{
+  "hero": {
+    "badge": "Literasiyang Pinansyal para sa Lahat",
+    "title_start": "Pag-uugnay ng",
+    "title_highlight": "kultura at pananalapi.",
+    "subtitle": "Kalinawan para sa iyong kinabukasan. Iniuugnay ka ng Finbridge sa iyong pera sa iyong wika.",
+    "cta_primary": "Ikonekta ang Bangko",
+    "cta_secondary": "Matuto Pa",
+    "copyright": "© 2025 Finbridge"
+  },
+  "features": {
+    "community": {
+      "title": "Komunidad Una",
+      "description": "Pinasadyang payo sa pananalapi na gumagalang sa iyong mga pagpapahalagang kultural at gawi sa pag-iipon ng komunidad."
+    },
+    "literacy": {
+      "title": "Literasiyang Pinansyal",
+      "description": "Alamin ang tungkol sa kredito, ipon, at pamumuhunan sa simpleng salita, isinalin sa iyong wika."
+    },
+    "security": {
+      "title": "Ligtas na Koneksyon",
+      "description": "Tinitiyak ng seguridad na pang-bangko na ligtas ang iyong data habang nakukuha mo ang malinaw na pananaw sa iyong pananalapi."
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "Tungkol sa Amin",
+      "mission": "Aming Misyon",
+      "impact": "Epekto sa Komunidad",
+      "diversity": "Pagkakaiba-iba at Pagsasama"
+    },
+    "resources": {
+      "title": "Mga Mapagkukunan",
+      "guides": "Mga Gabay sa Pananalapi",
+      "language": "Suporta sa Wika",
+      "help": "Sentro ng Tulong"
+    },
+    "stay_informed": {
+      "title": "Manatiling Alam",
+      "subtitle": "Mag-subscribe upang makatanggap ng mga tip sa pananalapi at update sa merkado.",
+      "placeholder": "Email Address",
+      "button": "Mag-sign Up",
+      "subscribed": "Naka-subscribe na!"
+    },
+    "copyright": "© 2025 Finbridge",
+    "description": "Naglilingkod sa aming mga komunidad nang may integridad, transparency, at pag-unawa sa kultura mula pa noong 2025."
+  },
+  "login": {
+    "brand": "Finbridge",
+    "hero": {
+      "title": "Pera,\nIsinalin.",
+      "subtitle": "Mag-navigate sa iyong paglalakbay sa pananalapi nang may kalinawan.",
+      "copyright": "© 2025 Finbridge"
+    },
+    "form": {
+      "title": "Mag-log in",
+      "subtitle": "Ikonekta ang iyong pangunahing bank account upang i-verify ang iyong pagkakakilanlan.",
+      "button": "Ikonekta ang Bank Account",
+      "encryption": "Naka-encrypt sa pamamagitan ng Plaid",
+      "terms_prefix": "Sa pagkonekta, sumasang-ayon ka sa",
+      "terms_link": "Mga Tuntunin",
+      "privacy_link": "Patakaran sa Pagkapribado",
+      "terms_suffix": " ng Finbridge.",
+      "and": "at"
+    },
+    "loading": "Nagtatatag ng secure na koneksyon..."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "nav": {
+      "overview": "Pangkalahatan",
+      "accounts": "Mga Account",
+      "transactions": "Mga Transaksyon",
+      "cash_flow": "Daloy ng Pera",
+      "translate": "Isalin ang mga Dokumento"
+    },
+    "stats": {
+      "net_worth": "Kabuuang Halaga",
+      "assets": "Mga Ari-arian",
+      "liabilities": "Mga Pagkakautang"
+    },
+    "graph": {
+      "title": "Daloy ng Pera",
+      "generating": "Bumubuo ng AI Graph...",
+      "unavailable": "Hindi Magamit ang Graph",
+      "time": {
+        "this_month": "Ngayong Buwan",
+        "last_month": "Nakaraang Buwan",
+        "ytd": "Simula ng Taon"
+      }
+    },
+    "translate": {
+      "title": "Isalin ang mga Dokumento",
+      "updated": "Huling na-update: Kani-kanina lang",
+      "upload_title": "Mag-upload ng Dokumento",
+      "upload_desc": "I-paste ang teksto o mag-upload ng file para sa pagsasalin at pagbubuod.",
+      "button_upload": "Mag-upload ng File (PDF/IMG)",
+      "button_process": "Isalin at Ibuod",
+      "analysis_title": "Pagsusuri ng AI",
+      "powered_by": "Pinapagana ng Gemini",
+      "waiting": "Naghihintay ng nilalaman...",
+      "waiting_desc": "Isasalin ng AI ang dokumento sa iyong napiling wika at magbibigay ng buod ng mga pangunahing punto.",
+      "exec_summary": "Ehekutibong Buod",
+      "translated_content": "Isinaling Nilalaman",
+      "confidence": "Kumpiyansa"
+    },
+    "recent": {
+      "title": "Kamakailang Transaksyon",
+      "view_all": "Tingnan Lahat"
+    },
+    "updated": "Huling na-update: Kani-kanina lang"
+  },
+  "chat": {
+    "title": "Katulong ng Finbridge",
+    "welcome": "Kumusta! Ako si Finbridge AI. Paano ako makakatulong sa iyo ngayon?",
+    "placeholder": "Magtanong tungkol sa pananalapi...",
+    "typing": "Nagta-type...",
+    "error": "Paumanhin, nagkakaroon ako ng problema sa pagkonekta ngayon."
+  }
+}

@@ -1,85 +1,120 @@
 {
-    "tagline": "Consejos financieros en tu idioma",
-    "switcher": { "en": "English", "es": "Español" },
-    "hero": {
-        "title": "Entiende tus finanzas sin confusión.",
-        "subtitle": "Orientación sencilla y culturalmente sensible—traducida para ti. Inicia sesión con Plaid y ve todo en un solo lugar.",
-        "alt": "Personas adultas aprendiendo sobre dinero con confianza"
+  "hero": {
+    "badge": "Educación Financiera para Todos",
+    "title_start": "Uniendo",
+    "title_highlight": "cultura y finanzas.",
+    "subtitle": "Claridad para tu futuro financiero. Finbridge te conecta con tu dinero en tu idioma.",
+    "cta_primary": "Conectar Banco",
+    "cta_secondary": "Más Información",
+    "copyright": "© 2025 Finbridge"
+  },
+  "features": {
+    "community": {
+      "title": "Comunidad Primero",
+      "description": "Asesoramiento financiero adaptado a tus valores culturales."
     },
-    "cta": {
-        "plaid": "Comienza — inicia sesión con Plaid",
-        "secondary": "Ver más"
+    "literacy": {
+      "title": "Educación Financiera",
+      "description": "Aprende sobre crédito, ahorros e inversiones en términos simples."
     },
-    "trust": {
-        "plaid": "Protegido por Plaid",
-        "privacyLine": "Nunca vemos ni guardamos tus credenciales bancarias"
-    },
-    "home": {
-        "choose_language": "Elige tu idioma",
-        "valuesHeading": "Por qué FinBridge",
-        "learn_heading": "Aprende más sobre",
-        "cta_text": "Traducir y entender tus finanzas no tiene por qué ser difícil.",
-        "articles": [
-            {
-                "title": "Por qué el idioma impacta tus decisiones financieras",
-                "blurb": "Entender cambia el comportamiento. Ver cómo la claridad mejora resultados.",
-                "img": "/assets/article-1.jpg",
-                "href": "https://www.languageline.com/blog/empowering-unbanked-non-english-speakers"
-            },
-            {
-                "title": "Cómo empezar con la banca en EE. UU.",
-                "blurb": "Cuenta corriente, historial de crédito y comisiones—lo esencial explicado.",
-                "img": "/assets/article-2.jpg",
-                "href": "https://www.consumerfinance.gov/consumer-tools/bank-accounts/"
-            },
-            {
-                "title": "Evita errores comunes al firmar documentos",
-                "blurb": "Consejos simples para revisar contratos y estados de cuenta.",
-                "img": "/assets/article-3.jpg",
-                "href": "https://www.consumer.ftc.gov/articles/understanding-your-credit-and-loans"
-            }
-        ],
-        "values": [
-            { "title": "Consciente de la cultura", "desc": "Consejos que respetan tus costumbres." },
-            { "title": "Lenguaje claro", "desc": "Explicaciones sin jerga bancaria." },
-            { "title": "Accionable", "desc": "Pasos sencillos que puedes tomar hoy." }
-        ],
-        "waitlist": {
-            "title": "Cómo empezar",
-            "description": "Déjanos tu correo para recibir una guía rápida y avisos del lanzamiento.",
-            "placeholder_email": "Tu correo",
-            "sending": "Enviando...",
-            "join_list": "Unirme a la lista",
-            "success": "¡Gracias! Te avisaremos cuando lancemos.",
-            "error": "Ocurrió un error. Inténtalo de nuevo."
-        }
-    },
-    "how": {
-        "title": "Cómo funciona",
-        "steps": [
-            { "title": "Elige un idioma", "desc": "Cambia entre inglés y español cuando quieras." },
-            { "title": "Inicia sesión con Plaid", "desc": "Conecta cuentas de forma segura. Tus credenciales no nos llegan." },
-            { "title": "Recibe orientación clara", "desc": "Consejos traducidos, sensibles a tu cultura, con acciones sencillas." }
-        ]
-    },
-    "about": {
-        "hero_blurb": "Hacemos que las finanzas personales en EE. UU. sean comprensibles para personas no nativas en inglés—orientación traducida y accionable.",
-        "mission": "Brindamos orientación financiera en lenguaje claro y culturalmente sensible para que puedas administrar tu dinero con confianza.",
-        "values": [
-            { "title": "Consciente de la cultura", "desc": "Consejos que respetan tus costumbres." },
-            { "title": "Lenguaje claro", "desc": "Explicaciones sin jerga bancaria." },
-            { "title": "Pasos accionables", "desc": "Pequeños pasos prácticos que puedes tomar hoy." }
-        ],
-        "metrics": [
-            { "label": "Idiomas", "value": "2+" },
-            { "label": "Acceso a credenciales", "value": "0" },
-            { "label": "Pasos", "value": "3+" }
-        ],
-        "faq": [
-            { "q": "¿Mis datos están seguros?", "a": "Sí: nunca vemos ni almacenamos tus credenciales bancarias. Plaid gestiona las conexiones de forma segura." },
-            { "q": "¿Ofrecen productos financieros?", "a": "No: ofrecemos orientación y traducciones, no servicios bancarios." },
-            { "q": "¿Qué idiomas soportan?", "a": "Inglés y español inicialmente, más por venir." }
-        ],
-        "cta": "Comienza — inicia sesión con Plaid"
+    "security": {
+      "title": "Conexión Segura",
+      "description": "Seguridad de nivel bancario para proteger tus datos."
     }
+  },
+  "footer": {
+    "about": {
+      "title": "Sobre Nosotros",
+      "mission": "Nuestra Misión",
+      "impact": "Impacto Comunitario",
+      "diversity": "Diversidad e Inclusión"
+    },
+    "resources": {
+      "title": "Recursos",
+      "guides": "Guías Financieras",
+      "language": "Soporte de Idiomas",
+      "help": "Centro de Ayuda"
+    },
+    "stay_informed": {
+      "title": "Mantente Informado",
+      "subtitle": "Suscríbete para recibir consejos financieros.",
+      "placeholder": "Dirección de Correo",
+      "button": "Suscribirse",
+      "subscribed": "¡Suscrito!"
+    },
+    "copyright": "© 2025 Finbridge",
+    "description": "Sirviendo a nuestras comunidades con integridad y entendimiento cultural."
+  },
+  "login": {
+    "brand": "Finbridge",
+    "hero": {
+      "title": "Dinero,\nTraducido.",
+      "subtitle": "Navegue su viaje financiero con claridad.",
+      "copyright": "© 2025 Finbridge"
+    },
+    "form": {
+      "title": "Iniciar Sesión",
+      "subtitle": "Conecte su cuenta bancaria para verificar su identidad.",
+      "button": "Conectar Cuenta Bancaria",
+      "encryption": "Encriptado de extremo a extremo vía Plaid",
+      "terms_prefix": "Al conectar, acepta los",
+      "terms_link": "Términos",
+      "privacy_link": "Política de Privacidad",
+      "terms_suffix": " de Finbridge.",
+      "and": "y"
+    },
+    "loading": "Estableciendo conexión segura..."
+  },
+  "dashboard": {
+    "title": "Panel de Control",
+    "nav": {
+      "overview": "Resumen",
+      "accounts": "Cuentas",
+      "transactions": "Transacciones",
+      "cash_flow": "Flujo de Caja",
+      "translate": "Translate Docs"
+    },
+    "stats": {
+      "net_worth": "Patrimonio Neto",
+      "assets": "Activos",
+      "liabilities": "Pasivos"
+    },
+    "graph": {
+      "title": "Flujo de Caja",
+      "generating": "Generando Gráfico IA...",
+      "unavailable": "Gráfico No Disponible",
+      "time": {
+        "this_month": "Este Mes",
+        "last_month": "Mes Pasado",
+        "ytd": "Año Actual"
+      }
+    },
+    "recent": {
+      "title": "Transacciones Recientes",
+      "view_all": "Ver Todo"
+    },
+    "updated": "Última actualización: Justo ahora",
+    "translate": {
+      "title": "Translate Documents",
+      "updated": "Last updated: Just now",
+      "upload_title": "Upload Document",
+      "upload_desc": "Paste text or upload a file for translation and summarization.",
+      "button_upload": "Upload File (PDF/IMG)",
+      "button_process": "Translate & Summarize",
+      "analysis_title": "AI Analysis",
+      "powered_by": "Powered by Gemini",
+      "waiting": "Waiting for content...",
+      "waiting_desc": "AI will translate the document into your preferred language and provide a summary of key points.",
+      "exec_summary": "Executive Summary",
+      "translated_content": "Translated Content",
+      "confidence": "Confidence"
+    }
+  },
+  "chat": {
+    "title": "Asistente Finbridge",
+    "welcome": "¡Hola! Soy Finbridge AI. ¿Cómo puedo ayudarte hoy?",
+    "placeholder": "Pregunta sobre finanzas...",
+    "typing": "Escribiendo...",
+    "error": "Lo siento, tengo problemas para conectarme en este momento."
+  }
 }

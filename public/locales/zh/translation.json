@@ -1,0 +1,121 @@
+{
+  "hero": {
+    "badge": "全民金融素养",
+    "title_start": "弥合",
+    "title_highlight": "文化与金融。",
+    "subtitle": "为您的未来提供清晰的财务指导。Finbridge 用您的语言为您提供具有文化意识的指导。",
+    "cta_primary": "连接银行",
+    "cta_secondary": "了解更多",
+    "copyright": "© 2025 Finbridge"
+  },
+  "features": {
+    "community": {
+      "title": "社区优先",
+      "description": "尊重您文化价值观的定制财务建议。"
+    },
+    "literacy": {
+      "title": "金融素养",
+      "description": "用简单的术语学习信用、储蓄和投资。"
+    },
+    "security": {
+      "title": "安全连接",
+      "description": "银行级安全保障您的数据安全。"
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "关于我们",
+      "mission": "我们的使命",
+      "impact": "社区影响",
+      "diversity": "多元化与包容性"
+    },
+    "resources": {
+      "title": "资源",
+      "guides": "理财指南",
+      "language": "语言支持",
+      "help": "帮助中心"
+    },
+    "stay_informed": {
+      "title": "保持知情",
+      "subtitle": "订阅以接收理财技巧和市场更新。",
+      "placeholder": "电子邮件地址",
+      "button": "注册",
+      "subscribed": "已订阅！"
+    },
+    "copyright": "© 2025 Finbridge",
+    "description": "以诚信、透明和文化理解服务我们的社区。"
+  },
+  "login": {
+    "brand": "Finbridge",
+    "hero": {
+      "title": "金钱，\n翻译。",
+      "subtitle": "清晰自信地驾驭您的财务之旅。",
+      "copyright": "© 2025 Finbridge"
+    },
+    "form": {
+      "title": "登录",
+      "subtitle": "连接您的主要银行账户以验证您的身份。",
+      "button": "连接银行账户",
+      "encryption": "通过 Plaid 进行端到端加密",
+      "terms_prefix": "连接即表示您同意 Finbridge 的",
+      "terms_link": "条款",
+      "privacy_link": "隐私政策",
+      "terms_suffix": "。",
+      "and": "和"
+    },
+    "loading": "正在建立安全连接..."
+  },
+  "dashboard": {
+    "title": "仪表板",
+    "nav": {
+      "overview": "概览",
+      "accounts": "账户",
+      "transactions": "交易",
+      "cash_flow": "现金流",
+      "translate": "翻译文档"
+    },
+    "translate": {
+      "title": "翻译文档",
+      "updated": "最后更新：刚刚",
+      "upload_title": "上传文档",
+      "upload_desc": "粘贴文本或上传文件以进行翻译和摘要。",
+      "input_placeholder": "在此粘贴您的财务文档内容（例如：租赁协议，银行对账单）...",
+      "button_upload": "上传文件 (PDF/IMG)",
+      "button_process": "翻译并摘要",
+      "analysis_title": "AI 分析",
+      "powered_by": "由 Gemini 提供支持",
+      "waiting": "等待内容...",
+      "waiting_desc": "AI 将把文档翻译成您的首选语言并提供关键点摘要。",
+      "exec_summary": "执行摘要",
+      "translated_content": "翻译内容",
+      "confidence": "置信度"
+    },
+    "stats": {
+      "net_worth": "净资产",
+      "assets": "资产",
+      "liabilities": "负债"
+    },
+    "graph": {
+      "title": "现金流",
+      "generating": "正在生成 AI 图表...",
+      "unavailable": "图表不可用",
+      "time": {
+        "this_month": "本月",
+        "last_month": "上月",
+        "ytd": "年初至今"
+      }
+    },
+    "recent": {
+      "title": "近期交易",
+      "view_all": "查看全部"
+    },
+    "updated": "最后更新：刚才"
+  },
+  "chat": {
+    "title": "Finbridge 助手",
+    "welcome": "你好！我是 Finbridge AI。今天有什么可以帮您的吗？",
+    "placeholder": "询问关于财务的问题...",
+    "typing": "输入中...",
+    "error": "抱歉，我现在连接出现问题。"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "nav": {
+    "banking": "Bankwesen",
+    "loans": "Kredite",
+    "investing": "Investieren",
+    "sign_in": "ANMELDEN",
+    "dashboard": "DASHBOARD"
+  }
+}

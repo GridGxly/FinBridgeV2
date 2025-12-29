@@ -1,6 +1,9 @@
 {
-    "tagline": "Financial Advice that Speaks to You",
-    "home": "Home",
-    "about": "About Us",
-    "dashboard": "Dashboard"
+  "nav": {
+    "banking": "Banking",
+    "loans": "Mortgage & Loans",
+    "investing": "Investing",
+    "sign_in": "SIGN IN",
+    "dashboard": "DASHBOARD"
+  }
 }

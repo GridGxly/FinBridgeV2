@@ -54,5 +54,40 @@ export default {
     values: "discipline, order, community harmony",
     budgeting_style: "systematic; often sets strict savings goals",
     investment_attitude: "low risk; prioritizes security and consistency"
+  },
+  French: {
+    saving_term: "épargne",
+    example: "saving for summer holidays (les grandes vacances) or property",
+    values: "work-life balance, pleasure (joie de vivre), security",
+    budgeting_style: "balanced; focuses on high-quality food/leisure while maintaining savings",
+    investment_attitude: "conservative; prefers real estate (pierre) and life insurance (assurance vie)"
+  },
+  Filipino: {
+    saving_term: "ipon",
+    example: "remittances (padala) or saving for Christmas (Pasko)",
+    values: "family obligation (utang na loob), resilience, generosity",
+    budgeting_style: "communal; income often supports extended family",
+    investment_attitude: "cautious; focuses on land, small business, or education"
+  },
+  Vietnamese: {
+    saving_term: "tiết kiệm",
+    example: "saving for Tet or children's education",
+    values: "hard work, thrift, family reputation",
+    budgeting_style: "strict saving; avoids debt typically",
+    investment_attitude: "loves gold and real estate; skeptical of volatile markets"
+  },
+  Arab: {
+    saving_term: "twfeer (توفير)",
+    example: "saving for marriage, housing, or Eid celebrations",
+    values: "generosity, family honor, hospitality",
+    budgeting_style: "family-centric; large expenses often shared",
+    investment_attitude: "prefers tangible assets (gold, real estate); interest (riba) avoidance is common"
+  },
+  German: {
+    saving_term: "sparen",
+    example: "saving for a house (Bausparen) or travel",
+    values: "efficiency, security, environmental responsibility",
+    budgeting_style: "very structured; high savings rate; loves cash over credit",
+    investment_attitude: "risk-averse; skeptical of stocks; prefers insurance and savings accounts"
   }
 };

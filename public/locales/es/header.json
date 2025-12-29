@@ -1,6 +1,9 @@
 {
-    "tagline": "Asesoramiento Financiero que Habla Tu Idioma",
-    "home": "Inicio",
-    "about": "Sobre Nosotros",
-    "dashboard": "Tablero"
+  "nav": {
+    "banking": "Banca",
+    "loans": "Hipotecas",
+    "investing": "Inversiones",
+    "sign_in": "INICIAR SESIÓN",
+    "dashboard": "PANEL"
+  }
 }

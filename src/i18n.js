@@ -6,7 +6,7 @@ import Backend from 'i18next-http-backend';
 i18n.use(LanguageDetector).use(Backend).use(initReactI18next).init({
     debug: true,
     fallbackLng: 'en',
-    supportedLngs: ['en', 'es'],
+    supportedLngs: ['en', 'es', 'zh', 'hi', 'fr', 'tl', 'vi', 'ar', 'ht', 'de'],
     ns: ['translation', 'about', 'header', 'chatbot'],
     defaultNS: 'translation',
     backend: {
@@ -18,7 +18,7 @@ i18n.use(LanguageDetector).use(Backend).use(initReactI18next).init({
     },
     returnObjects: true,
     interpolation: { escapeValue: false },
-    react: { useSuspense: false },
+    react: { useSuspense: true },
 });
 
 export default i18n;

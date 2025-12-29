@@ -95,7 +95,7 @@ const Login = () => {
                 <div className="w-full max-w-[480px] bg-white px-10 pt-12 pb-10 sm:px-12 sm:pt-14 sm:pb-12 rounded-3xl shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] border border-gray-200/60 ring-1 ring-black/5">
 
                     <div className="mb-8 text-center sm:text-left">
-                        <h1 className="text-3xl font-semibold tracking-tighter text-[#111] mb-3">Access Finbridge</h1>
+                        <h1 className="text-3xl font-semibold tracking-tighter text-[#111] mb-3">Log in</h1>
                         <p className="text-gray-600 text-[15px] leading-relaxed max-w-sm text-balance">
                             Link your primary financial account to verify your identity.
                         </p>

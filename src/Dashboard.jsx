@@ -5,27 +5,46 @@ import { usePlaidLink } from 'react-plaid-link';
 import { FaHome, FaWallet, FaExchangeAlt, FaChartLine, FaLanguage, FaSignOutAlt, FaBars, FaTimes, FaFileUpload, FaRobot } from 'react-icons/fa';
 import { SiChase, SiGooglegemini } from "react-icons/si";
 import { useAuth } from './context/AuthContext';
+import ChatWidget from './components/ChatWidget';
 
 export default function Dashboard() {
     const { t } = useTranslation();
     const { logout, user } = useAuth();
     const navigate = useNavigate();
 
+
+    const API_BASE_URL = (import.meta.env.VITE_BACKEND_URL || 'http://localhost:5001').replace(/\/$/, '');
+
     const [activeTab, setActiveTab] = useState('overview');
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const [translateInput, setTranslateInput] = useState('');
+    const [selectedFile, setSelectedFile] = useState(null);
     const [translateResult, setTranslateResult] = useState(null);
     const [translating, setTranslating] = useState(false);
+    const [history, setHistory] = useState([]);
+
+    const fetchHistory = useCallback(async () => {
+        if (!user?.id) return;
+        try {
+            const res = await fetch(`${API_BASE_URL}/api/history?userId=${user.id}`);
+            const data = await res.json();
+            if (Array.isArray(data)) setHistory(data);
+        } catch (e) {
+            console.error("Failed to fetch history", e);
+        }
+    }, [user?.id, API_BASE_URL]);
+
+    useEffect(() => {
+        if (activeTab === 'translate') {
+            fetchHistory();
+        }
+    }, [activeTab, fetchHistory]);
 
 
 
     const [token, setToken] = useState(null);
     const [plaidLoading, setPlaidLoading] = useState(true);
-
-    const API_BASE_URL = (import.meta.env.VITE_BACKEND_URL || 'http://localhost:5001').replace(/\/$/, '');
-
-
 
     useEffect(() => {
         const createLinkToken = async () => {
@@ -48,15 +67,12 @@ export default function Dashboard() {
         createLinkToken();
     }, [user, API_BASE_URL]);
 
-    const netWorth = "$142,500.00";
-    const netWorthChange = "+$2,340 (1.6%)";
+    const [netWorth, setNetWorth] = useState("$0.00");
+    const [assets, setAssets] = useState("$0.00");
+    const [liabilities, setLiabilities] = useState("$0.00");
+    const [transactions, setTransactions] = useState([]);
+    const [netWorthChange, setNetWorthChange] = useState("+2.5%");
 
-    const transactions = [
-        { id: 1, date: 'Oct 24', merchant: 'Whole Foods Market', amount: -124.50, category: 'Groceries' },
-        { id: 2, date: 'Oct 23', merchant: 'Uber Cloud Inc', amount: -15.90, category: 'Transport' },
-        { id: 3, date: 'Oct 22', merchant: 'Salary Deposit', amount: 3450.00, category: 'Income' },
-        { id: 4, date: 'Oct 21', merchant: 'Netflix Subscription', amount: -14.99, category: 'Entertainment' },
-    ];
 
     const [graphData, setGraphData] = useState(null);
     const [graphLoading, setGraphLoading] = useState(true);
@@ -64,7 +80,7 @@ export default function Dashboard() {
     useEffect(() => {
         const fetchGraph = async () => {
             try {
-                const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/graphs?type=spending`);
+                const res = await fetch(`${API_BASE_URL}/api/graphs?type=spending`);
                 const data = await res.json();
                 if (data && data.labels) setGraphData(data);
             } catch (e) {
@@ -86,7 +102,14 @@ export default function Dashboard() {
             });
             const data = await response.json();
             console.log("Plaid Exchange Success:", data, metadata);
-            alert(`Successfully connected to ${metadata.institution.name}!`);
+
+            if (data.financialData) {
+                setNetWorth(data.financialData.netWorth);
+                setAssets(data.financialData.assets);
+                setLiabilities(data.financialData.liabilities);
+            }
+
+            setTransactions(data.transactions);
         } catch (err) {
             console.error("Plaid Exchange Error:", err);
         }
@@ -122,9 +145,17 @@ export default function Dashboard() {
 
     return (
         <div className="min-h-screen bg-[#F9FAFB] flex font-sans text-slate-900">
+            <ChatWidget
+                financialData={{
+                    netWorth,
+                    assets,
+                    liabilities,
+                    transactions
+                }}
+            />
             <aside className="hidden md:flex w-64 bg-white border-r border-gray-200 flex-col fixed h-full z-20">
                 <div className="p-6 border-b border-gray-100">
-                    <Link to="/home" className="flex items-center gap-2 text-[#063925] font-bold text-xl tracking-tight">
+                    <Link to="/" className="flex items-center gap-2 text-[#063925] font-bold text-xl tracking-tight">
                         <div className="w-8 h-8 bg-[#063925] text-white rounded flex items-center justify-center font-serif text-lg">Fb</div>
                         FINBRIDGE
                     </Link>
@@ -378,31 +409,37 @@ export default function Dashboard() {
                                 </div>
 
                                 <div
-                                    className={`flex-1 border-2 border-dashed rounded-lg flex flex-col items-center justify-center p-8 transition-colors relative ${translateInput ? 'border-emerald-500 bg-emerald-50/30' : 'border-gray-200 hover:border-indigo-400 hover:bg-indigo-50/10'
+                                    className={`flex-1 border-2 border-dashed rounded-lg flex flex-col items-center justify-center p-8 transition-colors relative ${translateInput || selectedFile ? 'border-emerald-500 bg-emerald-50/30' : 'border-gray-200 hover:border-indigo-400 hover:bg-indigo-50/10'
                                         }`}
                                 >
                                     <input
                                         type="file"
-                                        accept=".txt,.md,.json,.csv"
+                                        accept=".txt,.md,.json,.csv,.pdf,.png,.jpg,.jpeg"
                                         className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
                                         onChange={(e) => {
                                             const file = e.target.files[0];
                                             if (file) {
-                                                const reader = new FileReader();
-                                                reader.onload = (ev) => setTranslateInput(ev.target.result);
-                                                reader.readAsText(file);
+                                                setSelectedFile(file);
+
+                                                if (file.type.startsWith('text/') || file.name.endsWith('.json') || file.name.endsWith('.md')) {
+                                                    const reader = new FileReader();
+                                                    reader.onload = (ev) => setTranslateInput(ev.target.result);
+                                                    reader.readAsText(file);
+                                                } else {
+                                                    setTranslateInput(`[File Selected]: ${file.name}`);
+                                                }
                                             }
                                         }}
                                     />
-                                    {translateInput ? (
+                                    {translateInput || selectedFile ? (
                                         <div className="text-center">
                                             <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M12 18v-6"></path><path d="M9 15l3 3 3-3"></path></svg>
                                             </div>
-                                            <p className="text-sm font-bold text-slate-900 mb-1">Document Loaded</p>
+                                            <p className="text-sm font-bold text-slate-900 mb-1">{selectedFile ? selectedFile.name : 'Document Loaded'}</p>
                                             <p className="text-xs text-slate-500">Ready to Process</p>
                                             <button
-                                                onClick={(e) => { e.preventDefault(); setTranslateInput(''); setTranslateResult(null); }}
+                                                onClick={(e) => { e.preventDefault(); setTranslateInput(''); setSelectedFile(null); setTranslateResult(null); }}
                                                 className="text-xs text-red-500 font-bold mt-4 hover:underline z-20 relative"
                                             >
                                                 Remove File
@@ -414,7 +451,7 @@ export default function Dashboard() {
                                                 <FaFileUpload size={24} />
                                             </div>
                                             <p className="text-sm font-bold text-slate-900 mb-1">{t('dashboard.translate.button_upload')}</p>
-                                            <p className="text-xs text-slate-400">TXT, MD, CSV (Max 5MB)</p>
+                                            <p className="text-xs text-slate-400">PDF, IMG, TXT (Max 5MB)</p>
                                         </div>
                                     )}
                                 </div>
@@ -422,16 +459,28 @@ export default function Dashboard() {
                                 <div className="mt-6 flex justify-end">
                                     <button
                                         onClick={async () => {
-                                            if (!translateInput) return;
+                                            if (!translateInput && !selectedFile) return;
                                             setTranslating(true);
                                             try {
-                                                const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/translate`, {
+                                                const formData = new FormData();
+                                                formData.append('targetLanguage', t('language_name') || 'English');
+                                                formData.append('userId', user?.id);
+
+                                                if (selectedFile) {
+                                                    formData.append('file', selectedFile);
+                                                } else {
+                                                    formData.append('text', translateInput);
+                                                }
+
+
+                                                const res = await fetch(`${API_BASE_URL}/api/translate`, {
                                                     method: 'POST',
-                                                    headers: { 'Content-Type': 'application/json' },
-                                                    body: JSON.stringify({ text: translateInput, targetLanguage: t('language_name') || 'English' })
+                                                    body: formData
                                                 });
+
                                                 const data = await res.json();
                                                 setTranslateResult(data);
+                                                fetchHistory();
                                             } catch (e) {
                                                 console.error(e);
                                                 setTranslateResult({ summary: "Error connecting to AI.", translatedText: "Please check your internet connection.", confidence: "Low" });
@@ -439,8 +488,8 @@ export default function Dashboard() {
                                                 setTranslating(false);
                                             }
                                         }}
-                                        disabled={translating || !translateInput}
-                                        className={`w-full bg-[#063925] text-white px-6 py-3 rounded-md font-bold transition-all flex items-center justify-center gap-2 ${translating || !translateInput ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#0a4d32] shadow-lg shadow-emerald-900/10'}`}
+                                        disabled={translating || (!translateInput && !selectedFile)}
+                                        className={`w-full bg-[#063925] text-white px-6 py-3 rounded-md font-bold transition-all flex items-center justify-center gap-2 ${translating || (!translateInput && !selectedFile) ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#0a4d32] shadow-lg shadow-emerald-900/10'}`}
                                     >
                                         {translating ? (
                                             <>
@@ -456,19 +505,24 @@ export default function Dashboard() {
                                 </div>
                             </div>
 
-                            <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 relative overflow-hidden flex flex-col">
-                                <div className="flex items-center gap-3 mb-6">
-                                    <div className="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center">
-                                        <SiGooglegemini size={22} />
+                            <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 relative overflow-hidden flex flex-col h-[600px]">
+                                <div className="flex items-center justify-between mb-4">
+                                    <div className="flex items-center gap-3">
+                                        <div className="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                                            <SiGooglegemini size={22} />
+                                        </div>
+                                        <div>
+                                            <h2 className="text-lg font-bold text-slate-900">{t('dashboard.translate.analysis_title')}</h2>
+                                            <p className="text-xs text-slate-500">{t('dashboard.translate.powered_by')}</p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h2 className="text-lg font-bold text-slate-900">{t('dashboard.translate.analysis_title')}</h2>
-                                        <p className="text-xs text-slate-500">{t('dashboard.translate.powered_by')}</p>
-                                    </div>
+                                    {history.length > 0 && (
+                                        <div className="text-xs text-slate-400 font-medium">Recent History</div>
+                                    )}
                                 </div>
 
                                 {translateResult ? (
-                                    <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500 overflow-y-auto max-h-[500px] custom-scrollbar pr-2">
+                                    <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500 overflow-y-auto max-h-[500px] custom-scrollbar pr-2 flex-1">
                                         <div>
                                             <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">{t('dashboard.translate.exec_summary')}</h3>
                                             <div className="bg-slate-50 p-4 rounded-lg text-sm text-slate-700 leading-relaxed border border-slate-100">
@@ -484,14 +538,41 @@ export default function Dashboard() {
                                         <div className="absolute top-6 right-6 text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded border border-emerald-100">
                                             {translateResult.confidence} {t('dashboard.translate.confidence')}
                                         </div>
+                                        <button
+                                            onClick={() => setTranslateResult(null)}
+                                            className="text-xs text-slate-400 hover:text-slate-600 underline w-full text-center pt-4"
+                                        >
+                                            Close Result
+                                        </button>
                                     </div>
                                 ) : (
-                                    <div className="flex-1 flex flex-col items-center justify-center text-center opacity-40 pb-12">
-                                        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center mb-4">
-                                            <SiGooglegemini size={40} className="text-slate-300" />
-                                        </div>
-                                        <p className="text-sm font-medium text-slate-500">{t('dashboard.translate.waiting')}</p>
-                                        <p className="text-xs text-slate-400 max-w-xs mt-2">{t('dashboard.translate.waiting_desc')}</p>
+                                    <div className="flex-1 overflow-y-auto custom-scrollbar pr-2">
+                                        {history.length > 0 ? (
+                                            <div className="space-y-3">
+                                                {history.map((item) => (
+                                                    <div key={item.id} className="p-3 border border-gray-100 rounded-lg hover:bg-slate-50 transition-colors cursor-pointer" onClick={() => setTranslateResult(item)}>
+                                                        <div className="flex justify-between items-start mb-1">
+                                                            <div className="font-bold text-sm text-slate-800 truncate w-48">{item.fileName || 'Text Input'}</div>
+                                                            {/* fuck all these stupid date timezone formatting issues here’s a bunch of shit that spits the date input into three different string format outputs I’m so sorry good luck */}
+                                                            <div className="text-[10px] text-slate-400">{new Date(item.createdAt?._seconds * 1000 || item.createdAt).toLocaleDateString()}</div>
+                                                        </div>
+                                                        <div className="text-xs text-slate-500 line-clamp-2">{item.summary}</div>
+                                                        <div className="mt-2 flex items-center gap-2">
+                                                            <span className="text-[10px] bg-indigo-50 text-indigo-600 px-1.5 py-0.5 rounded font-medium">{item.targetLanguage}</span>
+                                                            <span className="text-[10px] bg-emerald-50 text-emerald-600 px-1.5 py-0.5 rounded font-medium">{item.confidence}</span>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        ) : (
+                                            <div className="flex flex-col items-center justify-center text-center opacity-40 h-full">
+                                                <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center mb-4">
+                                                    <SiGooglegemini size={40} className="text-slate-300" />
+                                                </div>
+                                                <p className="text-sm font-medium text-slate-500">{t('dashboard.translate.waiting')}</p>
+                                                <p className="text-xs text-slate-400 max-w-xs mt-2">{t('dashboard.translate.waiting_desc')}</p>
+                                            </div>
+                                        )}
                                     </div>
                                 )}
                             </div>

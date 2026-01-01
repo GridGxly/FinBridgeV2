@@ -3,64 +3,64 @@
     "badge": "Literasiyang Pinansyal para sa Lahat",
     "title_start": "Pag-uugnay ng",
     "title_highlight": "kultura at pananalapi.",
-    "subtitle": "Kalinawan para sa iyong kinabukasan. Iniuugnay ka ng Finbridge sa iyong pera sa iyong wika.",
+    "subtitle": "Kalinawan para sa iyong kinabukasan.",
     "cta_primary": "Ikonekta ang Bangko",
     "cta_secondary": "Matuto Pa",
     "copyright": "© 2025 Finbridge"
   },
   "features": {
     "community": {
-      "title": "Komunidad Una",
-      "description": "Pinasadyang payo sa pananalapi na gumagalang sa iyong mga pagpapahalagang kultural at gawi sa pag-iipon ng komunidad."
+      "title": "Community First",
+      "description": "Tailored financial advice that respects your cultural values and community saving practices."
     },
     "literacy": {
-      "title": "Literasiyang Pinansyal",
-      "description": "Alamin ang tungkol sa kredito, ipon, at pamumuhunan sa simpleng salita, isinalin sa iyong wika."
+      "title": "Financial Literacy",
+      "description": "Learn about credit, savings, and investments in simple terms, translated into your language."
     },
     "security": {
-      "title": "Ligtas na Koneksyon",
-      "description": "Tinitiyak ng seguridad na pang-bangko na ligtas ang iyong data habang nakukuha mo ang malinaw na pananaw sa iyong pananalapi."
+      "title": "Secure Connection",
+      "description": "Bank-grade security ensures your data is safe while you get a clear view of your finances."
     }
   },
   "footer": {
     "about": {
-      "title": "Tungkol sa Amin",
-      "mission": "Aming Misyon",
-      "impact": "Epekto sa Komunidad",
-      "diversity": "Pagkakaiba-iba at Pagsasama"
+      "title": "About Us",
+      "mission": "Our Mission",
+      "impact": "Community Impact",
+      "diversity": "Diversity & Inclusion"
     },
     "resources": {
-      "title": "Mga Mapagkukunan",
-      "guides": "Mga Gabay sa Pananalapi",
-      "language": "Suporta sa Wika",
-      "help": "Sentro ng Tulong"
+      "title": "Resources",
+      "guides": "Financial Guides",
+      "language": "Language Support",
+      "help": "Help Center"
     },
     "stay_informed": {
-      "title": "Manatiling Alam",
-      "subtitle": "Mag-subscribe upang makatanggap ng mga tip sa pananalapi at update sa merkado.",
+      "title": "Stay Informed",
+      "subtitle": "Subscribe to receive financial tips and market updates.",
       "placeholder": "Email Address",
-      "button": "Mag-sign Up",
-      "subscribed": "Naka-subscribe na!"
+      "button": "Sign Up",
+      "subscribed": "Subscribed!"
     },
     "copyright": "© 2025 Finbridge",
-    "description": "Naglilingkod sa aming mga komunidad nang may integridad, transparency, at pag-unawa sa kultura mula pa noong 2025."
+    "description": "Serving our communities with integrity, transparency, and cultural understanding since 2025."
   },
   "login": {
     "brand": "Finbridge",
     "hero": {
       "title": "Pera,\nIsinalin.",
-      "subtitle": "Mag-navigate sa iyong paglalakbay sa pananalapi nang may kalinawan.",
+      "subtitle": "Mag-navigate nang may kalinawan.",
       "copyright": "© 2025 Finbridge"
     },
     "form": {
       "title": "Mag-log in",
-      "subtitle": "Ikonekta ang iyong pangunahing bank account upang i-verify ang iyong pagkakakilanlan.",
+      "subtitle": "Ikonekta ang iyong pangunahing account.",
       "button": "Ikonekta ang Bank Account",
       "encryption": "Naka-encrypt sa pamamagitan ng Plaid",
       "terms_prefix": "Sa pagkonekta, sumasang-ayon ka sa",
       "terms_link": "Mga Tuntunin",
       "privacy_link": "Patakaran sa Pagkapribado",
-      "terms_suffix": " ng Finbridge.",
+      "terms_suffix": ".",
       "and": "at"
     },
     "loading": "Nagtatatag ng secure na koneksyon..."
@@ -72,12 +72,87 @@
       "accounts": "Mga Account",
       "transactions": "Mga Transaksyon",
       "cash_flow": "Daloy ng Pera",
-      "translate": "Isalin ang mga Dokumento"
+      "translate": "Tagasalin"
+    },
+    "translate": {
+      "title": "Isalin ang mga Dokumento",
+      "updated": "Huling na-update: Ngayon lang",
+      "upload_title": "Mag-upload ng Dokumento",
+      "upload_desc": "I-paste ang text o mag-upload ng file para sa pagsasalin.",
+      "button_upload": "Mag-upload ng File (PDF/IMG)",
+      "button_process": "Isalin at Ibuod",
+      "analysis_title": "Pagsusuri ng AI",
+      "powered_by": "Pinapagana ng Gemini",
+      "waiting": "Naghihintay ng nilalaman...",
+      "waiting_desc": "Isasalin ng AI ang dokumento sa iyong gustong wika.",
+      "exec_summary": "Ehekutibong Buod",
+      "translated_content": "Isinalin na Nilalaman",
+      "confidence": "Kumpiyansa"
     },
     "stats": {
       "net_worth": "Kabuuang Halaga",
       "assets": "Mga Ari-arian",
-      "liabilities": "Mga Pagkakautang"
+      "liabilities": "Mga Pagkakautang",
+      "total_balance": "Kabuuang Balanse",
+      "last_30_days": "huling 30 araw",
+      "account_balance_history": "Kasaysayan ng Balanse",
+      "n_days": "30 Araw",
+      "money_out": "Pera Lumabas",
+      "gemini_analysis": "Matalinong Pagsusuri",
+      "gemini_desc": "Gumastos ka ng $800 sa pagkain ngayong buwan.",
+      "great_job": "Magaling!",
+      "alert": "Alerto:",
+      "under_budget": " Pasok ka sa iyong badyet. ",
+      "over_budget": " Lumampas ka sa badyet. ",
+      "see": "Tingnan",
+      "todo_list": "Gagawin",
+      "recent_docs": "Kamakailang Dokumento",
+      "vs": "laban sa",
+      "avg": "karaniwan"
+    },
+    "docs": {
+      "recent_title": "Kamakailang Dokumento",
+      "action_required": "Kailangan ng Aksyon",
+      "ready": "Handa na",
+      "type_pdf": "PDF",
+      "click_drag": "Mag-click o Mag-drag para Mag-upload",
+      "supported_formats": "Mga sinusuportahang format: PDF, PNG, JPG"
+    },
+    "preview": {
+      "close": "Isara",
+      "download": "I-download",
+      "secure_title": "Ligtas na Dokumento",
+      "encrypted_text": "Ang dokumentong ito ay naka-encrypt. Pakibisita ang file."
+    },
+    "accounts": {
+      "available_balance": "Magagamit na Balanse",
+      "current_balance": "Kasalukuyang Balanse",
+      "link_new": "Mag-link ng Bagong Account",
+      "type": {
+        "checking": "CHECKING",
+        "credit": "CREDIT",
+        "savings": "IPON"
+      }
+    },
+    "legal_disclaimer": "Pagtanggi",
+    "legal_text": "Ito ay isang demo project. Walang totoong data ng bangko ang pinoproseso.",
+    "understood": "Naintindihan",
+    "export": "I-export ang CSV",
+    "categories": {
+      "utility": "Utilidad",
+      "food": "Pagkain",
+      "transport": "Transportasyon",
+      "income": "Kita",
+      "subscription": "Susbkripsyon",
+      "shopping": "Pamimili",
+      "travel": "Paglalakbay"
+    },
+    "profile": {
+      "appearance": "Itsura",
+      "language": "Wika",
+      "light": "Maliwanag",
+      "dark": "Madilim",
+      "sign_out": "Mag-sign out"
     },
     "graph": {
       "title": "Daloy ng Pera",
@@ -86,35 +161,26 @@
       "time": {
         "this_month": "Ngayong Buwan",
         "last_month": "Nakaraang Buwan",
-        "ytd": "Simula ng Taon"
+        "ytd": "Simula ng Taon",
+        "today": "Today",
+        "tomorrow": "Tomorrow"
       }
-    },
-    "translate": {
-      "title": "Isalin ang mga Dokumento",
-      "updated": "Huling na-update: Kani-kanina lang",
-      "upload_title": "Mag-upload ng Dokumento",
-      "upload_desc": "I-paste ang teksto o mag-upload ng file para sa pagsasalin at pagbubuod.",
-      "button_upload": "Mag-upload ng File (PDF/IMG)",
-      "button_process": "Isalin at Ibuod",
-      "analysis_title": "Pagsusuri ng AI",
-      "powered_by": "Pinapagana ng Gemini",
-      "waiting": "Naghihintay ng nilalaman...",
-      "waiting_desc": "Isasalin ng AI ang dokumento sa iyong napiling wika at magbibigay ng buod ng mga pangunahing punto.",
-      "exec_summary": "Ehekutibong Buod",
-      "translated_content": "Isinaling Nilalaman",
-      "confidence": "Kumpiyansa"
     },
     "recent": {
       "title": "Kamakailang Transaksyon",
       "view_all": "Tingnan Lahat"
     },
-    "updated": "Huling na-update: Kani-kanina lang"
-  },
-  "chat": {
-    "title": "Katulong ng Finbridge",
-    "welcome": "Kumusta! Ako si Finbridge AI. Paano ako makakatulong sa iyo ngayon?",
-    "placeholder": "Magtanong tungkol sa pananalapi...",
-    "typing": "Nagta-type...",
-    "error": "Paumanhin, nagkakaroon ako ng problema sa pagkonekta ngayon."
+    "updated": "Huling na-update: Kani-kanina lang",
+    "chat": {
+      "title": "Finbridge Assistant",
+      "welcome": "Hi there! I'm Finbridge AI. How can I help you today?",
+      "placeholder": "Ask about finances...",
+      "error": "Sorry, I'm having trouble connecting right now.",
+      "questions": {
+        "0": "How can I get my credit score to 750?",
+        "1": "How can I save more money?",
+        "2": "How can I start investing?"
+      }
+    }
   }
 }

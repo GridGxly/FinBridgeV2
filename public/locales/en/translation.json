@@ -86,8 +86,65 @@
       "time": {
         "this_month": "This Month",
         "last_month": "Last Month",
-        "ytd": "YTD"
+        "ytd": "YTD",
+        "today": "Today",
+        "tomorrow": "Tomorrow"
       }
+    },
+    "chat": {
+      "title": "Finbridge Assistant",
+      "welcome": "Hi there! I'm Finbridge AI. How can I help you today?",
+      "placeholder": "Ask about finances...",
+      "error": "Sorry, I'm having trouble connecting right now.",
+      "questions": {
+        "0": "How can I get my credit score to 750?",
+        "1": "How can I save more money?",
+        "2": "How can I start investing?"
+      }
+    },
+    "docs": {
+      "recent_title": "Recent Documents",
+      "action_required": "Action Required",
+      "ready": "Ready",
+      "type_pdf": "PDF",
+      "click_drag": "Click or Drag to Upload",
+      "supported_formats": "Supported formats: PDF, PNG, JPG"
+    },
+    "preview": {
+      "close": "Close",
+      "download": "Download",
+      "secure_title": "Secure Document",
+      "encrypted_text": "This document is encrypted for your security. Please download the file to view its full contents locally."
+    },
+    "accounts": {
+      "available_balance": "Available Balance",
+      "current_balance": "Current Balance",
+      "link_new": "Link New Account",
+      "type": {
+        "checking": "CHECKING",
+        "credit": "CREDIT",
+        "savings": "SAVINGS"
+      }
+    },
+    "legal_disclaimer": "Disclaimer",
+    "legal_text": "This is a demo project. No real banking data is processed. Finbridge is not a registered financial institution. All data shown is for demonstration purposes only.",
+    "understood": "Understood",
+    "export": "Export CSV",
+    "categories": {
+      "utility": "Utility",
+      "food": "Food",
+      "transport": "Transport",
+      "income": "Income",
+      "subscription": "Subscription",
+      "shopping": "Shopping",
+      "travel": "Travel"
+    },
+    "profile": {
+      "appearance": "Appearance",
+      "language": "Language",
+      "light": "Light",
+      "dark": "Dark",
+      "sign_out": "Sign out"
     },
     "translate": {
       "title": "Translate Documents",
@@ -109,12 +166,5 @@
       "view_all": "View All"
     },
     "updated": "Last updated: Just now"
-  },
-  "chat": {
-    "title": "Finbridge Assistant",
-    "welcome": "Hi! I'm Finbridge AI. How can I help you today?",
-    "placeholder": "Ask about finances...",
-    "typing": "Typing...",
-    "error": "Sorry, I'm having trouble connecting right now."
   }
 }

@@ -2,20 +2,19 @@ import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function ChatWidget({ financialData = {} }) {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
 
 
     const API_BASE_URL = (import.meta.env.VITE_BACKEND_URL || 'http://localhost:5001').replace(/\/$/, '');
 
     const [messages, setMessages] = useState([
-        { id: 1, text: t('chat.welcome'), sender: 'bot' }
+        { id: 1, text: t('dashboard.chat.welcome'), sender: 'bot' }
     ]);
-
 
     useEffect(() => {
         if (messages.length === 1 && messages[0].sender === 'bot') {
-            setMessages([{ id: 1, text: t('chat.welcome'), sender: 'bot' }]);
+            setMessages([{ id: 1, text: t('dashboard.chat.welcome'), sender: 'bot' }]);
         }
     }, [t, messages.length]);
     const [inputText, setInputText] = useState("");
@@ -30,11 +29,16 @@ export default function ChatWidget({ financialData = {} }) {
         scrollToBottom();
     }, [messages]);
 
-    const handleSend = async (e) => {
-        e.preventDefault();
-        if (!inputText.trim()) return;
+    const presetQuestions = [
+        t('dashboard.chat.questions.0', "How can I get my credit score to 750?"),
+        t('dashboard.chat.questions.1', "How can I save more money?"),
+        t('dashboard.chat.questions.2', "How can I start investing?")
+    ];
 
-        const userMsg = { id: Date.now(), text: inputText, sender: 'user' };
+    const sendMessage = async (text) => {
+        if (!text.trim()) return;
+
+        const userMsg = { id: Date.now(), text: text, sender: 'user' };
         setMessages(prev => [...prev, userMsg]);
         setInputText("");
         setIsLoading(true);
@@ -56,10 +60,19 @@ export default function ChatWidget({ financialData = {} }) {
             setMessages(prev => [...prev, botMsg]);
         } catch (error) {
             console.error("Chat error:", error);
-            setMessages(prev => [...prev, { id: Date.now() + 1, text: t('chat.error'), sender: 'bot' }]);
+            setMessages(prev => [...prev, { id: Date.now() + 1, text: t('dashboard.chat.error', 'Sorry, I\'m having trouble connecting right now.'), sender: 'bot' }]);
         } finally {
             setIsLoading(false);
         }
+    };
+
+    const handleSend = async (e) => {
+        e.preventDefault();
+        sendMessage(inputText);
+    };
+
+    const handlePresetClick = (question) => {
+        sendMessage(question);
     };
 
     return (
@@ -68,7 +81,7 @@ export default function ChatWidget({ financialData = {} }) {
             {isOpen && (
                 <div className="bg-white w-80 h-96 rounded-lg shadow-2xl border border-gray-200 mb-4 flex flex-col overflow-hidden animate-in fade-in slide-in-from-bottom-5 duration-200">
                     <div className="bg-[#063925] p-3 text-white flex justify-between items-center">
-                        <span className="font-bold text-sm">{t('chat.title')}</span>
+                        <span className="font-bold text-sm">{t('dashboard.chat.title')}</span>
                         <button onClick={() => setIsOpen(false)} className="hover:bg-white/20 rounded p-1">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12" /></svg>
                         </button>
@@ -80,6 +93,21 @@ export default function ChatWidget({ financialData = {} }) {
                                 {msg.text}
                             </div>
                         ))}
+
+                        {messages.length === 1 && (
+                            <div className="flex flex-col gap-2 mt-2 mb-2 px-1">
+                                <span className="text-xs text-slate-400 font-medium ml-1">Suggested:</span>
+                                {presetQuestions.map((question, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => handlePresetClick(question)}
+                                        className="text-left text-xs bg-white border border-emerald-200 hover:border-emerald-400 text-emerald-800 hover:bg-emerald-50 px-3 py-2 rounded-lg transition-colors shadow-sm"
+                                    >
+                                        {question}
+                                    </button>
+                                ))}
+                            </div>
+                        )}
                         {isLoading && (
                             <div className="self-start text-xs text-slate-400 italic p-3 bg-white border border-gray-200 rounded-lg shadow-sm">
                                 <div className="flex gap-1">
@@ -97,7 +125,7 @@ export default function ChatWidget({ financialData = {} }) {
                             type="text"
                             value={inputText}
                             onChange={(e) => setInputText(e.target.value)}
-                            placeholder={t('chat.placeholder')}
+                            placeholder={t('dashboard.chat.placeholder')}
                             className="flex-1 text-sm border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-[#063925]"
                         />
                         <button type="submit" disabled={isLoading} className="bg-[#063925] text-white p-2 rounded hover:bg-[#0a4d32] disabled:opacity-50">

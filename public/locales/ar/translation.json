@@ -3,47 +3,47 @@
     "badge": "الثقافة المالية للجميع",
     "title_start": "سد الفجوة بين",
     "title_highlight": "الثقافة والمال.",
-    "subtitle": "البساطة والوضوح لمستقبلك المالي. Finbridge يربطك بمالك بلغتك.",
+    "subtitle": "البساطة والوضوح لمستقبلك المالي.",
     "cta_primary": "ربط البنك",
     "cta_secondary": "تعرف على المزيد",
     "copyright": "© 2025 Finbridge"
   },
   "features": {
     "community": {
-      "title": "المجتمع أولاً",
-      "description": "نصائح مالية مخصصة تحترم قيمك الثقافية وممارسات الادخار في المجتمع."
+      "title": "Community First",
+      "description": "Tailored financial advice that respects your cultural values and community saving practices."
     },
     "literacy": {
-      "title": "الثقافة المالية",
-      "description": "تعرف على الائتمان والمدخرات والاستثمارات بمصطلحات بسيطة، مترجمة إلى لغتك."
+      "title": "Financial Literacy",
+      "description": "Learn about credit, savings, and investments in simple terms, translated into your language."
     },
     "security": {
-      "title": "اتصال آمن",
-      "description": "أمان على مستوى البنوك يضمن سلامة بياناتك بينما تحصل على رؤية واضحة لأموالك."
+      "title": "Secure Connection",
+      "description": "Bank-grade security ensures your data is safe while you get a clear view of your finances."
     }
   },
   "footer": {
     "about": {
-      "title": "من نحن",
-      "mission": "مهمتنا",
-      "impact": "تأثير المجتمع",
-      "diversity": "التنوع والشمول"
+      "title": "About Us",
+      "mission": "Our Mission",
+      "impact": "Community Impact",
+      "diversity": "Diversity & Inclusion"
     },
     "resources": {
-      "title": "الموارد",
-      "guides": "أدلة مالية",
-      "language": "دعم اللغة",
-      "help": "مركز المساعدة"
+      "title": "Resources",
+      "guides": "Financial Guides",
+      "language": "Language Support",
+      "help": "Help Center"
     },
     "stay_informed": {
-      "title": "ابقى على اطلاع",
-      "subtitle": "اشترك لتلقي نصائح مالية وتحديثات السوق.",
-      "placeholder": "عنوان البريد الإلكتروني",
-      "button": "اشترك",
-      "subscribed": "تم الاشتراك!"
+      "title": "Stay Informed",
+      "subtitle": "Subscribe to receive financial tips and market updates.",
+      "placeholder": "Email Address",
+      "button": "Sign Up",
+      "subscribed": "Subscribed!"
     },
     "copyright": "© 2025 Finbridge",
-    "description": "خدمة مجتمعاتنا بنزاهة وشفافية وفهم ثقافي منذ عام 2025."
+    "description": "Serving our communities with integrity, transparency, and cultural understanding since 2025."
   },
   "login": {
     "brand": "Finbridge",
@@ -54,13 +54,13 @@
     },
     "form": {
       "title": "تسجيل الدخول",
-      "subtitle": "اربط حسابك المالي الرئيسي للتحقق من هويتك.",
+      "subtitle": "اربط حسابك المالي الرئيسي.",
       "button": "ربط الحساب البنكي",
       "encryption": "مشفر من طرف إلى طرف عبر Plaid",
       "terms_prefix": "بالاتصال، أنت توافق على",
-      "terms_link": "شروط",
+      "terms_link": "الشروط",
       "privacy_link": "سياسة الخصوصية",
-      "terms_suffix": " لـ Finbridge.",
+      "terms_suffix": ".",
       "and": "و"
     },
     "loading": "جاري إنشاء اتصال آمن..."
@@ -72,49 +72,115 @@
       "accounts": "حسابات",
       "transactions": "المعاملات",
       "cash_flow": "التدفق النقدي",
-      "translate": "ترجمة الوثائق"
+      "translate": "ترجمة"
+    },
+    "translate": {
+      "title": "ترجمة المستندات",
+      "updated": "آخر تحديث: الآن",
+      "upload_title": "تحميل مستند",
+      "upload_desc": "الصق النص أو حمل ملفًا للترجمة والملخص.",
+      "button_upload": "تحميل ملف (PDF/IMG)",
+      "button_process": "ترجمة وتلخيص",
+      "analysis_title": "تحليل AI",
+      "powered_by": "مدعوم من Gemini",
+      "waiting": "في انتظار المحتوى...",
+      "waiting_desc": "سيقوم الذكاء الاصطناعي بترجمة المستند إلى لغتك.",
+      "exec_summary": "ملخص تنفيذي",
+      "translated_content": "المحتوى المترجم",
+      "confidence": "ثقة"
     },
     "stats": {
       "net_worth": "صافي القيمة",
       "assets": "الأصول",
-      "liabilities": "الخصوم"
+      "liabilities": "الخصوم",
+      "total_balance": "إجمالي الرصيد",
+      "last_30_days": "آخر 30 يومًا",
+      "account_balance_history": "سجل الرصيد",
+      "n_days": "30 يومًا",
+      "money_out": "المصروفات",
+      "gemini_analysis": "تحليل ذكي",
+      "gemini_desc": "لقد أنفقت 800 دولار على الطعام هذا الشهر.",
+      "great_job": "عمل رائع!",
+      "alert": "تنبيه:",
+      "under_budget": " أنت تحت ميزانيتك. ",
+      "over_budget": " لقد تجاوزت الميزانية. ",
+      "see": "انظر",
+      "todo_list": "قائمة المهام",
+      "recent_docs": "المستندات الأخيرة",
+      "vs": "مقابل",
+      "avg": "متوسط"
+    },
+    "docs": {
+      "recent_title": "المستندات الأخيرة",
+      "action_required": "إجراء مطلوب",
+      "ready": "جاهز",
+      "type_pdf": "PDF",
+      "click_drag": "انقر أو اسحب للتحميل",
+      "supported_formats": "تنسيقات مدعومة: PDF, PNG, JPG"
+    },
+    "preview": {
+      "close": "إغلاق",
+      "download": "تحميل",
+      "secure_title": "مستند آمن",
+      "encrypted_text": "هذا المستند مشفر. يرجى تحميل الملف."
+    },
+    "accounts": {
+      "available_balance": "الرصيد المتاح",
+      "current_balance": "الرصيد الحالي",
+      "link_new": "ربط حساب جديد",
+      "type": {
+        "checking": "جاري",
+        "credit": "ائتمان",
+        "savings": "توفير"
+      }
+    },
+    "legal_disclaimer": "إخلاء مسؤولية",
+    "legal_text": "هذا مشروع تجريبي. لا تتم معالجة بيانات مصرفية حقيقية.",
+    "understood": "مفهوم",
+    "export": "تصدير CSV",
+    "categories": {
+      "utility": "خدمات",
+      "food": "طعام",
+      "transport": "نقل",
+      "income": "دخل",
+      "subscription": "اشتراك",
+      "shopping": "توسق",
+      "travel": "سفر"
+    },
+    "profile": {
+      "appearance": "مظهر",
+      "language": "لغة",
+      "light": "فاتح",
+      "dark": "داكن",
+      "sign_out": "تسجيل الخروج"
     },
     "graph": {
       "title": "التدفق النقدي",
-      "generating": "جاري إنشاء الرسم البياني بالذكاء الاصطناعي...",
+      "generating": "جاري إنشاء الرسم البياني...",
       "unavailable": "الرسم البياني غير متاح",
       "time": {
         "this_month": "هذا الشهر",
         "last_month": "الشهر الماضي",
-        "ytd": "منذ بداية العام"
+        "ytd": "منذ بداية العام",
+        "today": "اليوم",
+        "tomorrow": "غدا"
       }
     },
-    "translate": {
-      "title": "ترجمة الوثائق",
-      "updated": "آخر تحديث: للتو",
-      "upload_title": "تحميل الوثيقة",
-      "upload_desc": "الصق النص أو قم بتحميل ملف للترجمة والتلخيص.",
-      "button_upload": "تحميل ملف (PDF/IMG)",
-      "button_process": "ترجمة وتلخيص",
-      "analysis_title": "تحليل الذكاء الاصطناعي",
-      "powered_by": "مدعوم من Gemini",
-      "waiting": "في انتظار المحتوى...",
-      "waiting_desc": "سيقوم الذكاء الاصطناعي بترجمة الوثيقة إلى لغتك المفضلة وتقديم ملخص للنقاط الرئيسية.",
-      "exec_summary": "الملخص التنفيذي",
-      "translated_content": "المحتوى المترجم",
-      "confidence": "مستوى الثقة"
+    "chat": {
+      "title": "مساعد Finbridge",
+      "welcome": "أهلاً! أنا Finbridge AI. كيف يمكنني مساعدتك اليوم؟",
+      "placeholder": "اسأل عن الشؤون المالية...",
+      "error": "عذراً، أواجه مشكلة في الاتصال الآن.",
+      "questions": {
+        "0": "كيف أرفع تصنيفي الائتماني؟",
+        "1": "كيف يمكنني توفير المال؟",
+        "2": "كيف أبدأ الاستثمار؟"
+      }
     },
     "recent": {
       "title": "المعاملات الأخيرة",
       "view_all": "عرض الكل"
     },
     "updated": "آخر تحديث: للتو"
-  },
-  "chat": {
-    "title": "مساعد Finbridge",
-    "welcome": "مرحبًا! أنا Finbridge AI. كيف يمكنني مساعدتك اليوم؟",
-    "placeholder": "اسأل عن الشؤون المالية...",
-    "typing": "يكتب...",
-    "error": "عذراً، أواجه مشكلة في الاتصال الآن."
   }
 }

@@ -2,6 +2,8 @@ import "dotenv/config";
 
 import express from "express";
 import cors from "cors";
+import helmet from "helmet";
+import rateLimit from "express-rate-limit";
 import adviceRoutes from "./routes/advice.js";
 import transactionRoutes from "./routes/transactions.js";
 import plaidRoutes from "./routes/plaid.js";
@@ -17,7 +19,24 @@ console.log("--- DEBUG: SERVER STARTUP ---");
 console.log("OPENAI_API_KEY Loaded:", process.env.OPENAI_API_KEY ? "YES (" + process.env.OPENAI_API_KEY.substring(0, 4) + "...)" : "NO");
 console.log("---------------------------");
 
-app.use(cors());
+
+app.use(helmet());
+
+const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000,
+    max: 100,
+    standardHeaders: true,
+    legacyHeaders: false,
+});
+app.use(limiter);
+
+
+const corsOptions = {
+    origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true,
+};
+app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use("/api/advice", adviceRoutes);

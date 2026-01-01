@@ -3,47 +3,47 @@
     "badge": "Littératie financière pour tous",
     "title_start": "Combler le fossé entre",
     "title_highlight": "culture et finance.",
-    "subtitle": "Simplicité et clarté pour votre avenir financier. Finbridge vous connecte avec votre argent dans votre langue.",
+    "subtitle": "Simplicité et clarté pour votre avenir financier.",
     "cta_primary": "Connecter la banque",
     "cta_secondary": "En savoir plus",
     "copyright": "© 2025 Finbridge"
   },
   "features": {
     "community": {
-      "title": "La Communauté d'Abord",
-      "description": "Conseils financiers adaptés qui respectent vos valeurs culturelles et les pratiques d'épargne communautaires."
+      "title": "Community First",
+      "description": "Tailored financial advice that respects your cultural values and community saving practices."
     },
     "literacy": {
-      "title": "Éducation Financière",
-      "description": "Apprenez sur le crédit, l'épargne et les investissements en termes simples, traduits dans votre langue."
+      "title": "Financial Literacy",
+      "description": "Learn about credit, savings, and investments in simple terms, translated into your language."
     },
     "security": {
-      "title": "Connexion Sécurisée",
-      "description": "Sécurité de niveau bancaire garantissant que vos données sont en sécurité pendant que vous obtenez une vue claire de vos finances."
+      "title": "Secure Connection",
+      "description": "Bank-grade security ensures your data is safe while you get a clear view of your finances."
     }
   },
   "footer": {
     "about": {
-      "title": "À Propos",
-      "mission": "Notre Mission",
-      "impact": "Impact Communautaire",
-      "diversity": "Diversité et Inclusion"
+      "title": "About Us",
+      "mission": "Our Mission",
+      "impact": "Community Impact",
+      "diversity": "Diversity & Inclusion"
     },
     "resources": {
-      "title": "Ressources",
-      "guides": "Guides Financiers",
-      "language": "Support Linguistique",
-      "help": "Centre d'Aide"
+      "title": "Resources",
+      "guides": "Financial Guides",
+      "language": "Language Support",
+      "help": "Help Center"
     },
     "stay_informed": {
-      "title": "Restez Informé",
-      "subtitle": "Abonnez-vous pour recevoir des conseils financiers.",
-      "placeholder": "Adresse E-mail",
-      "button": "S'abonner",
-      "subscribed": "Abonné !"
+      "title": "Stay Informed",
+      "subtitle": "Subscribe to receive financial tips and market updates.",
+      "placeholder": "Email Address",
+      "button": "Sign Up",
+      "subscribed": "Subscribed!"
     },
     "copyright": "© 2025 Finbridge",
-    "description": "Servir nos communautés avec intégrité, transparence et compréhension culturelle depuis 2025."
+    "description": "Serving our communities with integrity, transparency, and cultural understanding since 2025."
   },
   "login": {
     "brand": "Finbridge",
@@ -54,13 +54,13 @@
     },
     "form": {
       "title": "Connexion",
-      "subtitle": "Liez votre compte financier principal pour vérifier votre identité.",
+      "subtitle": "Liez votre compte financier principal.",
       "button": "Connecter compte bancaire",
       "encryption": "Chiffré de bout en bout via Plaid",
       "terms_prefix": "En connectant, vous acceptez les",
       "terms_link": "Conditions",
       "privacy_link": "Confidentialité",
-      "terms_suffix": " de Finbridge.",
+      "terms_suffix": ".",
       "and": "et"
     },
     "loading": "Établissement connexion sécurisée..."
@@ -72,12 +72,87 @@
       "accounts": "Comptes",
       "transactions": "Transactions",
       "cash_flow": "Flux de trésorerie",
-      "translate": "Traduire des documents"
+      "translate": "Traduire"
+    },
+    "translate": {
+      "title": "Traduire des Documents",
+      "updated": "Mise à jour: À l'instant",
+      "upload_title": "Télécharger un Document",
+      "upload_desc": "Collez du texte ou téléchargez un fichier pour traduction.",
+      "button_upload": "Télécharger Fichier (PDF/IMG)",
+      "button_process": "Traduire & Résumer",
+      "analysis_title": "Analyse IA",
+      "powered_by": "Propulsé par Gemini",
+      "waiting": "En attente de contenu...",
+      "waiting_desc": "L'IA traduira le document dans votre langue préférée.",
+      "exec_summary": "Résumé Exécutif",
+      "translated_content": "Contenu Traduit",
+      "confidence": "Confiance"
     },
     "stats": {
       "net_worth": "Valeur Nette",
       "assets": "Actifs",
-      "liabilities": "Passifs"
+      "liabilities": "Passifs",
+      "total_balance": "Solde Total",
+      "last_30_days": "30 derniers jours",
+      "account_balance_history": "Historique du solde",
+      "n_days": "30 Jours",
+      "money_out": "Dépenses",
+      "gemini_analysis": "Analyse Intelligente",
+      "gemini_desc": "Vous avez dépensé 800$ en nourriture ce mois-ci (20% des revenus).",
+      "great_job": "Bon travail!",
+      "alert": "Alerte:",
+      "under_budget": " Vous êtes bien en dessous de votre budget de 10%. ",
+      "over_budget": " Les dépenses ont dépassé l'objectif de 10%. ",
+      "see": "Voir",
+      "todo_list": "À faire",
+      "recent_docs": "Documents Récents",
+      "vs": "cz",
+      "avg": "moy"
+    },
+    "docs": {
+      "recent_title": "Documents Récents",
+      "action_required": "Action Requise",
+      "ready": "Prêt",
+      "type_pdf": "PDF",
+      "click_drag": "Cliquer ou glisser pour télécharger",
+      "supported_formats": "Formats supportés: PDF, PNG, JPG"
+    },
+    "preview": {
+      "close": "Fermer",
+      "download": "Télécharger",
+      "secure_title": "Document Sécurisé",
+      "encrypted_text": "Ce document est chiffré pour votre sécurité. Veuillez télécharger le fichier."
+    },
+    "accounts": {
+      "available_balance": "Solde Disponible",
+      "current_balance": "Solde Actuel",
+      "link_new": "Lier un compte",
+      "type": {
+        "checking": "COMPTE CHÈQUES",
+        "credit": "CRÉDIT",
+        "savings": "ÉPARGNE"
+      }
+    },
+    "legal_disclaimer": "Avis de non-responsabilité",
+    "legal_text": "Ceci est un projet de démonstration. Aucune donnée bancaire réelle n'est traitée.",
+    "understood": "Compris",
+    "export": "Exporter CSV",
+    "categories": {
+      "utility": "Utilitaires",
+      "food": "Nourriture",
+      "transport": "Transport",
+      "income": "Revenu",
+      "subscription": "Abonnement",
+      "shopping": "Achats",
+      "travel": "Voyage"
+    },
+    "profile": {
+      "appearance": "Apparence",
+      "language": "Langue",
+      "light": "Clair",
+      "dark": "Sombre",
+      "sign_out": "Se déconnecter"
     },
     "graph": {
       "title": "Flux de trésorerie",
@@ -86,35 +161,26 @@
       "time": {
         "this_month": "Ce mois-ci",
         "last_month": "Mois dernier",
-        "ytd": "Cumul annuel"
+        "ytd": "Cumul annuel",
+        "today": "Aujourd'hui",
+        "tomorrow": "Demain"
+      }
+    },
+    "chat": {
+      "title": "Assistant Finbridge",
+      "welcome": "Bonjour! Je suis Finbridge AI.",
+      "placeholder": "Posez une question finance...",
+      "error": "Désolé, problème de connexion.",
+      "questions": {
+        "0": "Comment améliorer mon score de crédit?",
+        "1": "Comment économiser plus?",
+        "2": "Comment commencer à investir?"
       }
     },
     "recent": {
       "title": "Transactions récentes",
       "view_all": "Voir tout"
     },
-    "updated": "Dernière mise à jour : À l'instant",
-    "translate": {
-      "title": "Traduire des documents",
-      "updated": "Dernière mise à jour : À l'instant",
-      "upload_title": "Télécharger un document",
-      "upload_desc": "Collez du texte ou téléchargez un fichier pour la traduction et le résumé.",
-      "button_upload": "Télécharger un fichier (PDF/IMG)",
-      "button_process": "Traduire et résumer",
-      "analysis_title": "Analyse IA",
-      "powered_by": "Propulsé par Gemini",
-      "waiting": "En attente du contenu...",
-      "waiting_desc": "L'IA traduira le document dans votre langue préférée et fournira un résumé des points clés.",
-      "exec_summary": "Résumé Exécutif",
-      "translated_content": "Contenu Traduit",
-      "confidence": "Confiance"
-    }
-  },
-  "chat": {
-    "title": "Assistant Finbridge",
-    "welcome": "Bonjour ! Je suis Finbridge AI. Comment puis-je vous aider aujourd'hui ?",
-    "placeholder": "Posez des questions sur les finances...",
-    "typing": "En train d'écrire...",
-    "error": "Désolé, j'ai des difficultés à me connecter pour le moment."
+    "updated": "Mis à jour: À l'instant"
   }
 }

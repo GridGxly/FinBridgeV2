@@ -3,47 +3,47 @@
     "badge": "सभी के लिए वित्तीय साक्षरता",
     "title_start": "संस्कृति और",
     "title_highlight": "वित्त को जोड़ना।",
-    "subtitle": "आपके वित्तीय भविष्य के लिए सरलता और स्पष्टता। फिनब्रिज आपको आपकी भाषा में आपके पैसे से जोड़ता है।",
+    "subtitle": "आपके वित्तीय भविष्य के लिए सरलता और स्पष्टता।",
     "cta_primary": "बैंक कनेक्ट करें",
     "cta_secondary": "और जानें",
     "copyright": "© 2025 Finbridge"
   },
   "features": {
     "community": {
-      "title": "समुदाय पहले",
-      "description": "अनुकूलित वित्तीय सलाह जो आपके सांस्कृतिक मूल्यों और सामुदायिक बचत प्रथाओं का सम्मान करती है।"
+      "title": "Community First",
+      "description": "Tailored financial advice that respects your cultural values and community saving practices."
     },
     "literacy": {
-      "title": "वित्तीय साक्षरता",
-      "description": "सरल शब्दों में क्रेडिट, बचत और निवेश के बारे में जानें, आपकी भाषा में अनुवादित।"
+      "title": "Financial Literacy",
+      "description": "Learn about credit, savings, and investments in simple terms, translated into your language."
     },
     "security": {
-      "title": "सुरक्षित कनेक्शन",
-      "description": "बैंक-ग्रेड सुरक्षा सुनिश्चित करती है कि आपका डेटा सुरक्षित है जबकि आप अपने वित्त का स्पष्ट दृश्य प्राप्त करते हैं।"
+      "title": "Secure Connection",
+      "description": "Bank-grade security ensures your data is safe while you get a clear view of your finances."
     }
   },
   "footer": {
     "about": {
-      "title": "हमारे बारे में",
-      "mission": "हमारा मिशन",
-      "impact": "सामुदायिक प्रभाव",
-      "diversity": "विविधता और समावेशन"
+      "title": "About Us",
+      "mission": "Our Mission",
+      "impact": "Community Impact",
+      "diversity": "Diversity & Inclusion"
     },
     "resources": {
-      "title": "संसाधन",
-      "guides": "वित्तीय गाइड",
-      "language": "भाषा समर्थन",
-      "help": "सहायता केंद्र"
+      "title": "Resources",
+      "guides": "Financial Guides",
+      "language": "Language Support",
+      "help": "Help Center"
     },
     "stay_informed": {
-      "title": "सूचित रहें",
-      "subtitle": "वित्तीय सुझाव और बाजार अपडेट प्राप्त करने के लिए सदस्यता लें।",
-      "placeholder": "ईमेल पता",
-      "button": "साइन अप करें",
-      "subscribed": "सदस्यता ली गई!"
+      "title": "Stay Informed",
+      "subtitle": "Subscribe to receive financial tips and market updates.",
+      "placeholder": "Email Address",
+      "button": "Sign Up",
+      "subscribed": "Subscribed!"
     },
     "copyright": "© 2025 Finbridge",
-    "description": "2025 से अखंडता, पारदर्शिता और सांस्कृतिक समझ के साथ हमारे समुदायों की सेवा करना।"
+    "description": "Serving our communities with integrity, transparency, and cultural understanding since 2025."
   },
   "login": {
     "brand": "Finbridge",
@@ -56,10 +56,10 @@
       "title": "लॉग इन करें",
       "subtitle": "अपनी पहचान सत्यापित करने के लिए बैंक खाता लिंक करें।",
       "button": "बैंक खाता जोड़ें",
-      "encryption": "Plaid द्वारा एंड-टू-एंड एन्क्रिप्टेड",
-      "terms_prefix": "जुड़ने से आप Finbridge की",
+      "encryption": "Plaid द्वारा सुरक्षित",
+      "terms_prefix": "जुड़ने से आप",
       "terms_link": "शर्तें",
-      "privacy_link": "गोपनीयता नीति",
+      "privacy_link": "गोपनीयता",
       "terms_suffix": " स्वीकार करते हैं।",
       "and": "और"
     },
@@ -72,22 +72,7 @@
       "accounts": "खाते",
       "transactions": "लेनदेन",
       "cash_flow": "नकदी प्रवाह",
-      "translate": "दस्तावेज़ अनुवाद"
-    },
-    "stats": {
-      "net_worth": "कुल संपत्ति",
-      "assets": "संपत्ति",
-      "liabilities": "देनदारियां"
-    },
-    "graph": {
-      "title": "नकदी प्रवाह",
-      "generating": "AI ग्राफ जनरेट हो रहा है...",
-      "unavailable": "ग्राफ उपलब्ध नहीं है",
-      "time": {
-        "this_month": "इस महीने",
-        "last_month": "पिछले महीने",
-        "ytd": "अब तक"
-      }
+      "translate": "अनुवाद"
     },
     "translate": {
       "title": "दस्तावेज़ अनुवाद",
@@ -104,17 +89,98 @@
       "translated_content": "अनुवादित सामग्री",
       "confidence": "विश्वास स्तर"
     },
+    "stats": {
+      "net_worth": "कुल संपत्ति",
+      "assets": "संपत्ति",
+      "liabilities": "देनदारियां",
+      "total_balance": "कुल शेष",
+      "last_30_days": "पिछले 30 दिन",
+      "account_balance_history": "खाते का इतिहास",
+      "n_days": "30 दिन",
+      "money_out": "व्यय",
+      "gemini_analysis": "स्मार्ट विश्लेषण",
+      "gemini_desc": "आपने इस महीने भोजन पर $800 खर्च किए।",
+      "great_job": "बहुत बढ़िया!",
+      "alert": "चेतावनी:",
+      "under_budget": " आप अपने बजट के भीतर हैं। ",
+      "over_budget": " बजट सीमा पार हो गई है। ",
+      "see": "देखें",
+      "todo_list": "कार्य सूची",
+      "recent_docs": "हाल के दस्तावेज़",
+      "vs": "बनाम",
+      "avg": "औसत"
+    },
+    "docs": {
+      "recent_title": "हाल के दस्तावेज़",
+      "action_required": "कार्रवाई आवश्यक",
+      "ready": "तैयार",
+      "type_pdf": "PDF",
+      "click_drag": "अपलोड करने के लिए क्लिक करें या खींचें",
+      "supported_formats": "समर्थित प्रारूप: PDF, PNG, JPG"
+    },
+    "preview": {
+      "close": "बंद करें",
+      "download": "डाउनलोड",
+      "secure_title": "सुरक्षित दस्तावेज़",
+      "encrypted_text": "यह दस्तावेज़ एन्क्रिप्टेड है। कृपया फ़ाइल डाउनलोड करें।"
+    },
+    "accounts": {
+      "available_balance": "उपलब्ध शेष",
+      "current_balance": "वर्तमान शेष",
+      "link_new": "नया खाता जोड़ें",
+      "type": {
+        "checking": "चेकिंग",
+        "credit": "क्रेडिट",
+        "savings": "बचत"
+      }
+    },
+    "legal_disclaimer": "अस्वीकरण",
+    "legal_text": "यह एक डेमो प्रोजेक्ट है। कोई वास्तविक बैंकिंग डेटा संसाधित नहीं होता है।",
+    "understood": "समझ गया",
+    "export": "CSV निर्यात करें",
+    "categories": {
+      "utility": "उपयोगिता",
+      "food": "भोजन",
+      "transport": "परिवहन",
+      "income": "आय",
+      "subscription": "सदस्यता",
+      "shopping": "खरीदारी",
+      "travel": "यात्रा"
+    },
+    "profile": {
+      "appearance": "दिखावट",
+      "language": "भाषा",
+      "light": "लाइट",
+      "dark": "डार्क",
+      "sign_out": "साइन आउट"
+    },
+    "graph": {
+      "title": "नकदी प्रवाह",
+      "generating": "AI ग्राफ जनरेट हो रहा है...",
+      "unavailable": "ग्राफ उपलब्ध नहीं है",
+      "time": {
+        "this_month": "इस महीने",
+        "last_month": "पिछले महीने",
+        "ytd": "अब तक",
+        "today": "Today",
+        "tomorrow": "Tomorrow"
+      }
+    },
     "recent": {
       "title": "हाल के लेनदेन",
       "view_all": "सभी देखें"
     },
-    "updated": "अंतिम अपडेट: अभी"
-  },
-  "chat": {
-    "title": "फिनब्रिज सहायक",
-    "welcome": "नमस्ते! मैं फिनब्रिज एआई हूं। आज मैं आपकी कैसे मदद कर सकता हूं?",
-    "placeholder": "वित्त के बारे में पूछें...",
-    "typing": "टाइपिंग...",
-    "error": "क्षमा करें, मुझे अभी कनेक्ट करने में समस्या हो रही है।"
+    "updated": "अंतिम अपडेट: अभी",
+    "chat": {
+      "title": "Finbridge Assistant",
+      "welcome": "Hi there! I'm Finbridge AI. How can I help you today?",
+      "placeholder": "Ask about finances...",
+      "error": "Sorry, I'm having trouble connecting right now.",
+      "questions": {
+        "0": "How can I get my credit score to 750?",
+        "1": "How can I save more money?",
+        "2": "How can I start investing?"
+      }
+    }
   }
 }

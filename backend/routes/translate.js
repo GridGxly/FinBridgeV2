@@ -1,8 +1,8 @@
 import express from "express";
 import multer from "multer";
 import { translateDocument } from "../services/geminiService.js";
-import { bucket, db } from "../firebase/init.js";
-import { v4 as uuidv4 } from 'uuid';
+import { db } from "../firebase/init.js";
+
 
 const router = express.Router();
 const upload = multer({ storage: multer.memoryStorage() });
@@ -22,30 +22,7 @@ router.post("/", upload.single('file'), async (req, res) => {
 
 
         if (file) {
-            mimeType = file.mimetype;
-            fileBuffer = file.buffer;
-
-            const fileName = `uploads/${userId || 'guest'}/${uuidv4()}_${file.originalname}`;
-            const blob = bucket.file(fileName);
-            const blobStream = blob.createWriteStream({
-                metadata: {
-                    contentType: file.mimetype,
-                },
-            });
-
-            await new Promise((resolve, reject) => {
-                blobStream.on('error', reject);
-                blobStream.on('finish', resolve);
-                blobStream.end(file.buffer);
-            });
-
-
-            const [url] = await blob.getSignedUrl({
-                action: 'read',
-                expires: '03-01-2500'
-            });
-            fileUrl = url;
-            console.log("File uploaded to:", fileUrl);
+            console.log('File processing skipped for demo');
         }
 
 
@@ -58,17 +35,21 @@ router.post("/", upload.single('file'), async (req, res) => {
 
 
         if (userId && userId !== 'undefined') {
-            await db.collection('translations').add({
-                userId,
-                originalText: text ? text.substring(0, 200) + "..." : "[File]",
-                fileUrl: fileUrl,
-                fileName: file ? file.originalname : null,
-                targetLanguage: targetLanguage || "English",
-                summary: result.summary,
-                translatedTextFragments: result.translatedText?.substring(0, 200),
-                confidence: result.confidence,
-                createdAt: new Date()
-            });
+            try {
+                await db.collection('translations').add({
+                    userId,
+                    originalText: text ? text.substring(0, 200) + "..." : "[File]",
+                    fileUrl: fileUrl,
+                    fileName: file ? file.originalname : null,
+                    targetLanguage: targetLanguage || "English",
+                    summary: result.summary,
+                    translatedTextFragments: result.translatedText?.substring(0, 200),
+                    confidence: result.confidence,
+                    createdAt: new Date()
+                });
+            } catch (dbError) {
+                console.warn("Firestore Write Failed (Non-fatal):", dbError.message);
+            }
         }
 
         res.json(result);

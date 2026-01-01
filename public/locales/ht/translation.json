@@ -3,64 +3,64 @@
     "badge": "Literasi Finansye pou Tout Moun",
     "title_start": "Pon ant",
     "title_highlight": "kilti ak finans.",
-    "subtitle": "Senplisite ak klète pou avni finansye ou. Finbridge konekte ou ak lajan ou nan lang ou.",
+    "subtitle": "Senplisite ak klète pou avni finansye ou.",
     "cta_primary": "Konekte Bank",
     "cta_secondary": "Aprann Plis",
     "copyright": "© 2025 Finbridge"
   },
   "features": {
     "community": {
-      "title": "Kominote Anvan Tout",
-      "description": "Konsèy finansye pèsonalize ki respekte valè kiltirèl ou ak pratik ekonomize kominote a."
+      "title": "Community First",
+      "description": "Tailored financial advice that respects your cultural values and community saving practices."
     },
     "literacy": {
-      "title": "Konesans Finansye",
-      "description": "Aprann sou kredi, ekonomi, ak envestisman nan tèm senp, tradui nan lang ou."
+      "title": "Financial Literacy",
+      "description": "Learn about credit, savings, and investments in simple terms, translated into your language."
     },
     "security": {
-      "title": "Koneksyon Sekirize",
-      "description": "Sekirite nivo labank asire done ou an sekirite pandan ou jwenn yon gade klè sou finans ou."
+      "title": "Secure Connection",
+      "description": "Bank-grade security ensures your data is safe while you get a clear view of your finances."
     }
   },
   "footer": {
     "about": {
-      "title": "Konsène Nou",
-      "mission": "Misyon Nou",
-      "impact": "Enpak Kominotè",
-      "diversity": "Divèsite ak Enklizyon"
+      "title": "About Us",
+      "mission": "Our Mission",
+      "impact": "Community Impact",
+      "diversity": "Diversity & Inclusion"
     },
     "resources": {
-      "title": "Resous",
-      "guides": "Gid Finansye",
-      "language": "Sipò Lang",
-      "help": "Sant Èd"
+      "title": "Resources",
+      "guides": "Financial Guides",
+      "language": "Language Support",
+      "help": "Help Center"
     },
     "stay_informed": {
-      "title": "Rete Enfòme",
-      "subtitle": "Abònman pou resevwa konsèy finansye ak mizajou mache.",
-      "placeholder": "Adrès Imèl",
-      "button": "Enskri",
-      "subscribed": "Enskri!"
+      "title": "Stay Informed",
+      "subtitle": "Subscribe to receive financial tips and market updates.",
+      "placeholder": "Email Address",
+      "button": "Sign Up",
+      "subscribed": "Subscribed!"
     },
     "copyright": "© 2025 Finbridge",
-    "description": "Sèvi kominote nou yo avèk entegrite, transparans, ak konpreyansyon kiltirèl depi 2025."
+    "description": "Serving our communities with integrity, transparency, and cultural understanding since 2025."
   },
   "login": {
     "brand": "Finbridge",
     "hero": {
       "title": "Lajan,\nTradui.",
-      "subtitle": "Navige vwayaj finansye ou avèk klète.",
+      "subtitle": "Navige vwayaj finansye ou avèk konfyans.",
       "copyright": "© 2025 Finbridge"
     },
     "form": {
       "title": "Konekte",
-      "subtitle": "Lyen kont bankè prensipal ou a pou verifye idantite ou.",
+      "subtitle": "Lyen kont prensipal ou.",
       "button": "Konekte Kont Bankè",
       "encryption": "Chifre bout-an-bout via Plaid",
       "terms_prefix": "Lè ou konekte, ou dakò ak",
       "terms_link": "Tèm yo",
       "privacy_link": "Règleman Konfidansyalite",
-      "terms_suffix": " Finbridge la.",
+      "terms_suffix": ".",
       "and": "ak"
     },
     "loading": "Etabli koneksyon an sekirite..."
@@ -72,12 +72,87 @@
       "accounts": "Kont",
       "transactions": "Tranzaksyon",
       "cash_flow": "Koule Lajan",
-      "translate": "Tradui Dokiman"
+      "translate": "Tradiktè"
+    },
+    "translate": {
+      "title": "Tradwi Dokiman",
+      "updated": "Dènye aktyalizasyon: Kounye a",
+      "upload_title": "Telechaje Dokiman",
+      "upload_desc": "Kole tèks oswa telechaje yon dosye pou tradiksyon.",
+      "button_upload": "Telechaje Dosye (PDF/IMG)",
+      "button_process": "Tradwi & Rezime",
+      "analysis_title": "Analiz AI",
+      "powered_by": "Powered by Gemini",
+      "waiting": "Ap tann kontni...",
+      "waiting_desc": "AI pral tradwi dokiman an nan lang ou pi pito.",
+      "exec_summary": "Rezime Egzekitif",
+      "translated_content": "Kontni Tradui",
+      "confidence": "Konfyans"
     },
     "stats": {
       "net_worth": "Valè Filè",
       "assets": "Byen",
-      "liabilities": "Dèt"
+      "liabilities": "Dèt",
+      "total_balance": "Balans Total",
+      "last_30_days": "dènye 30 jou",
+      "account_balance_history": "Istwa Balans",
+      "n_days": "30 Jou",
+      "money_out": "Depans",
+      "gemini_analysis": "Analiz Entelijan",
+      "gemini_desc": "Ou depanse $800 nan manje mwa sa a.",
+      "great_job": "Bon travay!",
+      "alert": "Alèt:",
+      "under_budget": " Ou anba bidjè ou. ",
+      "over_budget": " Ou depase bidjè ou. ",
+      "see": "Gade",
+      "todo_list": "Pou Fè",
+      "recent_docs": "Dokiman Resan",
+      "vs": "kont",
+      "avg": "mwayèn"
+    },
+    "docs": {
+      "recent_title": "Dokiman Resan",
+      "action_required": "Aksyon Obligatwa",
+      "ready": "Pare",
+      "type_pdf": "PDF",
+      "click_drag": "Klike oswa Trennen pou Telechaje",
+      "supported_formats": "Fòma sipòte: PDF, PNG, JPG"
+    },
+    "preview": {
+      "close": "Fèmen",
+      "download": "Telechaje",
+      "secure_title": "Dokiman Sekirize",
+      "encrypted_text": "Dokiman sa a chifre. Tanpri telechaje fichye a."
+    },
+    "accounts": {
+      "available_balance": "Balans Disponib",
+      "current_balance": "Balans Aktyèl",
+      "link_new": "Konekte Nouvo Kont",
+      "type": {
+        "checking": "CHÈK",
+        "credit": "KREDI",
+        "savings": "EPAY"
+      }
+    },
+    "legal_disclaimer": "Avètisman Legal",
+    "legal_text": "Sa a se yon pwojè demo. Pa gen okenn done reyèl labank trete.",
+    "understood": "Konprann",
+    "export": " ekspòte CSV",
+    "categories": {
+      "utility": "Sèvis piblik",
+      "food": "Manje",
+      "transport": "Transpò",
+      "income": "Revni",
+      "subscription": "Abònman",
+      "shopping": "Shopping",
+      "travel": "Vwayaj"
+    },
+    "profile": {
+      "appearance": "Aparans",
+      "language": "Lang",
+      "light": "Limyè",
+      "dark": "Fènwa",
+      "sign_out": "Dekonekte"
     },
     "graph": {
       "title": "Koule Lajan",
@@ -86,35 +161,26 @@
       "time": {
         "this_month": "Mwa Sa a",
         "last_month": "Mwa Pase",
-        "ytd": "Ane Sa a"
+        "ytd": "Ane Sa a",
+        "today": "Today",
+        "tomorrow": "Tomorrow"
       }
-    },
-    "translate": {
-      "title": "Tradui Dokiman",
-      "updated": "Dènye aktyalizasyon: Fenman",
-      "upload_title": "Telechaje Dokiman",
-      "upload_desc": "Kole tèks oswa telechaje yon dosye pou tradiksyon ak rezime.",
-      "button_upload": "Telechaje Dosye (PDF/IMG)",
-      "button_process": "Tradui ak Rezime",
-      "analysis_title": "Analiz AI",
-      "powered_by": "Powered by Gemini",
-      "waiting": "Ap tann kontni...",
-      "waiting_desc": "AI pral tradui dokiman an nan lang ou pi pito epi bay yon rezime pwen kle yo.",
-      "exec_summary": "Rezime Egzekitif",
-      "translated_content": "Kontni Tradui",
-      "confidence": "Konfyans"
     },
     "recent": {
       "title": "Tranzaksyon Resan",
       "view_all": "Wè Tout"
     },
-    "updated": "Dènye aktyalizasyon: Fenman"
-  },
-  "chat": {
-    "title": "Asistan Finbridge",
-    "welcome": "Bonjou! Mwen se Finbridge AI. Ki jan mwen ka ede ou jodi a?",
-    "placeholder": "Mande sou finans...",
-    "typing": "Ap ekri...",
-    "error": "Padon, mwen gen pwoblèm pou konekte kounye a."
+    "updated": "Dènye aktyalizasyon: Fenman",
+    "chat": {
+      "title": "Finbridge Assistant",
+      "welcome": "Hi there! I'm Finbridge AI. How can I help you today?",
+      "placeholder": "Ask about finances...",
+      "error": "Sorry, I'm having trouble connecting right now.",
+      "questions": {
+        "0": "How can I get my credit score to 750?",
+        "1": "How can I save more money?",
+        "2": "How can I start investing?"
+      }
+    }
   }
 }

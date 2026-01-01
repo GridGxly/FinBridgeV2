@@ -3,64 +3,64 @@
     "badge": "Kiến thức tài chính cho mọi người",
     "title_start": "Thu hẹp khoảng cách giữa",
     "title_highlight": "văn hóa và tài chính.",
-    "subtitle": "Đơn giản và rõ ràng cho tương lai tài chính của bạn. Finbridge kết nối bạn với tiền của bạn bằng ngôn ngữ của bạn.",
+    "subtitle": "Đơn giản và rõ ràng cho tương lai tài chính của bạn.",
     "cta_primary": "Kết nối Ngân hàng",
     "cta_secondary": "Tìm hiểu thêm",
     "copyright": "© 2025 Finbridge"
   },
   "features": {
     "community": {
-      "title": "Cộng đồng là trên hết",
-      "description": "Lời khuyên tài chính phù hợp tôn trọng các giá trị văn hóa và thực hành tiết kiệm của cộng đồng bạn."
+      "title": "Community First",
+      "description": "Tailored financial advice that respects your cultural values and community saving practices."
     },
     "literacy": {
-      "title": "Kiến thức tài chính",
-      "description": "Tìm hiểu về tín dụng, tiết kiệm và đầu tư bằng những thuật ngữ đơn giản, được dịch sang ngôn ngữ của bạn."
+      "title": "Financial Literacy",
+      "description": "Learn about credit, savings, and investments in simple terms, translated into your language."
     },
     "security": {
-      "title": "Kết nối an toàn",
-      "description": "Bảo mật cấp ngân hàng đảm bảo dữ liệu của bạn an toàn trong khi bạn có được cái nhìn rõ ràng về tài chính của mình."
+      "title": "Secure Connection",
+      "description": "Bank-grade security ensures your data is safe while you get a clear view of your finances."
     }
   },
   "footer": {
     "about": {
-      "title": "Về chúng tôi",
-      "mission": "Sứ mệnh của chúng tôi",
-      "impact": "Tác động cộng đồng",
-      "diversity": "Đa dạng & Hòa nhập"
+      "title": "About Us",
+      "mission": "Our Mission",
+      "impact": "Community Impact",
+      "diversity": "Diversity & Inclusion"
     },
     "resources": {
-      "title": "Tài nguyên",
-      "guides": "Hướng dẫn tài chính",
-      "language": "Hỗ trợ ngôn ngữ",
-      "help": "Trung tâm trợ giúp"
+      "title": "Resources",
+      "guides": "Financial Guides",
+      "language": "Language Support",
+      "help": "Help Center"
     },
     "stay_informed": {
-      "title": "Luôn cập nhật",
-      "subtitle": "Đăng ký để nhận các mẹo tài chính và cập nhật thị trường.",
-      "placeholder": "Địa chỉ Email",
-      "button": "Đăng ký",
-      "subscribed": "Đã đăng ký!"
+      "title": "Stay Informed",
+      "subtitle": "Subscribe to receive financial tips and market updates.",
+      "placeholder": "Email Address",
+      "button": "Sign Up",
+      "subscribed": "Subscribed!"
     },
     "copyright": "© 2025 Finbridge",
-    "description": "Phục vụ cộng đồng của chúng tôi với sự chính trực, minh bạch và hiểu biết văn hóa từ năm 2025."
+    "description": "Serving our communities with integrity, transparency, and cultural understanding since 2025."
   },
   "login": {
     "brand": "Finbridge",
     "hero": {
       "title": "Tiền tệ,\nĐã dịch.",
-      "subtitle": "Điều hướng hành trình tài chính của bạn với sự rõ ràng.",
+      "subtitle": "Điều hướng hành trình tài chính của bạn.",
       "copyright": "© 2025 Finbridge"
     },
     "form": {
       "title": "Đăng nhập",
-      "subtitle": "Liên kết tài khoản ngân hàng chính của bạn để xác minh danh tính.",
+      "subtitle": "Liên kết tài khoản tài chính chính của bạn.",
       "button": "Kết nối Tài khoản Ngân hàng",
       "encryption": "Được mã hóa đầu cuối qua Plaid",
       "terms_prefix": "Bằng cách kết nối, bạn đồng ý với",
       "terms_link": "Điều khoản",
       "privacy_link": "Chính sách quyền riêng tư",
-      "terms_suffix": " của Finbridge.",
+      "terms_suffix": ".",
       "and": "và"
     },
     "loading": "Đang thiết lập kết nối an toàn..."
@@ -72,12 +72,87 @@
       "accounts": "Tài khoản",
       "transactions": "Giao dịch",
       "cash_flow": "Dòng tiền",
-      "translate": "Dịch tài liệu"
+      "translate": "Dịch thuật"
+    },
+    "translate": {
+      "title": "Dịch Tài Liệu",
+      "updated": "Cập nhật: Vừa xong",
+      "upload_title": "Tải lên Tài liệu",
+      "upload_desc": "Dán văn bản hoặc tải lên tệp để dịch và tóm tắt.",
+      "button_upload": "Tải lên Tệp (PDF/IMG)",
+      "button_process": "Dịch & Tóm tắt",
+      "analysis_title": "Phân tích AI",
+      "powered_by": "Được hỗ trợ bởi Gemini",
+      "waiting": "Đang chờ nội dung...",
+      "waiting_desc": "AI sẽ dịch tài liệu sang ngôn ngữ bạn chọn.",
+      "exec_summary": "Tóm tắt điều hành",
+      "translated_content": "Nội dung đã dịch",
+      "confidence": "Độ tin cậy"
     },
     "stats": {
       "net_worth": "Giá trị ròng",
       "assets": "Tài sản",
-      "liabilities": "Nợ phải trả"
+      "liabilities": "Nợ phải trả",
+      "total_balance": "Tổng số dư",
+      "last_30_days": "30 ngày qua",
+      "account_balance_history": "Lịch sử số dư",
+      "n_days": "30 Ngày",
+      "money_out": "Tiền ra",
+      "gemini_analysis": "Phân tích thông minh",
+      "gemini_desc": "Bạn đã chi $800 cho thực phẩm trong tháng này.",
+      "great_job": "Làm tốt lắm!",
+      "alert": "Cảnh báo:",
+      "under_budget": " Bạn vẫn ở dưới mức ngân sách. ",
+      "over_budget": " Chi tiêu đã vượt quá mục tiêu. ",
+      "see": "Xem",
+      "todo_list": "Việc cần làm",
+      "recent_docs": "Tài liệu gần đây",
+      "vs": "so với",
+      "avg": "TB"
+    },
+    "docs": {
+      "recent_title": "Tài liệu gần đây",
+      "action_required": "Cần hành động",
+      "ready": "Sẵn sàng",
+      "type_pdf": "PDF",
+      "click_drag": "Nhấp hoặc Kéo để Tải lên",
+      "supported_formats": "Định dạng hỗ trợ: PDF, PNG, JPG"
+    },
+    "preview": {
+      "close": "Đóng",
+      "download": "Tải xuống",
+      "secure_title": "Tài liệu bảo mật",
+      "encrypted_text": "Tài liệu này được mã hóa để bảo mật. Vui lòng tải xuống tệp."
+    },
+    "accounts": {
+      "available_balance": "Số dư khả dụng",
+      "current_balance": "Số dư hiện tại",
+      "link_new": "Liên kết tài khoản mới",
+      "type": {
+        "checking": "VÃNG LAI",
+        "credit": "TÍN DỤNG",
+        "savings": "TIẾT KIỆM"
+      }
+    },
+    "legal_disclaimer": "Tuyên bố từ chối trách nhiệm",
+    "legal_text": "Đây là một dự án demo. Không có dữ liệu ngân hàng thực nào được xử lý.",
+    "understood": "Đã hiểu",
+    "export": "Xuất CSV",
+    "categories": {
+      "utility": "Tiện ích",
+      "food": "Thực phẩm",
+      "transport": "Giao thông",
+      "income": "Thu nhập",
+      "subscription": "Đăng ký",
+      "shopping": "Mua sắm",
+      "travel": "Du lịch"
+    },
+    "profile": {
+      "appearance": "Giao diện",
+      "language": "Ngôn ngữ",
+      "light": "Sáng",
+      "dark": "Tối",
+      "sign_out": "Đăng xuất"
     },
     "graph": {
       "title": "Dòng tiền",
@@ -86,35 +161,26 @@
       "time": {
         "this_month": "Tháng này",
         "last_month": "Tháng trước",
-        "ytd": "Từ đầu năm"
+        "ytd": "Từ đầu năm",
+        "today": "Today",
+        "tomorrow": "Tomorrow"
       }
-    },
-    "translate": {
-      "title": "Dịch tài liệu",
-      "updated": "Cập nhật lần cuối: Vừa xong",
-      "upload_title": "Tải lên tài liệu",
-      "upload_desc": "Dán văn bản hoặc tải lên tệp để dịch và tóm tắt.",
-      "button_upload": "Tải lên tệp (PDF/IMG)",
-      "button_process": "Dịch và Tóm tắt",
-      "analysis_title": "Phân tích AI",
-      "powered_by": "Được cung cấp bởi Gemini",
-      "waiting": "Đang chờ nội dung...",
-      "waiting_desc": "AI sẽ dịch tài liệu sang ngôn ngữ bạn chọn và cung cấp tóm tắt các điểm chính.",
-      "exec_summary": "Tóm tắt điều hành",
-      "translated_content": "Nội dung đã dịch",
-      "confidence": "Độ tin cậy"
     },
     "recent": {
       "title": "Giao dịch gần đây",
       "view_all": "Xem tất cả"
     },
-    "updated": "Cập nhật lần cuối: Vừa xong"
-  },
-  "chat": {
-    "title": "Trợ lý Finbridge",
-    "welcome": "Xin chào! Tôi là Finbridge AI. Tôi có thể giúp gì cho bạn hôm nay?",
-    "placeholder": "Hỏi về tài chính...",
-    "typing": "Đang nhập...",
-    "error": "Xin lỗi, tôi đang gặp sự cố kết nối ngay bây giờ."
+    "updated": "Cập nhật lần cuối: Vừa xong",
+    "chat": {
+      "title": "Finbridge Assistant",
+      "welcome": "Hi there! I'm Finbridge AI. How can I help you today?",
+      "placeholder": "Ask about finances...",
+      "error": "Sorry, I'm having trouble connecting right now.",
+      "questions": {
+        "0": "How can I get my credit score to 750?",
+        "1": "How can I save more money?",
+        "2": "How can I start investing?"
+      }
+    }
   }
 }

@@ -93,7 +93,67 @@
     "stats": {
       "net_worth": "净资产",
       "assets": "资产",
-      "liabilities": "负债"
+      "liabilities": "负债",
+      "total_balance": "总余额",
+      "last_30_days": "过去 30 天",
+      "account_balance_history": "账户余额历史",
+      "n_days": "30 天",
+      "money_out": "支出",
+      "gemini_analysis": "智能分析",
+      "gemini_desc": "本月您在食物上花费了 $800（占收入的 20%）。",
+      "great_job": "干得好！",
+      "alert": "警报：",
+      "under_budget": " 您保持在 10% 的预算之内。 ",
+      "over_budget": " 超出了 10% 的预算目标。 ",
+      "see": "查看",
+      "todo_list": "待办事项",
+      "recent_docs": "最近文档",
+      "vs": "对比",
+      "avg": "平均"
+    },
+    "docs": {
+      "recent_title": "最近文档",
+      "action_required": "需要采取行动",
+      "ready": "就绪",
+      "type_pdf": "PDF",
+      "click_drag": "点击或拖拽上传",
+      "supported_formats": "支持的格式：PDF, PNG, JPG"
+    },
+    "preview": {
+      "close": "关闭",
+      "download": "下载",
+      "secure_title": "安全文档",
+      "encrypted_text": "为了您的安全，本文档已加密。请下载文件以在本地查看完整内容。"
+    },
+    "accounts": {
+      "available_balance": "可用余额",
+      "current_balance": "当前余额",
+      "link_new": "链接新账户",
+      "type": {
+        "checking": "支票账户",
+        "credit": "信用卡",
+        "savings": "储蓄账户"
+      }
+    },
+    "legal_disclaimer": "免责声明",
+    "legal_text": "这是一个演示项目。不处理真实的银行数据。Finbridge 不是注册的金融机构。",
+    "understood": "明白",
+    "export": "导出 CSV",
+    "categories": {
+      "utility": "公用事业",
+      "food": "餐饮",
+      "transport": "交通",
+      "income": "收入",
+      "subscription": "订阅",
+      "shopping": "购物",
+      "travel": "旅行"
+    },
+    "profile": {
+      "appearance": "外观",
+      "language": "语言",
+      "light": "浅色",
+      "dark": "深色",
+      "sign_out": "退出登录"
     },
     "graph": {
       "title": "现金流",
@@ -102,7 +162,20 @@
       "time": {
         "this_month": "本月",
         "last_month": "上月",
-        "ytd": "年初至今"
+        "ytd": "年初至今",
+        "today": "今天",
+        "tomorrow": "明天"
+      }
+    },
+    "chat": {
+      "title": "Finbridge 助手",
+      "welcome": "您好！我是 Finbridge AI。今天有什么可以帮您？",
+      "placeholder": "询问财务问题...",
+      "error": "抱歉，连接出现问题。",
+      "questions": {
+        "0": "如何将信用分提高到 750？",
+        "1": "如何节省更多钱？",
+        "2": "如何开始投资？"
       }
     },
     "recent": {
@@ -110,12 +183,5 @@
       "view_all": "查看全部"
     },
     "updated": "最后更新：刚才"
-  },
-  "chat": {
-    "title": "Finbridge 助手",
-    "welcome": "你好！我是 Finbridge AI。今天有什么可以帮您的吗？",
-    "placeholder": "询问关于财务的问题...",
-    "typing": "输入中...",
-    "error": "抱歉，我现在连接出现问题。"
   }
 }

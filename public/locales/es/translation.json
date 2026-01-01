@@ -72,12 +72,43 @@
       "accounts": "Cuentas",
       "transactions": "Transacciones",
       "cash_flow": "Flujo de Caja",
-      "translate": "Translate Docs"
+      "translate": "Traductor"
+    },
+    "translate": {
+      "title": "Traducir Documentos",
+      "updated": "Última actualización: Ahora mismo",
+      "upload_title": "Subir Documento",
+      "upload_desc": "Pegue texto o suba un archivo para traducción y resumen.",
+      "button_upload": "Subir Archivo (PDF/IMG)",
+      "button_process": "Traducir y Resumir",
+      "analysis_title": "Análisis IA",
+      "powered_by": "Desarrollado por Gemini",
+      "waiting": "Esperando contenido...",
+      "waiting_desc": "La IA traducirá el documento a su idioma preferido y proporcionará un resumen.",
+      "exec_summary": "Resumen Ejecutivo",
+      "translated_content": "Contenido Traducido",
+      "confidence": "Confianza"
     },
     "stats": {
       "net_worth": "Patrimonio Neto",
       "assets": "Activos",
-      "liabilities": "Pasivos"
+      "liabilities": "Pasivos",
+      "total_balance": "Saldo Total",
+      "last_30_days": "últimos 30 días",
+      "account_balance_history": "Historial de Saldo",
+      "n_days": "30 Días",
+      "money_out": "Gastos",
+      "gemini_analysis": "Análisis Inteligente",
+      "gemini_desc": "Gastaste $800 en comida este mes (20% de ingresos).",
+      "great_job": "¡Buen trabajo!",
+      "alert": "Alerta:",
+      "under_budget": " Estás por debajo de tu presupuesto del 10%. ",
+      "over_budget": " Has excedido tu presupuesto del 10%. ",
+      "see": "Ver",
+      "todo_list": "Pendientes",
+      "recent_docs": "Documentos Recientes",
+      "vs": "vs",
+      "avg": "promedio"
     },
     "graph": {
       "title": "Flujo de Caja",
@@ -86,35 +117,70 @@
       "time": {
         "this_month": "Este Mes",
         "last_month": "Mes Pasado",
-        "ytd": "Año Actual"
+        "ytd": "Año Actual",
+        "today": "Hoy",
+        "tomorrow": "Mañana"
       }
+    },
+    "chat": {
+      "title": "Asistente Finbridge",
+      "welcome": "¡Hola! Soy Finbridge AI. ¿Cómo puedo ayudarte hoy?",
+      "placeholder": "Pregunta sobre finanzas...",
+      "error": "Lo siento, tengo problemas de conexión.",
+      "questions": {
+        "0": "¿Cómo puedo mejorar mi crédito a 750?",
+        "1": "¿Cómo puedo ahorrar más dinero?",
+        "2": "¿Cómo puedo empezar a invertir?"
+      }
+    },
+    "docs": {
+      "recent_title": "Documentos Recientes",
+      "action_required": "Acción Requerida",
+      "ready": "Listo",
+      "type_pdf": "PDF",
+      "click_drag": "Haga clic o arrastre para cargar",
+      "supported_formats": "Formatos soportados: PDF, PNG, JPG"
+    },
+    "preview": {
+      "close": "Cerrar",
+      "download": "Descargar",
+      "secure_title": "Documento Seguro",
+      "encrypted_text": "Este documento está encriptado por seguridad. Descargue el archivo para ver su contenido completo localmente."
+    },
+    "accounts": {
+      "available_balance": "Saldo Disponible",
+      "current_balance": "Saldo Actual",
+      "link_new": "Vincular Cuenta",
+      "type": {
+        "checking": "CORRIENTE",
+        "credit": "CRÉDITO",
+        "savings": "AHORROS"
+      }
+    },
+    "legal_disclaimer": "Aviso Legal",
+    "legal_text": "Este es un proyecto de demostración. No se procesan datos bancarios reales. Finbridge no es una institución financiera registrada. Todos los datos mostrados son solo para fines de demostración.",
+    "understood": "Entendido",
+    "export": "Exportar CSV",
+    "categories": {
+      "utility": "Servicios",
+      "food": "Comida",
+      "transport": "Transporte",
+      "income": "Ingresos",
+      "subscription": "Suscripción",
+      "shopping": "Compras",
+      "travel": "Viajes"
+    },
+    "profile": {
+      "appearance": "Apariencia",
+      "language": "Idioma",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "sign_out": "Cerrar sesión"
     },
     "recent": {
       "title": "Transacciones Recientes",
       "view_all": "Ver Todo"
     },
-    "updated": "Última actualización: Justo ahora",
-    "translate": {
-      "title": "Translate Documents",
-      "updated": "Last updated: Just now",
-      "upload_title": "Upload Document",
-      "upload_desc": "Paste text or upload a file for translation and summarization.",
-      "button_upload": "Upload File (PDF/IMG)",
-      "button_process": "Translate & Summarize",
-      "analysis_title": "AI Analysis",
-      "powered_by": "Powered by Gemini",
-      "waiting": "Waiting for content...",
-      "waiting_desc": "AI will translate the document into your preferred language and provide a summary of key points.",
-      "exec_summary": "Executive Summary",
-      "translated_content": "Translated Content",
-      "confidence": "Confidence"
-    }
-  },
-  "chat": {
-    "title": "Asistente Finbridge",
-    "welcome": "¡Hola! Soy Finbridge AI. ¿Cómo puedo ayudarte hoy?",
-    "placeholder": "Pregunta sobre finanzas...",
-    "typing": "Escribiendo...",
-    "error": "Lo siento, tengo problemas para conectarme en este momento."
+    "updated": "Última actualización: Justo ahora"
   }
 }

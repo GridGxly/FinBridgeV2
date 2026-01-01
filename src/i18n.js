@@ -10,7 +10,7 @@ i18n.use(LanguageDetector).use(Backend).use(initReactI18next).init({
     ns: ['translation', 'about', 'header', 'chatbot'],
     defaultNS: 'translation',
     backend: {
-        loadPath: '/locales/{{lng}}/{{ns}}.json',
+        loadPath: '/locales/{{lng}}/{{ns}}.json?v=' + new Date().getTime(),
     },
     detection: {
         order: ['querystring', 'localStorage', 'navigator', 'htmlTag'],

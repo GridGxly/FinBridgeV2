@@ -174,6 +174,8 @@ export default function Dashboard() {
     const { user, logout } = useAuth();
     const navigate = useNavigate();
     const { darkMode, setDarkMode } = useTheme();
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    const API_BASE_URL = isLocal ? (import.meta.env.VITE_BACKEND_URL || 'http://localhost:5001') : '';
 
     const [activeTab, setActiveTab] = useState('overview');
     const [showProfileMenu, setShowProfileMenu] = useState(false);
@@ -286,7 +288,7 @@ export default function Dashboard() {
     useEffect(() => {
         const generateLinkToken = async () => {
             try {
-                const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/plaid/create_link_token`, {
+                const response = await fetch(`${API_BASE_URL}/api/plaid/create_link_token`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ userId: user?.uid || 'demo_user' }),
@@ -309,7 +311,7 @@ export default function Dashboard() {
     const handlePlaidSuccess = useCallback(async (public_token, metadata) => {
         try {
             console.log("Plaid Success:", metadata);
-            await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/plaid/exchange_public_token`, {
+            await fetch(`${API_BASE_URL}/api/plaid/exchange_public_token`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ public_token }),
@@ -404,7 +406,7 @@ export default function Dashboard() {
         if (user?.uid) formData.append('userId', user.uid);
 
         try {
-            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/translate`, {
+            const response = await fetch(`${API_BASE_URL}/api/translate`, {
                 method: 'POST',
                 body: formData,
             });

@@ -5,7 +5,8 @@ import { usePlaidLink } from 'react-plaid-link';
 import { useTranslation } from 'react-i18next';
 import { FaShieldAlt, FaLock } from 'react-icons/fa';
 
-const API_BASE_URL = (import.meta.env.VITE_BACKEND_URL || 'http://localhost:5001').replace(/\/$/, '');
+const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+const API_BASE_URL = isLocal ? (import.meta.env.VITE_BACKEND_URL || 'http://localhost:5001') : '';
 
 const Login = () => {
     const [token, setToken] = useState(null);

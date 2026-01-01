@@ -22,6 +22,7 @@ console.log("---------------------------");
 
 app.use(helmet());
 
+// rate Limiting
 const limiter = rateLimit({
     windowMs: 15 * 60 * 1000,
     max: 100,
@@ -48,11 +49,17 @@ app.use("/api/history", historyRoutes);
 
 app.get("/", (req, res) => {
     res.send("FinBridge backend is running.");
-})
+});
+
+
+app.get("/api/health", (req, res) => {
+    res.json({ ok: true, status: "healthy" });
+});
 
 export default app;
 
-if (process.env.NODE_ENV !== 'production') {
-    const PORT = process.env.PORT || 5001;
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-}
+
+const PORT = process.env.PORT || 5001;
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server running on port ${PORT}`);
+});

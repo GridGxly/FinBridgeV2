@@ -6,7 +6,8 @@ export default function ChatWidget({ financialData = {} }) {
     const [isOpen, setIsOpen] = useState(false);
 
 
-    const API_BASE_URL = (import.meta.env.VITE_BACKEND_URL || 'http://localhost:5001').replace(/\/$/, '');
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    const API_BASE_URL = isLocal ? (import.meta.env.VITE_BACKEND_URL || 'http://localhost:5001') : '';
 
     const [messages, setMessages] = useState([
         { id: 1, text: t('dashboard.chat.welcome'), sender: 'bot' }

@@ -101,3 +101,7 @@ backend/service-account.json
 *.sln
 *.sw?
 backend/check_env.js
+
+# Archives
+*.zip
+backend_deploy.zip

@@ -32,7 +32,7 @@ English, Mandarin Chinese, Hindi, French, Tagalog, Vietnamese, Arabic, Haitian C
 **Backend & Infrastructure**
 * ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)
 * ![Firebase](https://img.shields.io/badge/firebase-ffca28?style=flat&logo=firebase&logoColor=black)
-* ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
+* ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
 * **Status:** personal build (sandbox data only)
 
 

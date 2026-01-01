@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="public/logoTrans.png" alt="Finbridge Logo" width="200" />
-</p>
-
-# Finbridge (Beta)
+# Finbridge
 
 > **Money made clear for our communities: translate it, learn it, and use it.**
 

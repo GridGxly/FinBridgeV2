@@ -1,9 +1,11 @@
 {
-  "nav": {
-    "banking": "Banking",
-    "loans": "Mortgage & Loans",
-    "investing": "Investing",
-    "sign_in": "SIGN IN",
-    "dashboard": "DASHBOARD"
+  "header": {
+    "nav": {
+      "banking": "Banking",
+      "loans": "Mortgage & Loans",
+      "investing": "Investing",
+      "sign_in": "Sign In",
+      "dashboard": "DASHBOARD"
+    }
   }
 }

@@ -1,49 +1,52 @@
 {
   "hero": {
-    "badge": "الثقافة المالية للجميع",
-    "title_start": "سد الفجوة بين",
-    "title_highlight": "الثقافة والمال.",
-    "subtitle": "البساطة والوضوح لمستقبلك المالي.",
-    "cta_primary": "ربط البنك",
-    "cta_secondary": "تعرف على المزيد",
-    "copyright": "© 2025 Finbridge"
+    "title_start": "Finbridge تترجم",
+    "title_middle": "المستندات المصرفية المربكة",
+    "title_end": "إلى لغة بسيطة.",
+    "subtitle": "المشورة المالية ليست مقاسًا واحدًا يناسب الجميع. نحن نأخذ في الاعتبار خلفيتك ولغتك وأهدافك.",
+    "cta": "ابدأ الترجمة"
   },
   "features": {
     "community": {
-      "title": "Community First",
-      "description": "Tailored financial advice that respects your cultural values and community saving practices."
+      "title": "المجتمع أولاً",
+      "description": "مشورة مالية مخصصة تحترم قيمك الثقافية."
     },
-    "literacy": {
-      "title": "Financial Literacy",
-      "description": "Learn about credit, savings, and investments in simple terms, translated into your language."
-    },
-    "security": {
-      "title": "Secure Connection",
-      "description": "Bank-grade security ensures your data is safe while you get a clear view of your finances."
+    "jargon": {
+      "title": "بدون مصطلحات.",
+      "description": "نحن نزيل المصطلحات المربكة حتى تتمكن من التركيز على الأرقام."
+    }
+  },
+  "demo": {
+    "original_scan": "مسح أصلي",
+    "simplified": "مبسط",
+    "pay_alert": "ادفع 125.00 دولارًا",
+    "fee_alert": "تجنب رسوم 35 دولارًا.",
+    "call_action": "اتصل بـ 800-555...",
+    "plan_action": "تأكيد الخطة."
+  },
+  "how_it_works": {
+    "title": "كيف يعمل",
+    "subtitle": "ثلاث خطوات للوضوح المالي.",
+    "steps": {
+      "0": {
+        "title": "تحميل",
+        "desc": "قم بتحميل صورة أو PDF لمستندك."
+      },
+      "1": {
+        "title": "تحليل",
+        "desc": "نسلط الضوء على التواريخ والمبالغ والمخاطر الرئيسية."
+      },
+      "2": {
+        "title": "إجراء",
+        "desc": "تحصل على قائمة مهام واضحة خطوة بخطوة."
+      }
     }
   },
   "footer": {
-    "about": {
-      "title": "About Us",
-      "mission": "Our Mission",
-      "impact": "Community Impact",
-      "diversity": "Diversity & Inclusion"
-    },
-    "resources": {
-      "title": "Resources",
-      "guides": "Financial Guides",
-      "language": "Language Support",
-      "help": "Help Center"
-    },
-    "stay_informed": {
-      "title": "Stay Informed",
-      "subtitle": "Subscribe to receive financial tips and market updates.",
-      "placeholder": "Email Address",
-      "button": "Sign Up",
-      "subscribed": "Subscribed!"
-    },
-    "copyright": "© 2025 Finbridge",
-    "description": "Serving our communities with integrity, transparency, and cultural understanding since 2025."
+    "project": "مشروع",
+    "github": "مستودع GitHub",
+    "live_demo": "عرض حي",
+    "copyright": "© 2025 Finbridge. كل الحقوق محفوظة."
   },
   "login": {
     "brand": "Finbridge",

@@ -1,49 +1,52 @@
 {
   "hero": {
-    "badge": "सभी के लिए वित्तीय साक्षरता",
-    "title_start": "संस्कृति और",
-    "title_highlight": "वित्त को जोड़ना।",
-    "subtitle": "आपके वित्तीय भविष्य के लिए सरलता और स्पष्टता।",
-    "cta_primary": "बैंक कनेक्ट करें",
-    "cta_secondary": "और जानें",
-    "copyright": "© 2025 Finbridge"
+    "title_start": "Finbridge अनुवाद करता है",
+    "title_middle": "भ्रामक बैंक दस्तावेजों को",
+    "title_end": "सरल हिंदी में।",
+    "subtitle": "वित्तीय सलाह सभी के लिए एक जैसी नहीं होती। हम आपकी पृष्ठभूमि, भाषा और लक्ष्यों पर विचार करते हैं।",
+    "cta": "अनुवाद शुरू करें"
   },
   "features": {
     "community": {
-      "title": "Community First",
-      "description": "Tailored financial advice that respects your cultural values and community saving practices."
+      "title": "समुदाय पहले",
+      "description": "अनुकूलित वित्तीय सलाह जो आपके सांस्कृतिक मूल्यों का सम्मान करती है।"
     },
-    "literacy": {
-      "title": "Financial Literacy",
-      "description": "Learn about credit, savings, and investments in simple terms, translated into your language."
-    },
-    "security": {
-      "title": "Secure Connection",
-      "description": "Bank-grade security ensures your data is safe while you get a clear view of your finances."
+    "jargon": {
+      "title": "जार्गन मुक्त।",
+      "description": "हम भ्रामक शब्दों को हटा देते हैं ताकि आप संख्याओं पर ध्यान केंद्रित कर सकें।"
+    }
+  },
+  "demo": {
+    "original_scan": "मूल स्कैन",
+    "simplified": "सरलीकृत",
+    "pay_alert": "$125.00 भुगतान करें",
+    "fee_alert": "$35 विलंब शुल्क से बचें।",
+    "call_action": "कॉल करें 800-555...",
+    "plan_action": "भुगतान योजना की पुष्टि करें।"
+  },
+  "how_it_works": {
+    "title": "यह कैसे काम करता है",
+    "subtitle": "वित्तीय स्पष्टता के लिए तीन चरण।",
+    "steps": {
+      "0": {
+        "title": "अपलोड",
+        "desc": "अपने दस्तावेज़ की एक फोटो या पीडीएफ अपलोड करें।"
+      },
+      "1": {
+        "title": "विश्लेषण",
+        "desc": "हम प्रमुख तिथियों, राशियों और जोखिमों को उजागर करते हैं।"
+      },
+      "2": {
+        "title": "कार्रवाई",
+        "desc": "आपको चरण-दर-चरण कार्य सूची मिलती है।"
+      }
     }
   },
   "footer": {
-    "about": {
-      "title": "About Us",
-      "mission": "Our Mission",
-      "impact": "Community Impact",
-      "diversity": "Diversity & Inclusion"
-    },
-    "resources": {
-      "title": "Resources",
-      "guides": "Financial Guides",
-      "language": "Language Support",
-      "help": "Help Center"
-    },
-    "stay_informed": {
-      "title": "Stay Informed",
-      "subtitle": "Subscribe to receive financial tips and market updates.",
-      "placeholder": "Email Address",
-      "button": "Sign Up",
-      "subscribed": "Subscribed!"
-    },
-    "copyright": "© 2025 Finbridge",
-    "description": "Serving our communities with integrity, transparency, and cultural understanding since 2025."
+    "project": "प्रोजेक्ट",
+    "github": "GitHub रेपो",
+    "live_demo": "लाइव डेमो",
+    "copyright": "© 2025 Finbridge. सर्वाधिकार सुरक्षित।"
   },
   "login": {
     "brand": "Finbridge",

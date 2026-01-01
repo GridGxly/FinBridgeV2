@@ -1,49 +1,52 @@
 {
   "hero": {
-    "badge": "Literasi Finansye pou Tout Moun",
-    "title_start": "Pon ant",
-    "title_highlight": "kilti ak finans.",
-    "subtitle": "Senplisite ak klète pou avni finansye ou.",
-    "cta_primary": "Konekte Bank",
-    "cta_secondary": "Aprann Plis",
-    "copyright": "© 2025 Finbridge"
+    "title_start": "Finbridge tradiksyon",
+    "title_middle": "dokiman labank konfizyon",
+    "title_end": "an kreyòl senp.",
+    "subtitle": "konsèy finansye pa yon sèl gwosè-anfòm-tout. Nou konsidere background ou, lang, ak objektif.",
+    "cta": "Kòmanse Tradiksyon"
   },
   "features": {
     "community": {
-      "title": "Community First",
-      "description": "Tailored financial advice that respects your cultural values and community saving practices."
+      "title": "Kominote Premye",
+      "description": "Konsèy finansye pwepare ki respekte valè kiltirèl ou."
     },
-    "literacy": {
-      "title": "Financial Literacy",
-      "description": "Learn about credit, savings, and investments in simple terms, translated into your language."
-    },
-    "security": {
-      "title": "Secure Connection",
-      "description": "Bank-grade security ensures your data is safe while you get a clear view of your finances."
+    "jargon": {
+      "title": "Pa Gen Jargon.",
+      "description": "Nou retire tèm konfizyon yo pou ou ka konsantre sou nimewo yo."
+    }
+  },
+  "demo": {
+    "original_scan": "ESKANÈ ORIJINAL",
+    "simplified": "SENPLIFYE",
+    "pay_alert": "Peye $125.00",
+    "fee_alert": "Evite frè reta $35.",
+    "call_action": "Rele 800-555...",
+    "plan_action": "Konfime plan."
+  },
+  "how_it_works": {
+    "title": "Kijan li fonksyone",
+    "subtitle": "Twa etap nan klè finansye.",
+    "steps": {
+      "0": {
+        "title": "Telechaje",
+        "desc": "Telechaje yon foto oswa PDF nan dokiman ou an."
+      },
+      "1": {
+        "title": "Analize",
+        "desc": "Nou mete aksan sou dat kle, kantite lajan, ak risk."
+      },
+      "2": {
+        "title": "Aksyon",
+        "desc": "Ou jwenn yon lis etap-pa-etap klè."
+      }
     }
   },
   "footer": {
-    "about": {
-      "title": "About Us",
-      "mission": "Our Mission",
-      "impact": "Community Impact",
-      "diversity": "Diversity & Inclusion"
-    },
-    "resources": {
-      "title": "Resources",
-      "guides": "Financial Guides",
-      "language": "Language Support",
-      "help": "Help Center"
-    },
-    "stay_informed": {
-      "title": "Stay Informed",
-      "subtitle": "Subscribe to receive financial tips and market updates.",
-      "placeholder": "Email Address",
-      "button": "Sign Up",
-      "subscribed": "Subscribed!"
-    },
-    "copyright": "© 2025 Finbridge",
-    "description": "Serving our communities with integrity, transparency, and cultural understanding since 2025."
+    "project": "Pwojè",
+    "github": "GitHub Repo",
+    "live_demo": "Demo Live",
+    "copyright": "© 2025 Finbridge. Tout dwa rezève."
   },
   "login": {
     "brand": "Finbridge",

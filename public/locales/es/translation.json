@@ -1,49 +1,52 @@
 {
   "hero": {
-    "badge": "Educación Financiera para Todos",
-    "title_start": "Uniendo",
-    "title_highlight": "cultura y finanzas.",
-    "subtitle": "Claridad para tu futuro financiero. Finbridge te conecta con tu dinero en tu idioma.",
-    "cta_primary": "Conectar Banco",
-    "cta_secondary": "Más Información",
-    "copyright": "© 2025 Finbridge"
+    "title_start": "Finbridge traduce",
+    "title_middle": "documentos bancarios confusos",
+    "title_end": "a español sencillo.",
+    "subtitle": "El asesoramiento financiero no es igual para todos. Consideramos sus antecedentes, idioma y objetivos.",
+    "cta": "Empezar a Traducir"
   },
   "features": {
     "community": {
       "title": "Comunidad Primero",
       "description": "Asesoramiento financiero adaptado a tus valores culturales."
     },
-    "literacy": {
-      "title": "Educación Financiera",
-      "description": "Aprende sobre crédito, ahorros e inversiones en términos simples."
-    },
-    "security": {
-      "title": "Conexión Segura",
-      "description": "Seguridad de nivel bancario para proteger tus datos."
+    "jargon": {
+      "title": "Sin Jerga.",
+      "description": "Eliminamos los términos confusos para que puedas concentrarte en los números."
+    }
+  },
+  "demo": {
+    "original_scan": "ESCANEO ORIGINAL",
+    "simplified": "SIMPLIFICADO",
+    "pay_alert": "Pagar $125.00",
+    "fee_alert": "Evitar cargo de $35.",
+    "call_action": "Llamar 800-555...",
+    "plan_action": "Plan de pago."
+  },
+  "how_it_works": {
+    "title": "Cómo funciona",
+    "subtitle": "Tres pasos para la claridad financiera.",
+    "steps": {
+      "0": {
+        "title": "Subir",
+        "desc": "Sube una foto o PDF de tu documento."
+      },
+      "1": {
+        "title": "Analizar",
+        "desc": "Resaltamos fechas clave, montos y riesgos."
+      },
+      "2": {
+        "title": "Acción",
+        "desc": "Obtienes una lista de tareas clara paso a paso."
+      }
     }
   },
   "footer": {
-    "about": {
-      "title": "Sobre Nosotros",
-      "mission": "Nuestra Misión",
-      "impact": "Impacto Comunitario",
-      "diversity": "Diversidad e Inclusión"
-    },
-    "resources": {
-      "title": "Recursos",
-      "guides": "Guías Financieras",
-      "language": "Soporte de Idiomas",
-      "help": "Centro de Ayuda"
-    },
-    "stay_informed": {
-      "title": "Mantente Informado",
-      "subtitle": "Suscríbete para recibir consejos financieros.",
-      "placeholder": "Dirección de Correo",
-      "button": "Suscribirse",
-      "subscribed": "¡Suscrito!"
-    },
-    "copyright": "© 2025 Finbridge",
-    "description": "Sirviendo a nuestras comunidades con integridad y entendimiento cultural."
+    "project": "Proyecto",
+    "github": "Repositorio GitHub",
+    "live_demo": "Demo en Vivo",
+    "copyright": "© 2025 Finbridge. Todos los derechos reservados."
   },
   "login": {
     "brand": "Finbridge",

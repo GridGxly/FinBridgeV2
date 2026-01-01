@@ -1,49 +1,52 @@
 {
   "hero": {
-    "badge": "Littératie financière pour tous",
-    "title_start": "Combler le fossé entre",
-    "title_highlight": "culture et finance.",
-    "subtitle": "Simplicité et clarté pour votre avenir financier.",
-    "cta_primary": "Connecter la banque",
-    "cta_secondary": "En savoir plus",
-    "copyright": "© 2025 Finbridge"
+    "title_start": "Finbridge traduit",
+    "title_middle": "les documents bancaires confus",
+    "title_end": "en langage clair.",
+    "subtitle": "Les conseils financiers ne sont pas uniques. Nous prenons en compte vos antécédents, votre langue et vos objectifs.",
+    "cta": "Commencer à Traduire"
   },
   "features": {
     "community": {
-      "title": "Community First",
-      "description": "Tailored financial advice that respects your cultural values and community saving practices."
+      "title": "Communauté d'abord",
+      "description": "Des conseils financiers adaptés qui respectent vos valeurs culturelles."
     },
-    "literacy": {
-      "title": "Financial Literacy",
-      "description": "Learn about credit, savings, and investments in simple terms, translated into your language."
-    },
-    "security": {
-      "title": "Secure Connection",
-      "description": "Bank-grade security ensures your data is safe while you get a clear view of your finances."
+    "jargon": {
+      "title": "Sans Jargon.",
+      "description": "Nous supprimons les termes confus pour que vous puissiez vous concentrer sur les chiffres."
+    }
+  },
+  "demo": {
+    "original_scan": "SCAN ORIGINAL",
+    "simplified": "SIMPLIFIÉ",
+    "pay_alert": "Payer 125,00 $",
+    "fee_alert": "Éviter frais de 35 $.",
+    "call_action": "Appeler 800-555...",
+    "plan_action": "Confirmer paiement."
+  },
+  "how_it_works": {
+    "title": "Comment ça marche",
+    "subtitle": "Trois étapes vers la clarté financière.",
+    "steps": {
+      "0": {
+        "title": "Télécharger",
+        "desc": "Téléchargez une photo ou un PDF de votre document."
+      },
+      "1": {
+        "title": "Analyser",
+        "desc": "Nous soulignons les dates clés, les montants et les risques."
+      },
+      "2": {
+        "title": "Action",
+        "desc": "Vous obtenez une liste de tâches claire étape par étape."
+      }
     }
   },
   "footer": {
-    "about": {
-      "title": "About Us",
-      "mission": "Our Mission",
-      "impact": "Community Impact",
-      "diversity": "Diversity & Inclusion"
-    },
-    "resources": {
-      "title": "Resources",
-      "guides": "Financial Guides",
-      "language": "Language Support",
-      "help": "Help Center"
-    },
-    "stay_informed": {
-      "title": "Stay Informed",
-      "subtitle": "Subscribe to receive financial tips and market updates.",
-      "placeholder": "Email Address",
-      "button": "Sign Up",
-      "subscribed": "Subscribed!"
-    },
-    "copyright": "© 2025 Finbridge",
-    "description": "Serving our communities with integrity, transparency, and cultural understanding since 2025."
+    "project": "Projet",
+    "github": "Dépôt GitHub",
+    "live_demo": "Démo en direct",
+    "copyright": "© 2025 Finbridge. Tous droits réservés."
   },
   "login": {
     "brand": "Finbridge",

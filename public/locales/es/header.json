@@ -1,9 +1,18 @@
 {
+  "header": {
+    "nav": {
+      "banking": "Banking",
+      "loans": "Mortgage & Loans",
+      "investing": "Investing",
+      "sign_in": "Sign In",
+      "dashboard": "DASHBOARD"
+    }
+  },
   "nav": {
     "banking": "Banca",
     "loans": "Hipotecas",
     "investing": "Inversiones",
-    "sign_in": "INICIAR SESIÓN",
+    "sign_in": "Iniciar Sesión",
     "dashboard": "PANEL"
   }
 }

@@ -10,54 +10,50 @@ const supportedLngs = ['en', 'es', 'zh', 'hi', 'fr', 'tl', 'vi', 'ar', 'ht', 'de
 const dictionaries = {
     en: {
         header: {
-            nav: { banking: "Banking", loans: "Mortgage & Loans", investing: "Investing", sign_in: "SIGN IN", dashboard: "DASHBOARD" }
+            header: {
+                nav: { banking: "Banking", loans: "Mortgage & Loans", investing: "Investing", sign_in: "Sign In", dashboard: "DASHBOARD" }
+            },
         },
         translation: {
             hero: {
-                badge: "Financial Literacy for All",
-                title_start: "Bridging the gap between",
-                title_highlight: "culture and finance.",
-                subtitle: "Simplicity and clarity for your financial future. Finbridge connects you to your money with culturally aware guidance in your language.",
-                cta_primary: "Connect Your Bank",
-                cta_secondary: "Learn More",
-                copyright: "© 2025 Finbridge"
+                title_start: "Finbridge translates",
+                title_middle: "confusing bank documents",
+                title_end: "into plain English.",
+                subtitle: "Financial advice isn't one-size-fits-all. We consider your background, language, and goals.",
+                cta: "Start Translating",
             },
             features: {
                 community: {
                     title: "Community First",
                     description: "Tailored financial advice that respects your cultural values and community saving practices."
                 },
-                literacy: {
-                    title: "Financial Literacy",
-                    description: "Learn about credit, savings, and investments in simple terms, translated into your language."
-                },
-                security: {
-                    title: "Secure Connection",
-                    description: "Bank-grade security ensures your data is safe while you get a clear view of your finances."
+                jargon: {
+                    title: "Jargon Free.",
+                    description: "We strip away the confusing terms so you can focus on the numbers."
+                }
+            },
+            demo: {
+                original_scan: "ORIGINAL SCAN",
+                simplified: "SIMPLIFIED",
+                pay_alert: "Pay $125.00",
+                fee_alert: "Avoid $35 late fee.",
+                call_action: "Call 800-555...",
+                plan_action: "Confirm payment plan."
+            },
+            how_it_works: {
+                title: "How it works",
+                subtitle: "Three steps to financial clarity.",
+                steps: {
+                    0: { title: "Upload", desc: "Upload a photo or PDF of your document." },
+                    1: { title: "Analyze", desc: "We highlight key dates, amounts, and risks." },
+                    2: { title: "Action", desc: "You get a clear, step-by-step to-do list." }
                 }
             },
             footer: {
-                about: {
-                    title: "About Us",
-                    mission: "Our Mission",
-                    impact: "Community Impact",
-                    diversity: "Diversity & Inclusion"
-                },
-                resources: {
-                    title: "Resources",
-                    guides: "Financial Guides",
-                    language: "Language Support",
-                    help: "Help Center"
-                },
-                stay_informed: {
-                    title: "Stay Informed",
-                    subtitle: "Subscribe to receive financial tips and market updates.",
-                    placeholder: "Email Address",
-                    button: "Sign Up",
-                    subscribed: "Subscribed!"
-                },
-                copyright: "© 2025 Finbridge",
-                description: "Serving our communities with integrity, transparency, and cultural understanding since 2025."
+                project: "Project",
+                github: "GitHub Repo",
+                live_demo: "Live Demo",
+                copyright: "© 2025 Finbridge. All rights reserved."
             },
             login: {
                 brand: "Finbridge",
@@ -147,27 +143,49 @@ const dictionaries = {
         }
     },
     es: {
-        header: { nav: { banking: "Banca", loans: "Hipotecas", investing: "Inversiones", sign_in: "INICIAR SESIÓN", dashboard: "PANEL" } },
+        header: {
+            nav: { banking: "Banca", loans: "Hipotecas", investing: "Inversiones", sign_in: "Iniciar Sesión", dashboard: "PANEL" }
+        },
         translation: {
             hero: {
-                badge: "Educación Financiera para Todos",
-                title_start: "Uniendo",
-                title_highlight: "cultura y finanzas.",
-                subtitle: "Claridad para tu futuro financiero. Finbridge te conecta con tu dinero en tu idioma.",
-                cta_primary: "Conectar Banco",
-                cta_secondary: "Más Información"
+                title_start: "Finbridge traduce",
+                title_middle: "documentos bancarios confusos",
+                title_end: "a español sencillo.",
+                subtitle: "El asesoramiento financiero no es igual para todos. Consideramos sus antecedentes, idioma y objetivos.",
+                cta: "Empezar a Traducir",
             },
             features: {
-                community: { title: "Comunidad Primero", description: "Asesoramiento financiero adaptado a tus valores culturales." },
-                literacy: { title: "Educación Financiera", description: "Aprende sobre crédito, ahorros e inversiones en términos simples." },
-                security: { title: "Conexión Segura", description: "Seguridad de nivel bancario para proteger tus datos." }
+                community: {
+                    title: "Comunidad Primero",
+                    description: "Asesoramiento financiero adaptado a tus valores culturales."
+                },
+                jargon: {
+                    title: "Sin Jerga.",
+                    description: "Eliminamos los términos confusos para que puedas concentrarte en los números."
+                }
+            },
+            demo: {
+                original_scan: "ESCANEO ORIGINAL",
+                simplified: "SIMPLIFICADO",
+                pay_alert: "Pagar $125.00",
+                fee_alert: "Evitar cargo de $35.",
+                call_action: "Llamar 800-555...",
+                plan_action: "Plan de pago."
+            },
+            how_it_works: {
+                title: "Cómo funciona",
+                subtitle: "Tres pasos para la claridad financiera.",
+                steps: {
+                    0: { title: "Subir", desc: "Sube una foto o PDF de tu documento." },
+                    1: { title: "Analizar", desc: "Resaltamos fechas clave, montos y riesgos." },
+                    2: { title: "Acción", desc: "Obtienes una lista de tareas clara paso a paso." }
+                }
             },
             footer: {
-                about: { title: "Sobre Nosotros", mission: "Nuestra Misión", impact: "Impacto Comunitario", diversity: "Diversidad e Inclusión" },
-                resources: { title: "Recursos", guides: "Guías Financieras", language: "Soporte de Idiomas", help: "Centro de Ayuda" },
-                stay_informed: { title: "Mantente Informado", subtitle: "Suscríbete para recibir consejos financieros.", placeholder: "Dirección de Correo", button: "Suscribirse", subscribed: "¡Suscrito!" },
-                copyright: "© 2025 Finbridge",
-                description: "Sirviendo a nuestras comunidades con integridad y entendimiento cultural."
+                project: "Proyecto",
+                github: "Repositorio GitHub",
+                live_demo: "Demo en Vivo",
+                copyright: "© 2025 Finbridge. Todos los derechos reservados."
             },
             login: {
                 brand: "Finbridge",
@@ -277,24 +295,44 @@ const dictionaries = {
         header: { nav: { banking: "银行业务", loans: "贷款", investing: "投资", sign_in: "登录", dashboard: "仪表板" } },
         translation: {
             hero: {
-                badge: "全民金融素养",
-                title_start: "弥合",
-                title_highlight: "文化与金融。",
-                subtitle: "为您的未来提供清晰的财务指导。Finbridge 用您的语言为您提供具有文化意识的指导。",
-                cta_primary: "连接银行",
-                cta_secondary: "了解更多"
+                title_start: "Finbridge 将",
+                title_middle: "令人困惑的银行文件",
+                title_end: "翻译成通俗易懂的语言。",
+                subtitle: "理财建议不是一刀切的。我们会考虑您的背景、语言和目标。",
+                cta: "开始翻译",
             },
             features: {
-                community: { title: "社区优先", description: "尊重您文化价值观的定制财务建议。" },
-                literacy: { title: "金融素养", description: "用简单的术语学习信用、储蓄和投资。" },
-                security: { title: "安全连接", description: "银行级安全保障您的数据安全。" }
+                community: {
+                    title: "社区优先",
+                    description: "尊重您的文化价值观的定制理财建议。"
+                },
+                jargon: {
+                    title: "无行话。",
+                    description: "我们将令人困惑的术语剔除，让您专注于数字。"
+                }
+            },
+            demo: {
+                original_scan: "原始扫描",
+                simplified: "简化版",
+                pay_alert: "支付 $125.00",
+                fee_alert: "避免 $35 滞纳金。",
+                call_action: "致电 800-555...",
+                plan_action: "确认付款计划。"
+            },
+            how_it_works: {
+                title: "工作原理",
+                subtitle: "实现财务清晰的三个步骤。",
+                steps: {
+                    0: { title: "上传", desc: "上传您的文档照片或 PDF。" },
+                    1: { title: "分析", desc: "我们突出显示关键日期、金额和风险。" },
+                    2: { title: "行动", desc: "您获得清晰的逐步待办事项列表。" }
+                }
             },
             footer: {
-                about: { title: "关于我们", mission: "我们的使命", impact: "社区影响", diversity: "多元化与包容性" },
-                resources: { title: "资源", guides: "理财指南", language: "语言支持", help: "帮助中心" },
-                stay_informed: { title: "保持知情", subtitle: "订阅以接收理财技巧和市场更新。", placeholder: "电子邮件地址", button: "注册", subscribed: "已订阅！" },
-                copyright: "© 2025 Finbridge",
-                description: "以诚信、透明和文化理解服务我们的社区。"
+                project: "项目",
+                github: "GitHub 仓库",
+                live_demo: "现场演示",
+                copyright: "© 2025 Finbridge. 保留所有权利。"
             },
             login: {
                 brand: "Finbridge",
@@ -419,12 +457,44 @@ const dictionaries = {
         header: { nav: { banking: "Bankwesen", loans: "Kredite", investing: "Investieren", sign_in: "ANMELDEN", dashboard: "DASHBOARD" } },
         translation: {
             hero: {
-                badge: "Finanzkompetenz für alle",
-                title_start: "Die Brücke zwischen",
-                title_highlight: "Kultur und Finanzen.",
-                subtitle: "Einfachheit und Klarheit für Ihre finanzielle Zukunft. Finbridge verbindet Sie mit Ihrem Geld.",
-                cta_primary: "Bank verbinden",
-                cta_secondary: "Mehr erfahren"
+                title_start: "Finbridge übersetzt",
+                title_middle: "verwirrende Bankdokumente",
+                title_end: "in einfaches Deutsch.",
+                subtitle: "Finanzberatung ist keine Einheitslösung. Wir berücksichtigen Ihren Hintergrund, Ihre Sprache und Ihre Ziele.",
+                cta: "Übersetzung Starten",
+            },
+            features: {
+                community: {
+                    title: "Gemeinschaft Zuerst",
+                    description: "Maßgeschneiderte Finanzberatung, die Ihre kulturellen Werte respektiert."
+                },
+                jargon: {
+                    title: "Kein Fachjargon.",
+                    description: "Wir entfernen verwirrende Begriffe, damit Sie sich auf die Zahlen konzentrieren können."
+                }
+            },
+            demo: {
+                original_scan: "ORIGINAL SCAN",
+                simplified: "VEREINFACHT",
+                pay_alert: "Zahlen $125.00",
+                fee_alert: "$35 Verzugsgebühr vermeiden.",
+                call_action: "Anrufen 800-555...",
+                plan_action: "Zahlungsplan bestätigen."
+            },
+            how_it_works: {
+                title: "Wie es funktioniert",
+                subtitle: "Drei Schritte zur finanziellen Klarheit.",
+                steps: {
+                    0: { title: "Hochladen", desc: "Foto oder PDF Ihres Dokuments hochladen." },
+                    1: { title: "Analysieren", desc: "Wir markieren wichtige Daten, Beträge und Risiken." },
+                    2: { title: "Handeln", desc: "Sie erhalten eine klare Schritt-für-Schritt-Liste." }
+                }
+            },
+            footer: {
+                project: "Projekt",
+                github: "GitHub Repo",
+                live_demo: "Live Demo",
+                copyright: "© 2025 Finbridge. Alle Rechte vorbehalten."
             },
             dashboard: {
                 title: "Dashboard",
@@ -533,12 +603,44 @@ const dictionaries = {
         header: { nav: { banking: "Banque", loans: "Prêts", investing: "Investir", sign_in: "CONNEXION", dashboard: "TABLEAU DE BORD" } },
         translation: {
             hero: {
-                badge: "Littératie financière pour tous",
-                title_start: "Combler le fossé entre",
-                title_highlight: "culture et finance.",
-                subtitle: "Simplicité et clarté pour votre avenir financier.",
-                cta_primary: "Connecter la banque",
-                cta_secondary: "En savoir plus"
+                title_start: "Finbridge traduit",
+                title_middle: "les documents bancaires confus",
+                title_end: "en langage clair.",
+                subtitle: "Les conseils financiers ne sont pas uniques. Nous prenons en compte vos antécédents, votre langue et vos objectifs.",
+                cta: "Commencer à Traduire",
+            },
+            features: {
+                community: {
+                    title: "Communauté d'abord",
+                    description: "Des conseils financiers adaptés qui respectent vos valeurs culturelles."
+                },
+                jargon: {
+                    title: "Sans Jargon.",
+                    description: "Nous supprimons les termes confus pour que vous puissiez vous concentrer sur les chiffres."
+                }
+            },
+            demo: {
+                original_scan: "SCAN ORIGINAL",
+                simplified: "SIMPLIFIÉ",
+                pay_alert: "Payer 125,00 $",
+                fee_alert: "Éviter frais de 35 $.",
+                call_action: "Appeler 800-555...",
+                plan_action: "Confirmer paiement."
+            },
+            how_it_works: {
+                title: "Comment ça marche",
+                subtitle: "Trois étapes vers la clarté financière.",
+                steps: {
+                    0: { title: "Télécharger", desc: "Téléchargez une photo ou un PDF de votre document." },
+                    1: { title: "Analyser", desc: "Nous soulignons les dates clés, les montants et les risques." },
+                    2: { title: "Action", desc: "Vous obtenez une liste de tâches claire étape par étape." }
+                }
+            },
+            footer: {
+                project: "Projet",
+                github: "Dépôt GitHub",
+                live_demo: "Démo en direct",
+                copyright: "© 2025 Finbridge. Tous droits réservés."
             },
             dashboard: {
                 title: "Tableau de bord",
@@ -647,12 +749,44 @@ const dictionaries = {
         header: { nav: { banking: "बैंकिंग", loans: "ऋण", investing: "निवेश", sign_in: "साइन इन", dashboard: "डैशबोर्ड" } },
         translation: {
             hero: {
-                badge: "सभी के लिए वित्तीय साक्षरता",
-                title_start: "संस्कृति और",
-                title_highlight: "वित्त को जोड़ना।",
-                subtitle: "आपके वित्तीय भविष्य के लिए सरलता और स्पष्टता।",
-                cta_primary: "बैंक कनेक्ट करें",
-                cta_secondary: "और जानें"
+                title_start: "Finbridge अनुवाद करता है",
+                title_middle: "भ्रामक बैंक दस्तावेजों को",
+                title_end: "सरल हिंदी में।",
+                subtitle: "वित्तीय सलाह सभी के लिए एक जैसी नहीं होती। हम आपकी पृष्ठभूमि, भाषा और लक्ष्यों पर विचार करते हैं।",
+                cta: "अनुवाद शुरू करें",
+            },
+            features: {
+                community: {
+                    title: "समुदाय पहले",
+                    description: "अनुकूलित वित्तीय सलाह जो आपके सांस्कृतिक मूल्यों का सम्मान करती है।"
+                },
+                jargon: {
+                    title: "जार्गन मुक्त।",
+                    description: "हम भ्रामक शब्दों को हटा देते हैं ताकि आप संख्याओं पर ध्यान केंद्रित कर सकें।"
+                }
+            },
+            demo: {
+                original_scan: "मूल स्कैन",
+                simplified: "सरलीकृत",
+                pay_alert: "$125.00 भुगतान करें",
+                fee_alert: "$35 विलंब शुल्क से बचें।",
+                call_action: "कॉल करें 800-555...",
+                plan_action: "भुगतान योजना की पुष्टि करें।"
+            },
+            how_it_works: {
+                title: "यह कैसे काम करता है",
+                subtitle: "वित्तीय स्पष्टता के लिए तीन चरण।",
+                steps: {
+                    0: { title: "अपलोड", desc: "अपने दस्तावेज़ की एक फोटो या पीडीएफ अपलोड करें।" },
+                    1: { title: "विश्लेषण", desc: "हम प्रमुख तिथियों, राशियों और जोखिमों को उजागर करते हैं।" },
+                    2: { title: "कार्रवाई", desc: "आपको चरण-दर-चरण कार्य सूची मिलती है।" }
+                }
+            },
+            footer: {
+                project: "प्रोजेक्ट",
+                github: "GitHub रेपो",
+                live_demo: "लाइव डेमो",
+                copyright: "© 2025 Finbridge. सर्वाधिकार सुरक्षित।"
             },
             dashboard: {
                 title: "डैशबोर्ड",
@@ -765,12 +899,44 @@ const dictionaries = {
         header: { nav: { banking: "Pagbabangko", loans: "Mga Pautang", investing: "Pamumuhunan", sign_in: "MAG-SIGN IN", dashboard: "DASHBOARD" } },
         translation: {
             hero: {
-                badge: "Literasiyang Pinansyal para sa Lahat",
-                title_start: "Pag-uugnay ng",
-                title_highlight: "kultura at pananalapi.",
-                subtitle: "Kalinawan para sa iyong kinabukasan.",
-                cta_primary: "Ikonekta ang Bangko",
-                cta_secondary: "Matuto Pa"
+                title_start: "Isinasalin ng Finbridge",
+                title_middle: "ang nakakalitong dokumento",
+                title_end: "sa simpleng wika.",
+                subtitle: "Ang payong pampinansyal ay hindi pare-pareho. Isinasaalang-alang namin ang iyong background, wika, at mga layunin.",
+                cta: "Simulan ang Pagsasalin",
+            },
+            features: {
+                community: {
+                    title: "Komunidad Una",
+                    description: "Pinasadyang payo sa pananalapi na gumagalang sa iyong mga pagpapahalaga sa kultura."
+                },
+                jargon: {
+                    title: "Walang Jargon.",
+                    description: "Inaalis namin ang mga nakakalitong termino para makapag-focus ka sa mga numero."
+                }
+            },
+            demo: {
+                original_scan: "ORIHINAL NA SCAN",
+                simplified: "PINADALI",
+                pay_alert: "Magbayad ng $125.00",
+                fee_alert: "Iwasan ang $35 fee.",
+                call_action: "Tumawag sa 800-555...",
+                plan_action: "Kumpirmahin ang plano."
+            },
+            how_it_works: {
+                title: "Paano ito gumagana",
+                subtitle: "Tatlong hakbang sa kalinawan sa pananalapi.",
+                steps: {
+                    0: { title: "Mag-upload", desc: "Mag-upload ng larawan o PDF ng iyong dokumento." },
+                    1: { title: "Pag-aralan", desc: "Hina-highlight namin ang mga pangunahing petsa at halaga." },
+                    2: { title: "Aksyon", desc: "Makakakuha ka ng malinaw na listahan ng gagawin." }
+                }
+            },
+            footer: {
+                project: "Proyekto",
+                github: "GitHub Repo",
+                live_demo: "Live Demo",
+                copyright: "© 2025 Finbridge. Nakareserba ang lahat ng karapatan."
             },
             dashboard: {
                 title: "Dashboard",
@@ -868,12 +1034,44 @@ const dictionaries = {
         header: { nav: { banking: "Ngân hàng", loans: "Khoản vay", investing: "Đầu tư", sign_in: "ĐĂNG NHẬP", dashboard: "BẢNG ĐIỀU KHIỂN" } },
         translation: {
             hero: {
-                badge: "Kiến thức tài chính cho mọi người",
-                title_start: "Thu hẹp khoảng cách giữa",
-                title_highlight: "văn hóa và tài chính.",
-                subtitle: "Đơn giản và rõ ràng cho tương lai tài chính của bạn.",
-                cta_primary: "Kết nối Ngân hàng",
-                cta_secondary: "Tìm hiểu thêm"
+                title_start: "Finbridge dịch",
+                title_middle: "tài liệu ngân hàng khó hiểu",
+                title_end: "sang ngôn ngữ đơn giản.",
+                subtitle: "Lời khuyên tài chính không phải là một kích cỡ phù hợp với tất cả. Chúng tôi xem xét nền tảng, ngôn ngữ và mục tiêu của bạn.",
+                cta: "Bắt đầu Dịch",
+            },
+            features: {
+                community: {
+                    title: "Cộng đồng Trước tiên",
+                    description: "Lời khuyên tài chính phù hợp tôn trọng các giá trị văn hóa của bạn."
+                },
+                jargon: {
+                    title: "Không Chuyên Ngành.",
+                    description: "Chúng tôi loại bỏ các thuật ngữ khó hiểu để bạn có thể tập trung vào các con số."
+                }
+            },
+            demo: {
+                original_scan: "BẢN QUÉT GỐC",
+                simplified: "ĐƠN GIẢN HÓA",
+                pay_alert: "Thanh toán $125.00",
+                fee_alert: "Tránh phí chậm $35.",
+                call_action: "Gọi 800-555...",
+                plan_action: "Xác nhận kế hoạch."
+            },
+            how_it_works: {
+                title: "Cách hoạt động",
+                subtitle: "Ba bước để tài chính rõ ràng.",
+                steps: {
+                    0: { title: "Tải lên", desc: "Tải lên ảnh hoặc PDF tài liệu của bạn." },
+                    1: { title: "Phân tích", desc: "Chúng tôi làm nổi bật các ngày chính, số tiền và rủi ro." },
+                    2: { title: "Hành động", desc: "Bạn nhận được danh sách việc cần làm rõ ràng." }
+                }
+            },
+            footer: {
+                project: "Dự án",
+                github: "GitHub Repo",
+                live_demo: "Demo Trực tiếp",
+                copyright: "© 2025 Finbridge. Đã đăng ký Bản quyền."
             },
             dashboard: {
                 title: "Bảng điều khiển",
@@ -971,12 +1169,44 @@ const dictionaries = {
         header: { nav: { banking: "المصرفية", loans: "القروض", investing: "الاستثمار", sign_in: "تسجيل الدخول", dashboard: "لوحة القيادة" } },
         translation: {
             hero: {
-                badge: "الثقافة المالية للجميع",
-                title_start: "سد الفجوة بين",
-                title_highlight: "الثقافة والمال.",
-                subtitle: "البساطة والوضوح لمستقبلك المالي.",
-                cta_primary: "ربط البنك",
-                cta_secondary: "تعرف على المزيد"
+                title_start: "Finbridge تترجم",
+                title_middle: "المستندات المصرفية المربكة",
+                title_end: "إلى لغة بسيطة.",
+                subtitle: "المشورة المالية ليست مقاسًا واحدًا يناسب الجميع. نحن نأخذ في الاعتبار خلفيتك ولغتك وأهدافك.",
+                cta: "ابدأ الترجمة",
+            },
+            features: {
+                community: {
+                    title: "المجتمع أولاً",
+                    description: "مشورة مالية مخصصة تحترم قيمك الثقافية."
+                },
+                jargon: {
+                    title: "بدون مصطلحات.",
+                    description: "نحن نزيل المصطلحات المربكة حتى تتمكن من التركيز على الأرقام."
+                }
+            },
+            demo: {
+                original_scan: "مسح أصلي",
+                simplified: "مبسط",
+                pay_alert: "ادفع 125.00 دولارًا",
+                fee_alert: "تجنب رسوم 35 دولارًا.",
+                call_action: "اتصل بـ 800-555...",
+                plan_action: "تأكيد الخطة."
+            },
+            how_it_works: {
+                title: "كيف يعمل",
+                subtitle: "ثلاث خطوات للوضوح المالي.",
+                steps: {
+                    0: { title: "تحميل", desc: "قم بتحميل صورة أو PDF لمستندك." },
+                    1: { title: "تحليل", desc: "نسلط الضوء على التواريخ والمبالغ والمخاطر الرئيسية." },
+                    2: { title: "إجراء", desc: "تحصل على قائمة مهام واضحة خطوة بخطوة." }
+                }
+            },
+            footer: {
+                project: "مشروع",
+                github: "مستودع GitHub",
+                live_demo: "عرض حي",
+                copyright: "© 2025 Finbridge. كل الحقوق محفوظة."
             },
             dashboard: {
                 title: "لوحة القيادة",
@@ -1085,12 +1315,44 @@ const dictionaries = {
         header: { nav: { banking: "Banking", loans: "Prè", investing: "Envestisman", sign_in: "KONEKTE", dashboard: "TABLO DEBÒ" } },
         translation: {
             hero: {
-                badge: "Literasi Finansye pou Tout Moun",
-                title_start: "Pon ant",
-                title_highlight: "kilti ak finans.",
-                subtitle: "Senplisite ak klète pou avni finansye ou.",
-                cta_primary: "Konekte Bank",
-                cta_secondary: "Aprann Plis"
+                title_start: "Finbridge tradiksyon",
+                title_middle: "dokiman labank konfizyon",
+                title_end: "an kreyòl senp.",
+                subtitle: "konsèy finansye pa yon sèl gwosè-anfòm-tout. Nou konsidere background ou, lang, ak objektif.",
+                cta: "Kòmanse Tradiksyon",
+            },
+            features: {
+                community: {
+                    title: "Kominote Premye",
+                    description: "Konsèy finansye pwepare ki respekte valè kiltirèl ou."
+                },
+                jargon: {
+                    title: "Pa Gen Jargon.",
+                    description: "Nou retire tèm konfizyon yo pou ou ka konsantre sou nimewo yo."
+                }
+            },
+            demo: {
+                original_scan: "ESKANÈ ORIJINAL",
+                simplified: "SENPLIFYE",
+                pay_alert: "Peye $125.00",
+                fee_alert: "Evite frè reta $35.",
+                call_action: "Rele 800-555...",
+                plan_action: "Konfime plan.",
+            },
+            how_it_works: {
+                title: "Kijan li fonksyone",
+                subtitle: "Twa etap nan klè finansye.",
+                steps: {
+                    0: { title: "Telechaje", desc: "Telechaje yon foto oswa PDF nan dokiman ou an." },
+                    1: { title: "Analize", desc: "Nou mete aksan sou dat kle, kantite lajan, ak risk." },
+                    2: { title: "Aksyon", desc: "Ou jwenn yon lis etap-pa-etap klè." }
+                }
+            },
+            footer: {
+                project: "Pwojè",
+                github: "GitHub Repo",
+                live_demo: "Demo Live",
+                copyright: "© 2025 Finbridge. Tout dwa rezève."
             },
             dashboard: {
                 title: "Tablo Debò",

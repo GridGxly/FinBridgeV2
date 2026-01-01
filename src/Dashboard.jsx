@@ -191,6 +191,9 @@ export default function Dashboard() {
 
     const accounts = React.useMemo(() => getInitialAccountsData(t), [t]);
 
+
+
+    // memoize localized data to update when i18n.language changes
     const currentLocale = i18n.language || 'en-US';
 
     const BALANCE_HISTORY = React.useMemo(() => [
@@ -220,12 +223,12 @@ export default function Dashboard() {
 
     const notifications = React.useMemo(() => [
         { id: 1, title: 'Electric Bill', desc: `${t('dashboard.graph.time.today', 'Today')} • $120.50` },
-        { id: 2, title: 'Rent Due', desc: `${t('dashboard.graph.time.today', 'Tomorrow')} • $1,500.00` }
+        { id: 2, title: 'Rent Due', desc: `${t('dashboard.graph.time.tomorrow', 'Tomorrow')} • $1,500.00` }
     ], [t]);
 
     const bills = React.useMemo(() => [
         { id: 1, name: 'Electric Bill', amount: 120.50, due: t('dashboard.graph.time.today', 'Today'), status: 'urgent' },
-        { id: 2, name: 'Rent Due', amount: 1500.00, due: 'Tomorrow', status: 'warning' }
+        { id: 2, name: 'Rent Due', amount: 1500.00, due: t('dashboard.graph.time.tomorrow', 'Tomorrow'), status: 'warning' }
     ], [t]);
 
     const initialDocuments = React.useMemo(() => [
@@ -810,7 +813,7 @@ export default function Dashboard() {
                                             </div>
                                             <div className="text-right">
                                                 <p className={`text-sm font-bold tabular-nums ${textClass}`}>${bill.amount.toLocaleString('en-US', { minimumFractionDigits: 2 })}</p>
-                                                <p className={`text-[10px] font-bold uppercase tracking-wider ${bill.due === 'Today' ? 'text-red-600' : 'text-orange-500'
+                                                <p className={`text-[10px] font-bold uppercase tracking-wider ${bill.due === t('dashboard.graph.time.today', 'Today') ? 'text-red-600' : 'text-orange-500'
                                                     }`}>{bill.due}</p>
                                             </div>
                                         </div>
@@ -913,7 +916,7 @@ export default function Dashboard() {
                                         </div>
 
                                         <div className="flex items-center gap-6">
-                                            <span className={`text-[10px] uppercase font-bold px-2 py-1 rounded ${doc.status === 'Action Required' ? 'bg-red-100 text-red-600' : 'bg-green-100 text-green-700'
+                                            <span className={`text-[10px] uppercase font-bold px-2 py-1 rounded ${doc.status === t('dashboard.docs.action_required', 'Action Required') ? 'bg-red-100 text-red-600' : 'bg-green-100 text-green-700'
                                                 }`}>
                                                 {doc.status}
                                             </span>

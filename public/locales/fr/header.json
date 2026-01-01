@@ -1,4 +1,13 @@
 {
+  "header": {
+    "nav": {
+      "banking": "Banking",
+      "loans": "Mortgage & Loans",
+      "investing": "Investing",
+      "sign_in": "Sign In",
+      "dashboard": "DASHBOARD"
+    }
+  },
   "nav": {
     "banking": "Banque",
     "loans": "Prêts",

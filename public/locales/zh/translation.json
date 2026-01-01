@@ -1,49 +1,52 @@
 {
   "hero": {
-    "badge": "全民金融素养",
-    "title_start": "弥合",
-    "title_highlight": "文化与金融。",
-    "subtitle": "为您的未来提供清晰的财务指导。Finbridge 用您的语言为您提供具有文化意识的指导。",
-    "cta_primary": "连接银行",
-    "cta_secondary": "了解更多",
-    "copyright": "© 2025 Finbridge"
+    "title_start": "Finbridge 将",
+    "title_middle": "令人困惑的银行文件",
+    "title_end": "翻译成通俗易懂的语言。",
+    "subtitle": "理财建议不是一刀切的。我们会考虑您的背景、语言和目标。",
+    "cta": "开始翻译"
   },
   "features": {
     "community": {
       "title": "社区优先",
-      "description": "尊重您文化价值观的定制财务建议。"
+      "description": "尊重您的文化价值观的定制理财建议。"
     },
-    "literacy": {
-      "title": "金融素养",
-      "description": "用简单的术语学习信用、储蓄和投资。"
-    },
-    "security": {
-      "title": "安全连接",
-      "description": "银行级安全保障您的数据安全。"
+    "jargon": {
+      "title": "无行话。",
+      "description": "我们将令人困惑的术语剔除，让您专注于数字。"
+    }
+  },
+  "demo": {
+    "original_scan": "原始扫描",
+    "simplified": "简化版",
+    "pay_alert": "支付 $125.00",
+    "fee_alert": "避免 $35 滞纳金。",
+    "call_action": "致电 800-555...",
+    "plan_action": "确认付款计划。"
+  },
+  "how_it_works": {
+    "title": "工作原理",
+    "subtitle": "实现财务清晰的三个步骤。",
+    "steps": {
+      "0": {
+        "title": "上传",
+        "desc": "上传您的文档照片或 PDF。"
+      },
+      "1": {
+        "title": "分析",
+        "desc": "我们突出显示关键日期、金额和风险。"
+      },
+      "2": {
+        "title": "行动",
+        "desc": "您获得清晰的逐步待办事项列表。"
+      }
     }
   },
   "footer": {
-    "about": {
-      "title": "关于我们",
-      "mission": "我们的使命",
-      "impact": "社区影响",
-      "diversity": "多元化与包容性"
-    },
-    "resources": {
-      "title": "资源",
-      "guides": "理财指南",
-      "language": "语言支持",
-      "help": "帮助中心"
-    },
-    "stay_informed": {
-      "title": "保持知情",
-      "subtitle": "订阅以接收理财技巧和市场更新。",
-      "placeholder": "电子邮件地址",
-      "button": "注册",
-      "subscribed": "已订阅！"
-    },
-    "copyright": "© 2025 Finbridge",
-    "description": "以诚信、透明和文化理解服务我们的社区。"
+    "project": "项目",
+    "github": "GitHub 仓库",
+    "live_demo": "现场演示",
+    "copyright": "© 2025 Finbridge. 保留所有权利。"
   },
   "login": {
     "brand": "Finbridge",

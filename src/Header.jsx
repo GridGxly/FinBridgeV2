@@ -46,7 +46,7 @@ function Header() {
                             to="/login"
                             className="bg-[#0b0f19] dark:bg-white text-white dark:text-[#0b0f19] px-6 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition-all shadow-lg hover:shadow-xl"
                         >
-                            Sign In
+                            {t('nav.sign_in', 'Sign In')}
                         </Link>
                     )}
                 </div>

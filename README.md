@@ -2,8 +2,6 @@
 
 > **Money made clear for our communities: translate it, learn it, and use it.**
 
-### [View Live Demo](https://d34qgf2s4sj5t3.cloudfront.net)
-
 Finbridge helps ethnic communities, immigrants, bilingual students, and anyone new to the U.S. build real financial literacy and sets up users for long-term success.
 
 ---

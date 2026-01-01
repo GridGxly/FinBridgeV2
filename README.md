@@ -12,22 +12,22 @@ Finbridge helps ethnic communities, immigrants, bilingual students, and anyone n
 
 ---
 
-### 👥 Who it’s For
+### Who it’s For?
 - **Ethnic communities** (from young to old)
 - **Immigrants & Individuals** not yet accustomed to the U.S. system
 - **Bilingual students and families**
 
-### 🌍 Languages (initial set)
+### Languages
 English, Mandarin Chinese, Hindi, French, Tagalog, Vietnamese, Arabic, Haitian Creole, German.
 
-### 🚀 Key Features:
+### Key Features:
 - **Translate** key terms and documents so “bank-speak” becomes everyday language
 - **Learn** bite-size finance basics (credit, HYSA, Roth IRA, fees, APR, etc.)
 - **Inline Document Translator** Upload documents for instant translation and summarization.
 - **Plaid Integration:** Connecting bank accounts for live insights.
 - **AI Assistance:** Context-aware explanation using Google Gemini to assist users further.
 
-### 🛠 Tech Stack
+### Tech Stack
 
 **Frontend**
 * ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
@@ -42,14 +42,14 @@ English, Mandarin Chinese, Hindi, French, Tagalog, Vietnamese, Arabic, Haitian C
 * **Status:** personal build (sandbox data only)
 
 
-###  Getting Started
+### Getting Started
 
 To run this project locally:
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/yourusername/finbridge.git
-   cd finbridge
+   git clone https://github.com/GridGxly/FinBridgeV2.git
+   cd FinBridgeV2
    ```
 
 2. **Install dependencies**

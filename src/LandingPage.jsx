@@ -26,7 +26,7 @@ export default function LandingPage() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.1 }}
-                        className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium text-[#0b0f19] dark:text-white leading-[1.05] mb-12 tracking-tight transition-colors"
+                        className="text-4xl md:text-7xl lg:text-8xl font-serif font-medium text-[#0b0f19] dark:text-white leading-[1.05] mb-8 md:mb-12 tracking-tight transition-colors"
                     >
                         {t('hero.title_start', 'Finbridge translates')} <br className="hidden md:block" />
                         {t('hero.title_middle', 'confusing bank documents')} <br className="hidden md:block" />
@@ -40,7 +40,7 @@ export default function LandingPage() {
                     >
                         <button
                             onClick={() => navigate('/login')}
-                            className="bg-[#064e3b] dark:bg-emerald-500 text-white dark:text-[#0b0f19] text-xl md:text-2xl px-10 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                            className="bg-[#064e3b] dark:bg-emerald-500 text-white dark:text-[#0b0f19] text-lg md:text-2xl px-8 py-3 md:px-10 md:py-4 rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                         >
                             {t('hero.cta', 'Start Translating')}
                         </button>
@@ -97,7 +97,7 @@ export default function LandingPage() {
                 </div>
             </section>
 
-            <section className="py-24 px-6 bg-slate-50/50 dark:bg-slate-900/50 transition-colors duration-300">
+            <section className="py-24 px-6 bg-slate-50/50 dark:bg-slate-900/50 transition-colors duration-300 overflow-hidden">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-20">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -145,14 +145,14 @@ export default function LandingPage() {
                         whileHover={{ scale: 1.05, rotate: 0 }}
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 100 }}
-                        className="relative cursor-pointer z-10"
+                        className="relative cursor-pointer z-10 w-full max-w-[320px] md:max-w-none"
                     >
                         <div className="absolute -top-6 -right-4 bg-[#064e3b] text-white text-[12px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg z-30 border-2 border-white ring-2 ring-emerald-500">
                             {t('demo.simplified', 'SIMPLIFIED')}
                         </div>
 
                         <div className="relative bg-[#0b0f19] rounded-[2.5rem] p-3 shadow-2xl border border-slate-700/50 rotate-1 transition-transform">
-                            <div className="w-72 md:w-80 bg-gradient-to-br from-[#064e3b] to-[#022c22] rounded-[2rem] p-6 text-white min-h-[24rem] flex flex-col justify-center border border-white/5 relative overflow-hidden">
+                            <div className="w-full md:w-80 bg-gradient-to-br from-[#064e3b] to-[#022c22] rounded-[2rem] p-6 text-white min-h-[24rem] flex flex-col justify-center border border-white/5 relative overflow-hidden">
 
                                 <div className="absolute top-0 right-0 w-40 h-40 bg-emerald-500/10 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none"></div>
 

@@ -77,7 +77,7 @@ export default function ChatWidget({ financialData = {} }) {
     };
 
     return (
-        <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+        <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end mb-16 lg:mb-0">
 
             {isOpen && (
                 <div className="bg-white w-80 h-96 rounded-lg shadow-2xl border border-gray-200 mb-4 flex flex-col overflow-hidden animate-in fade-in slide-in-from-bottom-5 duration-200">

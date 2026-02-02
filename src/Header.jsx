@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "./context/AuthContext";
 import { useTheme } from "./context/ThemeContext";
@@ -13,12 +13,12 @@ function Header() {
 
     return (
         <header className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 dark:border-slate-800 h-20 transition-colors duration-300">
-            <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+            <div className="max-w-7xl mx-auto px-4 md:px-6 h-full flex items-center justify-between gap-2">
 
 
                 <Link to="/" className="flex items-center gap-3 group">
                     <img src="/favicon.png" alt="FinBridge" className="w-8 h-8 opacity-90 grayscale group-hover:grayscale-0 transition-all" />
-                    <span className="font-serif font-bold text-2xl tracking-tight text-[#0b0f19] dark:text-white">FINBRIDGE</span>
+                    <span className="font-serif font-bold text-xl md:text-2xl tracking-tight text-[#0b0f19] dark:text-white truncate">FINBRIDGE</span>
                 </Link>
 
                 <div className="flex items-center gap-4">

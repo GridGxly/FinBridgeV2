@@ -486,7 +486,7 @@ export default function Dashboard() {
             <LegalModal isOpen={showLegal} onClose={() => setShowLegal(false)} />
             <DocPreviewModal doc={selectedDoc} onClose={() => setSelectedDoc(null)} />
 
-            <aside className={`w-64 border-r flex flex-col fixed h-full z-20 ${transitionClass} ${darkMode ? 'bg-gray-900 border-gray-800' : 'bg-white border-gray-100'}`}>
+            <aside className={`hidden lg:flex w-64 border-r flex-col fixed h-full z-20 ${transitionClass} ${darkMode ? 'bg-gray-900 border-gray-800' : 'bg-white border-gray-100'}`}>
                 <div className="p-6">
                     <div className="flex items-center gap-3 mb-8">
                         <button
@@ -531,7 +531,7 @@ export default function Dashboard() {
                 </div>
             </aside>
 
-            <main className="flex-1 ml-64 p-6 overflow-y-auto h-full">
+            <main className="flex-1 ml-0 lg:ml-64 p-4 md:p-6 overflow-y-auto h-full pb-24 lg:pb-6">
 
                 <header className="flex justify-between items-center mb-6">
                     <div className="flex items-center gap-4">
@@ -543,7 +543,7 @@ export default function Dashboard() {
                                 onClick={() => setActiveTab('documents')}
                                 className="bg-[#064e3b] text-white px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-2 shadow-sm hover:bg-[#053d2e]"
                             >
-                                <FiFileText /> {t('dashboard.translate.upload_title', 'Upload Document')}
+                                <FiFileText /> <span className="hidden md:inline">{t('dashboard.translate.upload_title', 'Upload Document')}</span>
                             </button>
                         )}
 
@@ -1057,6 +1057,27 @@ export default function Dashboard() {
                 )}
 
             </main>
+            
+            <div className={`lg:hidden fixed bottom-0 left-0 right-0 ${darkMode ? 'bg-gray-900 border-gray-800' : 'bg-white border-gray-100'} border-t z-30 px-6 py-3 flex justify-between items-center shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]`}>
+                {[
+                    { id: 'overview', icon: <FaHome size={20} />, label: t('dashboard.nav.overview', 'Overview') },
+                    { id: 'transactions', icon: <FaExchangeAlt size={20} />, label: t('dashboard.nav.transactions', 'Activity') },
+                    { id: 'documents', icon: <FaFileAlt size={20} />, label: t('dashboard.nav.documents', 'Docs') },
+                    { id: 'accounts', icon: <FaWallet size={20} />, label: t('dashboard.nav.accounts', 'Accounts') },
+                ].map(tab => (
+                    <button
+                        key={tab.id}
+                        onClick={() => setActiveTab(tab.id)}
+                        className={`flex flex-col items-center gap-1 transition-all ${activeTab === tab.id
+                            ? 'text-[#064e3b] dark:text-emerald-400'
+                            : 'text-gray-400 dark:text-gray-500'
+                            }`}
+                    >
+                        {tab.icon}
+                        <span className="text-[10px] font-medium">{tab.label}</span>
+                    </button>
+                ))}
+            </div>
         </div>
     );
 }

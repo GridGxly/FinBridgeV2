@@ -77,7 +77,7 @@ const Login = () => {
                 <span className="font-serif font-bold text-2xl tracking-tight text-slate-900 dark:text-white">FINBRIDGE</span>
             </Link>
 
-            <div className="w-full max-w-md bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 p-8 transition-colors duration-300">
+            <div className="w-full max-w-md bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 p-6 md:p-8 transition-colors duration-300">
                 <div className="text-center mb-8">
                     <h1 className="text-2xl font-bold text-slate-900 dark:text-white mb-2 tracking-tight">{t('login.form.title', 'Log in')}</h1>
                     <p className="text-slate-500 dark:text-slate-400 text-sm">
